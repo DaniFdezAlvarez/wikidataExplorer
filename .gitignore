@@ -55,3 +55,12 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Development
+.mr.developer.cfg
+.project
+.pydevproject
+.idea/
+*.tsv
+*.xml
+files/
