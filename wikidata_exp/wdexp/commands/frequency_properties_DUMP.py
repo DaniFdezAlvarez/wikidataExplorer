@@ -3,7 +3,7 @@ __author__ = 'Dani'
 import ijson
 
 
-class FrequencyProperties(object):
+class FrequencyPropertiesCommand(object):
 
     def __init__(self, source_file, out_file):
         self._in_file = source_file
@@ -107,8 +107,6 @@ class FrequencyProperties(object):
         else:
             self._err_count_item += 1
             print 'Elemento de tipo desconocido:', elem_type
-
-
 
 
     def _process_item(self, properties):
