@@ -5,6 +5,7 @@ PROP_TRENDS = "trends"
 DOWNLOAD_PATH = "C:\\Users\\Dani\\repos_git\\wikidata_exp\\wikidata_exp\\files\\downloads\\g_trends"
 
 import json
+import traceback
 import time
 from os import walk
 from os import remove
@@ -26,10 +27,13 @@ class TrackTrendsCommand(object):
     def exec_command(self, string_return=False):
         whole_json_source = self._read_in_json()
         count = 0
-        for a_dict in whole_json_source:
-            count += 1
-            print "Procesing", a_dict[PROP_LABEL], "...............", count
-            self._complete_json_with_trends(a_dict)
+        try:
+            for a_dict in whole_json_source:
+                count += 1
+                print "Procesing", a_dict[PROP_LABEL], "...............", count
+                self._complete_json_with_trends(a_dict)
+        except:
+            traceback.print_exc()
         if string_return:
             return json.dumps(whole_json_source, indent=4, encoding='utf-8')
         else:
@@ -63,6 +67,7 @@ class TrackTrendsCommand(object):
         trend_list = self._parse_trend_content(trend_raw_content)
         self._delete_trend_file(target_path)
         time.sleep(2.5)
+        return trend_list
 
     @staticmethod
     def _download_trend_file(term):
@@ -71,7 +76,11 @@ class TrackTrendsCommand(object):
     @staticmethod
     def _read_trend_file():
         a_path = None
+        start_time = time.time()
         while a_path is None:
+            current_state = time.time()
+            if current_state - start_time > 30:
+                raise ValueError("Are we banned? Stop")
             for base_path, ignore_this, the_files_array in walk(DOWNLOAD_PATH):
                 if len(the_files_array) > 0:
                     candidate_path = join(base_path, the_files_array[0])
@@ -82,8 +91,7 @@ class TrackTrendsCommand(object):
         result = in_stream.read()
         in_stream.close()
         return a_path, result
-        # with open(a_path, "r") as in_stream:
-        #     return a_path, in_stream.read()
+
 
     @staticmethod
     def _parse_trend_content(raw_content):
