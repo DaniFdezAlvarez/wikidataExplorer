@@ -47,7 +47,6 @@ def ScrapeTwoMonths(keyword, year, startmonth):
     # date = '&date='+str(startmonth)+'%2F'+str(year)+'%202m'
     
     URL = URL_start + queries + URL_end
-
     webbrowser.open(URL)
 
     # browser = spynner.Browser()
