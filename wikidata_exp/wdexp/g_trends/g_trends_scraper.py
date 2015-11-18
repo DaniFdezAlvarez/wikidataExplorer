@@ -12,7 +12,7 @@ from os.path import join
 import random
 
 DOWNLOAD_PATH = "C:\\Users\\Dani\\repos_git\\wikidata_exp\\wikidata_exp\\files\\downloads\\g_trends"
-SLEEP_AVERAGE_TIME = 20
+SLEEP_AVERAGE_TIME = 17
 
 _URL_START = "http://www.google.com/trends/trendsReport?&q="
 _URL_END = "&cmpt=q&content=1&export=1"
