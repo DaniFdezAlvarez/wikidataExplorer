@@ -16,7 +16,7 @@ class CountNgramsCommand(object):
         self._initialize_indexes()
 
     def _initialize_indexes(self):
-        for i in range(self._min_n, self._max_n):
+        for i in range(self._min_n, self._max_n + 1):
             self._indexes[i] = {}
 
 
