@@ -28,8 +28,13 @@ from wdexp.g_trends.commads.track_trends_SCRAP import TrackTrendsCommand
 aol_counter = CountNgramsCommand(out_file_pattern="../files/out/aol_ngram_index.txt",
                                  source_file="../files/in/consultas-AOL.txt",
                                  min_n=1,
-                                 max_n=5)
-aol_counter.exec_command()
+                                 max_n=6)
+# aol_counter.exec_command(1)
+# aol_counter.exec_command(2)
+# aol_counter.exec_command(3)
+# aol_counter.exec_command(4)
+# aol_counter.exec_command(5)
+aol_counter.exec_command(6)
 
 print "Done!"
 

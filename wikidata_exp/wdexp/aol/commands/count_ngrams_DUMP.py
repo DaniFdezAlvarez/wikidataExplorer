@@ -20,38 +20,39 @@ class CountNgramsCommand(object):
             self._indexes[i] = {}
 
 
-    def exec_command(self, string_return=False):
-        self._process_in_file()
+    def exec_command(self, ngram_size, string_return=False):
+        self._process_in_file(ngram_size)
         if string_return:
             result = ""
-            for an_index in self._indexes:
-                relative_result = "\n\nResults for n = {}".format(an_index)
-                sorted_list_ngrams = self._dictionary_to_sorted_list_of_keys(self._indexes[an_index])
-                for a_ngram in sorted_list_ngrams:
-                    relative_result += "{}:{}\n".format(a_ngram, self._indexes[an_index][a_ngram])
-                result += relative_result
+            # for an_index in self._indexes:
+            #     relative_result = "\n\nResults for n = {}".format(an_index)
+            #     sorted_list_ngrams = self._dictionary_to_sorted_list_of_keys(self._indexes[an_index])
+            #     for a_ngram in sorted_list_ngrams:
+            #         relative_result += "{}:{}\n".format(a_ngram, self._indexes[an_index][a_ngram])
+            #     result += relative_result
             return result
         else:
-            for an_index in self._indexes:
-                self._write_index_to_file(an_index)
+            # for an_index in self._indexes:
+            self._write_index_to_file(ngram_size)
+            self._indexes[ngram_size] = {}
 
 
-    def _process_in_file(self):
+    def _process_in_file(self, ngram_size):
         counter = 0
         with open(self._in_file, "r") as in_stream:
             for line in in_stream:
                 counter += 1
-                if counter % 100000 == 0:
-                    print "Llevo", counter
+                if counter % 200000 == 0:
+                    print "Llevo", counter, ngram_size
                 pieces = line.split("\t")
                 frequency = int(pieces[0].strip())
                 tokens = self._normalize(pieces[1]).split(" ")
-                for ngram_size in range(self._min_n, self._max_n + 1):
-                    sequences = self._extract_ngram_sequences(tokens, ngram_size)
-                    for sequence in sequences:
-                        if sequence not in self._indexes[ngram_size]:
-                            self._indexes[ngram_size][sequence] = 0
-                        self._indexes[ngram_size][sequence] += frequency
+                # for ngram_size in range(self._min_n, self._max_n + 1):
+                sequences = self._extract_ngram_sequences(tokens, ngram_size)
+                for sequence in sequences:
+                    if sequence not in self._indexes[ngram_size]:
+                        self._indexes[ngram_size][sequence] = 0
+                    self._indexes[ngram_size][sequence] += frequency
 
     @staticmethod
     def _extract_ngram_sequences(tokens, ngram_size):
