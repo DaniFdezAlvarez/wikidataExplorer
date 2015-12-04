@@ -55,7 +55,7 @@ class FrequencyPropertiesCommand(object):
             elif event == 'map_key' and prefix == 'item.claims':
                 properties[value] = 0
                 current_claim_key = value
-            elif event == 'start_map' and prefix == 'item.claims.' + str(current_claim_key) + '.item':
+            elif event == 'end_map' and prefix == 'item.claims.' + str(current_claim_key) + '.item':
                 # print 'item.claims.' + str(current_claim_key) + '.item'
                 properties[current_claim_key] += 1
 
