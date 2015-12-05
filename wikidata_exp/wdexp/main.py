@@ -39,7 +39,7 @@ from wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
 
 
 graph_builder = GraphEntitiesCommand(out_file="../files/out/complete_with_alias.txt",
-                                     source_file="../files/out/complete.txt")
+                                     source_file="../files/in/wikidata_slice.json")
 graph_builder.exec_command()
 
 print "Done!"
