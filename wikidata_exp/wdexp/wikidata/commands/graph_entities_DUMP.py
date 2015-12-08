@@ -10,15 +10,18 @@ class GraphEntitiesCommand(object):
         self._out_file = out_file
 
 
-    def exec_command(self, string_return=False):
+    def exec_command(self, string_return=False, object_return=False):
+        if string_return and object_return:
+            raise BaseException("You should use just a type of return")
         graph = self._create_nx_graph()
+        if object_return:
+            return graph
 
 
     def _create_nx_graph(self):
         g = nx.DiGraph()
         for origin, target in self._read_edges():
             g.add_edge(origin, target)
-            print origin, target
 
         return g
 
@@ -50,7 +53,7 @@ class GraphEntitiesCommand(object):
                 datavalue_type = None
                 elem_count += 1
                 possible_edges = []
-                if elem_count % 500 == 0:
+                if elem_count % 10000 == 0:
                     print 'Llevamos ' + str(elem_count) + ' elementos'
             elif event == 'string' and prefix == 'item.id':
                 elem_id = value
