@@ -4,6 +4,7 @@ from wdexp.wikidata.commands.aliases_properties_API import AliasesPropertiesComm
 from wdexp.aol.commands.count_ngrams_DUMP import CountNgramsCommand
 from wdexp.g_trends.commads.track_trends_SCRAP import TrackTrendsCommand
 from wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
+from wdexp.wikidata.commands.page_rank_NETG import PageRankCommand
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
 # out_file="../files/out/brief_pro.txt")
@@ -40,7 +41,10 @@ from wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
 
 graph_builder = GraphEntitiesCommand(out_file="../files/out/complete_with_alias.txt",
                                      source_file="../files/in/wikidata_slice.json")
-graph_builder.exec_command()
+graph = graph_builder.exec_command(object_return=True)
+
+page_ranker = PageRankCommand(networkx_graph=graph, out_file="page_rank.txt")
+page_ranker.exec_command()
 
 print "Done!"
 
