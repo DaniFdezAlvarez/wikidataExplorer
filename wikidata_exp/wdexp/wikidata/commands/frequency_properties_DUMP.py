@@ -33,45 +33,34 @@ class FrequencyPropertiesCommand(object):
         elem_count = 1
 
         for prefix, event, value in ijson.parse(json_stream):
-            if event == 'end_map' and prefix == 'item':
-                self._process_current_data(elem_id, elem_type, desc_en, label_en, properties)
-                elem_id = None
-                elem_type = None
-                desc_en = None
-                current_claim_key = None
-                label_en = None
-                properties = {}
-                elem_count += 1
-                if elem_count % 500 == 0:
-                    print 'Llevamos ' + str(elem_count) + ' elementos'
-            elif event == 'string' and prefix == 'item.id':
-                elem_id = value
-            elif event == 'string' and prefix == 'item.type':
-                elem_type = value
-            elif event == 'string' and prefix == 'item.descriptions.en.value':
-                desc_en = value
-            elif event == 'string' and prefix == 'item.labels.en.value':
-                label_en = value
+            if event == 'end_map':
+                if prefix == 'item':
+                    self._process_current_data(elem_id, elem_type, desc_en, label_en, properties)
+                    elem_id = None
+                    elem_type = None
+                    desc_en = None
+                    current_claim_key = None
+                    label_en = None
+                    properties = {}
+                    elem_count += 1
+                    if elem_count % 500 == 0:
+                        print 'Llevamos ' + str(elem_count) + ' elementos'
+                if prefix == 'item.claims.' + str(current_claim_key) + '.item':
+                    # print 'item.claims.' + str(current_claim_key) + '.item'
+                    properties[current_claim_key] += 1
+            elif event == 'string':
+                if prefix == 'item.id':
+                    elem_id = value
+                elif prefix == 'item.type':
+                    elem_type = value
+                elif prefix == 'item.descriptions.en.value':
+                    desc_en = value
+                elif prefix == 'item.labels.en.value':
+                    label_en = value
             elif event == 'map_key' and prefix == 'item.claims':
                 properties[value] = 0
                 current_claim_key = value
-            elif event == 'end_map' and prefix == 'item.claims.' + str(current_claim_key) + '.item':
-                # print 'item.claims.' + str(current_claim_key) + '.item'
-                properties[current_claim_key] += 1
 
-            # if elem_count % 10000 == 0:
-            #     break
-
-        # for elem in ijson.items(json_stream, 'item.item'):
-        #     counter += 1
-        #     if counter %1 == 0:
-        #         print "elementos analizados:", counter
-        #     if elem["type"] == 'item':
-        #         # print 'item'
-        #         self._process_item(elem)
-        #     elif elem["type"] == 'property':
-        #         self._process_property(elem)
-        #         # print "property"
 
 
         print 'Errores en propiedades: ', self._err_count_prop
