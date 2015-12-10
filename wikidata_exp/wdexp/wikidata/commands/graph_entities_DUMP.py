@@ -55,18 +55,19 @@ class GraphEntitiesCommand(object):
                 possible_edges = []
                 if elem_count % 10000 == 0:
                     print 'Llevamos ' + str(elem_count) + ' elementos'
-            elif event == 'string' and prefix == 'item.id':
-                elem_id = value
-            elif event == 'string' and prefix == 'item.type':
-                elem_type = value
-            # elif event == 'string' and prefix == 'item.labels.en.value':  # If we had enough memory, procces
-            #     label_en = value
+            elif event == 'string':
+                if prefix == 'item.id':
+                    elem_id = value
+                elif prefix == 'item.type':
+                    elem_type = value
+                elif prefix == 'item.claims.' + str(current_claim_key) + '.item.mainsnak.datatype':
+                    datatype = value
+                elif prefix == 'item.claims.' + str(current_claim_key) + '.item.mainsnak.datavalue.value.entity-type':
+                    datavalue_type = value
+                # elif prefix == 'item.labels.en.value':
+                #     label_en = value
             elif event == 'map_key' and prefix == 'item.claims':
                 current_claim_key = value
-            elif event == 'string' and prefix == 'item.claims.' + str(current_claim_key) + '.item.mainsnak.datatype':
-                datatype = value
-            elif event == 'string' and prefix == 'item.claims.' + str(current_claim_key) + '.item.mainsnak.datavalue.value.entity-type':
-                datavalue_type = value
             elif event == 'number' and prefix == 'item.claims.' + str(current_claim_key) + '.item.mainsnak.datavalue.value.numeric-id':
                 datavalue_num_id = value
             elif event == "end_array" and prefix == "item.claims." + str(current_claim_key):
