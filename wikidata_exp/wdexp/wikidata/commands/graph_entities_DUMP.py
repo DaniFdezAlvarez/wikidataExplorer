@@ -53,8 +53,9 @@ class GraphEntitiesCommand(object):
                 datavalue_type = None
                 elem_count += 1
                 possible_edges = []
-                if elem_count % 10000 == 0:
+                if elem_count % 10 == 0:
                     print 'Llevamos ' + str(elem_count) + ' elementos'
+
             elif event == 'string':
                 if prefix == 'item.id':
                     elem_id = value
