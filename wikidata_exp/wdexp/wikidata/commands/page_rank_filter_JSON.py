@@ -1,6 +1,7 @@
 __author__ = 'Dani'
 
 import json
+import re
 
 MIN_SCORE = 6.37503840499e-09
 
@@ -27,7 +28,9 @@ class PageRankFilterCommand(object):
 
     def _read_in_file(self):
         with open(self._in_file, "r") as in_stream:
-            return json.load(in_stream)
+            a_str = in_stream.read()
+            a_str = re.sub("(u')|'", '"', a_str)
+            return json.loads(a_str)
 
     def _filter_and_sort_dcit(self, a_dict):
         result = []
