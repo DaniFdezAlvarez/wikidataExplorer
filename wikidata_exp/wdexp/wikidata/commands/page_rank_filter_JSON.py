@@ -1,9 +1,9 @@
 __author__ = 'Dani'
 
-import json
-import re
 
-MIN_SCORE = 6.37503840499e-09
+from decimal import *
+
+MIN_SCORE = Decimal('6.3750384049853736E-9')
 
 
 class PageRankFilterCommand(object):
@@ -28,9 +28,14 @@ class PageRankFilterCommand(object):
 
     def _read_in_file(self):
         with open(self._in_file, "r") as in_stream:
-            a_str = in_stream.read()
-            a_str = re.sub("(u')|'", '"', a_str)
-            return json.loads(a_str)
+            # a_str = in_stream.read()
+            # a_str = re.sub("(u')|'", '"', a_str)
+            # return json.loads(a_str)
+            result = {}
+            for a_tuple in self._read_key_values_in_chunks(in_stream, ","):
+                result[a_tuple[0]] = a_tuple[1]
+                print a_tuple[1]
+            return result
 
     def _filter_and_sort_dcit(self, a_dict):
         result = []
@@ -48,6 +53,42 @@ class PageRankFilterCommand(object):
             result += ",\n\t\"" + a_tuple[0] + "\": " + str(a_tuple[1])
         result += "\n}"
         return result
+
+    def _read_key_values_in_chunks(self, in_stream, break_char):
+        previous_result = ""
+        while True:
+            data = in_stream.read(1024)
+            if not data:
+                break
+            last_index = 0
+            for i in range(0, len(data)):
+                if data[i] == break_char:
+                    yield self._extract_key_value_from_substring(previous_result + data[last_index:i + 1])
+                    previous_result = ""
+                    last_index = i + 1
+            previous_result += data[last_index:]
+        yield self._extract_key_value_from_substring(previous_result)
+
+
+
+    def _extract_key_value_from_substring(self, target_str):
+        first_index = None
+        last_index = None
+        colon_index = None
+        i=0
+        for char in target_str:
+            if char == "'":
+                if not first_index:
+                    first_index = i
+                else:
+                    last_index = i
+            if char == ":":
+                colon_index = i
+                break
+            i += 1
+        return target_str[first_index + 1:last_index], Decimal(target_str[colon_index + 2:-1])
+
+
 
 
 
