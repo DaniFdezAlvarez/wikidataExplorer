@@ -6,6 +6,7 @@ from wdexp.g_trends.commads.track_trends_SCRAP import TrackTrendsCommand
 from wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
 from wdexp.wikidata.commands.page_rank_NETG import PageRankCommand
 from wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
+from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCommand
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
 # out_file="../files/out/brief_pro.txt")
@@ -48,9 +49,14 @@ from wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
 # page_ranker.exec_command()
 
 
-page_rank_filter = PageRankFilterCommand(source_file="",
-                                         out_file="")
-page_rank_filter.exec_command()
+# page_rank_filter = PageRankFilterCommand(source_file="",
+#                                          out_file="")
+# page_rank_filter.exec_command()
 
+
+entity_properties_tracker = EntitiesPropertiesCommand(source_file="../files/in/filt_sort_pg_slice.json",
+                                                      out_file="../files/out/complete_top_pg_entities.json",
+                                                      number_of_entities=1000)
+entity_properties_tracker.exec_command()
 print "Done!"
 
