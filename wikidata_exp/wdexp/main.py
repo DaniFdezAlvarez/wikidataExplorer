@@ -7,6 +7,7 @@ from wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
 from wdexp.wikidata.commands.page_rank_NETG import PageRankCommand
 from wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
 from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCommand
+from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
 # out_file="../files/out/brief_pro.txt")
@@ -54,9 +55,15 @@ from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCo
 # page_rank_filter.exec_command()
 
 
-entity_properties_tracker = EntitiesPropertiesCommand(source_file="../files/in/filt_sort_pg_slice.json",
-                                                      out_file="../files/out/complete_top_pg_entities.json",
-                                                      number_of_entities=1000)
-entity_properties_tracker.exec_command()
+# entity_properties_tracker = EntitiesPropertiesCommand(source_file="../files/in/filt_sort_pg_slice.json",
+#                                                       out_file="../files/out/complete_top_pg_entities.json",
+#                                                       number_of_entities=1000)
+# entity_properties_tracker.exec_command()
+
+entity_pg_ranker = EntityRankerCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\filt_sort_page_rank.json",
+                                       out_file="../files/out/complete_top_pg_entities.json")
+
+print entity_pg_ranker._exec_command(string_return=True, entities=["Q319", "Q544", "Q2", "Q308", "Q313", "Q111", "Q193", "Q324", "Q332", "Q525"])
+
 print "Done!"
 

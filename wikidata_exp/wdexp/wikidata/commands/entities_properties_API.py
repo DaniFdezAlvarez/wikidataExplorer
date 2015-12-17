@@ -2,8 +2,9 @@ __author__ = 'Dani'
 
 import requests
 from requests.adapters import HTTPAdapter
+import json
 
-
+ENTITY_ID = "id"
 ENTITY_ALIASES = "aliases"
 ENTITY_LABEL = "labels"
 ENTITY_DESCRIPTION = "descriptions"
@@ -21,25 +22,26 @@ class EntitiesPropertiesCommand(object):
 
     def exec_command(self, string_return=False):
         id_tuples = self._read_top_k_ids()
-        result = {"acepted" : {},
-                  "discarded" : {}}
+        result = {"acepted" : [],
+                  "discarded" : []}
         succeses = 0
         for a_tuple in id_tuples:  # ID, score
             candidate_dict = self._get_entity_properties_dict(a_tuple[0], a_tuple[1])
             print candidate_dict
             if self._is_worthy_entity_dict(candidate_dict):
-                result["acepted"][a_tuple[0]] = candidate_dict
+                result["acepted"].append(candidate_dict)
                 succeses += 1
+                print succeses
                 if succeses >= self._top_k:
                     break
             else:
-                result["discarded"][a_tuple[0]] = candidate_dict
+                result["discarded"].append(candidate_dict)
 
         if string_return:
             return str(result)
         else:
             with open(self._out_file, "w") as out_stream:
-                out_stream.write(str(result))
+                json.dump(result, out_stream)
 
 
     def _is_worthy_entity_dict(self, entity_dict):
@@ -102,7 +104,8 @@ class EntitiesPropertiesCommand(object):
     def _get_entity_properties_dict(self, entity_id, pg_score):
         entity_url = self._build_uri_of_property(entity_id)
         json_entity = self._get_json_of_property(entity_url)
-        result = {ENTITY_ALIASES: self._get_prop_aliases(entity_id, json_entity),
+        result = {ENTITY_ID: entity_id,
+                  ENTITY_ALIASES: self._get_prop_aliases(entity_id, json_entity),
                   ENTITY_LABEL: self._get_prop_label(entity_id, json_entity),
                   ENTITY_DESCRIPTION: self._get_prop_description(entity_id, json_entity),
                   ENTITY_PG_SCORE: pg_score}
