@@ -8,6 +8,7 @@ from wdexp.wikidata.commands.page_rank_NETG import PageRankCommand
 from wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
 from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCommand
 from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
+from wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCommand
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
 # out_file="../files/out/brief_pro.txt")
@@ -60,10 +61,34 @@ from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
 #                                                       number_of_entities=1000)
 # entity_properties_tracker.exec_command()
 
-entity_pg_ranker = EntityRankerCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\filt_sort_page_rank.json",
-                                       out_file="../files/out/complete_top_pg_entities.json")
+# entity_pg_ranker = EntityRankerCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\filt_sort_page_rank.json",
+#                                        out_file="../files/out/complete_top_pg_entities.json")
+#
+# print entity_pg_ranker._exec_command(string_return=True, entities=["Q319", "Q544", "Q2", "Q308", "Q313", "Q111", "Q193", "Q324", "Q332", "Q525"])
 
-print entity_pg_ranker._exec_command(string_return=True, entities=["Q319", "Q544", "Q2", "Q308", "Q313", "Q111", "Q193", "Q324", "Q332", "Q525"])
 
-print "Done!"
 
+subgrapher = SubgraphEntitiesCommand(out_file="out_graph.tsv", out_img="out_img.png")
+subgraph = subgrapher.exec_command(object_return=True, entities=['Q6999', 'Q8101032'], file_return=True, img_return=True)
+
+
+
+
+# repeated = {}
+# existing = set()
+#
+# for line in open("out_graph.tsv"):
+#     for piece in line[:-1].split("\t"):
+#         if piece in existing:
+#             if not piece in repeated:
+#                 repeated[piece] = 1
+#             repeated[piece] += 1
+#         else:
+#             existing.add(piece)
+# print repeated
+#
+#
+#
+#
+# print "Done!"
+#

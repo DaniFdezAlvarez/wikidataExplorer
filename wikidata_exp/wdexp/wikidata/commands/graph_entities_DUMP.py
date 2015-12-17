@@ -16,6 +16,7 @@ class GraphEntitiesCommand(object):
         graph = self._create_nx_graph()
         if object_return:
             return graph
+        # TODO implement textual return??
 
 
     def _create_nx_graph(self):
