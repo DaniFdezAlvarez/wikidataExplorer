@@ -79,8 +79,8 @@ class SubgraphEntitiesCommand(object):
 
 
     @staticmethod
-    def _build_query(base_query, target_entity_node):
-        return base_query.format(target_entity_node)
+    def _build_query(query_skeleton, target_entity_node):
+        return query_skeleton.format(target_entity_node)
 
 
     @staticmethod

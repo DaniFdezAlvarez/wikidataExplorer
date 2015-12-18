@@ -9,6 +9,8 @@ from wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
 from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCommand
 from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
 from wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCommand
+from wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
+
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
 # out_file="../files/out/brief_pro.txt")
@@ -68,9 +70,13 @@ from wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCom
 
 
 
-subgrapher = SubgraphEntitiesCommand(out_file="out_graph.tsv", out_img="out_img.png")
-subgraph = subgrapher.exec_command(object_return=True, entities=['Q6999', 'Q8101032'], file_return=True, img_return=True)
+# subgrapher = SubgraphEntitiesCommand(out_file="out_graph.tsv", out_img="out_img.png")
+# subgraph = subgrapher.exec_command(object_return=True, entities=['Q319'], file_return=True, img_return=True)
 
+
+categorizer = CategoryDetectionCommand(source_file="../files/out/complete_top_pg_entities.json",
+                                       out_file="../files/outcategorized_top_pg_entities.json")
+categorizer._exec_command()
 
 
 
