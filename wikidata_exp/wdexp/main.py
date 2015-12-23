@@ -10,6 +10,7 @@ from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCo
 from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
 from wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCommand
 from wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
+from wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCommands
 
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
@@ -71,13 +72,19 @@ from wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionC
 
 
 # subgrapher = SubgraphEntitiesCommand(out_file="out_graph.tsv", out_img="out_img.png")
-# subgraph = subgrapher.exec_command(object_return=True, entities=['Q319'], file_return=True, img_return=True)
+# subgraph = subgrapher.exec_command(object_return=True, entities=['Q111'], file_return=True, img_return=False)
 
 
-categorizer = CategoryDetectionCommand(source_file="../files/out/complete_top_pg_entities.json",
-                                       out_file="../files/outcategorized_top_pg_entities.json")
-categorizer._exec_command()
+# categorizer = CategoryDetectionCommand(source_file="../files/out/complete_top_pg_entities.json",
+#                                        out_file="../files/outcategorized_top_pg_entities.json")
+# categorizer._exec_command()
 
+
+common_detector = CommonIncomingCommands(source_dump_file="../files/in/wikidata_slice.json",
+                                         source_target_ids_file="../files/in/filt_sort_pg_slice.json",
+                                         out_file="in_out_edges.json",
+                                         topk_target_entities=1000)
+common_detector._exec_command(string_return=False)
 
 
 # repeated = {}

@@ -16,15 +16,15 @@ HAS_INSTANCES = "have_instances"
 BOTH = "both"
 NO_TAXON = "no_taxon"
 
-SPARQL_IS_INSTANCES = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
+SPARQL_IS_INSTANCE = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
                       'PREFIX wd: <http://www.wikidata.org/entity/> ' \
                       'PREFIX wdt: <http://www.wikidata.org/prop/direct/> ' \
                       'SELECT ?obj ?a_prop WHERE {{ wd:{} ?a_prop ?obj . ' \
-                      'FILTER (?a_prop IN (wdt:P31, wdt:P279 )) ' \
+                      'FILTER (?a_prop IN (wdt:P31)) ' \
                       'SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en" . }}}}LIMIT 5'
 
 
-SPARQL_HAS_INSTANCE = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
+SPARQL_HAS_INSTANCES = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
                       'PREFIX wd: <http://www.wikidata.org/entity/> ' \
                       'PREFIX wdt: <http://www.wikidata.org/prop/direct/> ' \
                       'SELECT ?sub ?a_prop WHERE {{ ?sub ?a_prop wd:{} . ' \

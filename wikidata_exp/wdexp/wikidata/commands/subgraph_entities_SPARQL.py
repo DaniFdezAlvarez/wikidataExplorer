@@ -38,15 +38,21 @@ class SubgraphEntitiesCommand(object):
 
     def exec_command(self, entities, string_return=False, img_return=False, file_return=True, object_return=False):
         subgraph = nx.DiGraph()
+        print "Me presento"
         for entity in entities:
+            print entity, "Voy con outcoming!"
             outcoming = self._get_objects_in_triples(entity)
             for an_outcoming_node in outcoming:
                 subgraph.add_edge(entity, an_outcoming_node)
+            print entity, "Termine outcoming, voy con incoming!"
             incoming = self._get_subjects_in_triples(entity)
             for an_incoming_node in incoming:
                 subgraph.add_edge(an_incoming_node, entity)
+            print "termine incoming, a ver ahora"
         if file_return:
+            print "Texto ini"
             self._serialize_graph_text(subgraph)
+            print "Texto fin"
         if img_return:
             self._serialize_graph_image(subgraph)
 
