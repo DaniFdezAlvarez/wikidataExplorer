@@ -10,7 +10,8 @@ from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCo
 from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
 from wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCommand
 from wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
-from wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCommands
+from wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCommand
+from wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import FrequentIncomingPropsByEntityCommand
 
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",
@@ -25,7 +26,7 @@ from wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCom
 
 
 # aliases_tracker = AliasesPropertiesCommand(out_file="../files/out/complete_with_alias.txt",
-#                                            source_file="../files/out/complete.txt")
+# source_file="../files/out/complete.txt")
 #
 # aliases_tracker.exec_command(string_return=False)
 
@@ -80,11 +81,19 @@ from wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCom
 # categorizer._exec_command()
 
 
-common_detector = CommonIncomingCommands(source_dump_file="../files/in/wikidata_slice.json",
-                                         source_target_ids_file="../files/in/filt_sort_pg_slice.json",
-                                         out_file="in_out_edges.json",
-                                         topk_target_entities=1000)
-common_detector._exec_command(string_return=False)
+# common_detector = CommonIncomingCommand(source_dump_file="../files/in/wikidata_slice.json",
+#                                         source_target_ids_file="../files/in/filt_sort_pg_slice.json",
+#                                         out_file="in_out_edges.json",
+#                                         topk_target_entities=1000)
+# common_detector._exec_command(string_return=False)
+
+frequent_associations_detector = FrequentIncomingPropsByEntityCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\in_out_edges.json",
+                                                                      out_file_entities="in_entities_500001.json",
+                                                                      out_file_props="props_count_50000.json")
+frequent_associations_detector.exec_command()
+
+
+
 
 
 # repeated = {}

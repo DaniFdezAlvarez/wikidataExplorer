@@ -10,7 +10,7 @@ LABEL = "label"
 DESCRIPTION = "desc"
 
 
-class CommonIncomingCommands(object):
+class CommonIncomingCommand(object):
 
     def __init__(self, source_dump_file, out_file, source_target_ids_file, topk_target_entities):
         self._in_dump_file = source_dump_file
