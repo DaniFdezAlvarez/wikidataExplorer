@@ -47,17 +47,17 @@ from wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import Frequ
 # aol_counter.exec_command(6)
 
 
-# graph_builder = GraphEntitiesCommand(out_file="../files/out/complete_with_alias.txt",
-#                                      source_file="../files/in/wikidata_slice.json")
-# graph = graph_builder.exec_command(object_return=True)
-#
-# page_ranker = PageRankCommand(networkx_graph=graph, out_file="page_rank.txt")
-# page_ranker.exec_command()
+graph_builder = GraphEntitiesCommand(out_file="../files/out/complete_with_alias.txt",
+                                     source_file="../files/in/wikidata_slice.json")
+graph = graph_builder.exec_command(object_return=True)
+
+page_ranker = PageRankCommand(networkx_graph=graph, out_file="page_rank.txt")
+page_ranker.exec_command()
 
 
-# page_rank_filter = PageRankFilterCommand(source_file="",
-#                                          out_file="")
-# page_rank_filter.exec_command()
+page_rank_filter = PageRankFilterCommand(source_file="",
+                                         out_file="")
+page_rank_filter.exec_command()
 
 
 # entity_properties_tracker = EntitiesPropertiesCommand(source_file="../files/in/filt_sort_pg_slice.json",
@@ -81,11 +81,11 @@ from wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import Frequ
 # categorizer._exec_command()
 
 
-common_detector = CommonIncomingCommand(source_dump_file="../files/in/wikidata_slice.json",
-                                        source_target_ids_file="../files/in/filt_sort_pg_slice.json",
-                                        out_file="in_out_edges_ooo.json",
-                                        topk_target_entities=1000)
-common_detector._exec_command(string_return=False)
+# common_detector = CommonIncomingCommand(source_dump_file="../files/in/wikidata_slice.json",
+#                                         source_target_ids_file="../files/in/filt_sort_pg_slice.json",
+#                                         out_file="in_out_edges_ooo.json",
+#                                         topk_target_entities=1000)
+# common_detector._exec_command(string_return=False)
 
 
 # frequent_associations_detector = FrequentIncomingPropsByEntityCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\in_out_edges1000.json",

@@ -41,22 +41,25 @@ class GraphEntitiesCommand(object):
         elem_count = 1
 
         for prefix, event, value in ijson.parse(json_stream):
-            if event == 'end_map' and prefix == 'item':
-                for triple in possible_edges:
-                    if self._is_valid_edge(elem_type, triple[0], triple[1]):  # triple: datatype, datavalue_type, datavalue_num_id
-                        yield (elem_id, 'Q' + triple[2])
-                        # pass
-                elem_id = None
-                elem_type = None
-                current_claim_key = None
-                # label_en = None
-                datavalue_num_id = None
-                datavalue_type = None
-                elem_count += 1
-                possible_edges = []
-                if elem_count % 10 == 0:
-                    print 'Llevamos ' + str(elem_count) + ' elementos'
-
+            if event == 'end_map':
+                if prefix == 'item':
+                    for tuple_4 in possible_edges:
+                        if self._is_valid_edge(elem_type, tuple_4[0], tuple_4[1]):  # triple: datatype, datavalue_type, datavalue_num_id
+                            print elem_id, tuple_4[2], tuple_4[3]
+                            yield (elem_id, 'Q' + tuple_4[3])
+                            # pass
+                    elem_id = None
+                    elem_type = None
+                    current_claim_key = None
+                    # label_en = None
+                    datavalue_num_id = None
+                    datavalue_type = None
+                    elem_count += 1
+                    possible_edges = []
+                    if elem_count % 10 == 0:
+                        print 'Llevamos ' + str(elem_count) + ' elementos'
+                elif prefix == "item.claims." + str(current_claim_key) + ".item":
+                    possible_edges.append((datatype, datavalue_type, current_claim_key, str(datavalue_num_id)))
             elif event == 'string':
                 if prefix == 'item.id':
                     elem_id = value
@@ -72,8 +75,6 @@ class GraphEntitiesCommand(object):
                 current_claim_key = value
             elif event == 'number' and prefix == 'item.claims.' + str(current_claim_key) + '.item.mainsnak.datavalue.value.numeric-id':
                 datavalue_num_id = value
-            elif event == "end_array" and prefix == "item.claims." + str(current_claim_key):
-                possible_edges.append((datatype, datavalue_type, str(datavalue_num_id)))
 
 
     @staticmethod

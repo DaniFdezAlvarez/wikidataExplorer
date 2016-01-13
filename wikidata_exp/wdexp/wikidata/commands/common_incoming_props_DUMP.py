@@ -84,8 +84,6 @@ class CommonIncomingCommand(object):
             elif event == 'number' and prefix == 'item.claims.' + str(
                     current_claim_key) + '.item.mainsnak.datavalue.value.numeric-id':
                 datavalue_num_id = value
-            # elif event == "end_array" and prefix == "item.claims." + str(current_claim_key):
-            #     possible_edges.append((datatype, datavalue_type, current_claim_key, str(datavalue_num_id)))
 
 
     def _read_target_entities(self):
