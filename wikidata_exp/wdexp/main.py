@@ -55,9 +55,9 @@ page_ranker = PageRankCommand(networkx_graph=graph, out_file="page_rank.txt")
 page_ranker.exec_command()
 
 
-page_rank_filter = PageRankFilterCommand(source_file="",
-                                         out_file="")
-page_rank_filter.exec_command()
+# page_rank_filter = PageRankFilterCommand(source_file="",
+#                                          out_file="")
+# page_rank_filter.exec_command()
 
 
 # entity_properties_tracker = EntitiesPropertiesCommand(source_file="../files/in/filt_sort_pg_slice.json",

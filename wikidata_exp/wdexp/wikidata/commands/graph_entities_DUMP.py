@@ -45,7 +45,6 @@ class GraphEntitiesCommand(object):
                 if prefix == 'item':
                     for tuple_4 in possible_edges:
                         if self._is_valid_edge(elem_type, tuple_4[0], tuple_4[1]):  # triple: datatype, datavalue_type, datavalue_num_id
-                            print elem_id, tuple_4[2], tuple_4[3]
                             yield (elem_id, 'Q' + tuple_4[3])
                             # pass
                     elem_id = None
