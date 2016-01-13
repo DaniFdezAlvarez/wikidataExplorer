@@ -81,16 +81,24 @@ from wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import Frequ
 # categorizer._exec_command()
 
 
-# common_detector = CommonIncomingCommand(source_dump_file="../files/in/wikidata_slice.json",
-#                                         source_target_ids_file="../files/in/filt_sort_pg_slice.json",
-#                                         out_file="in_out_edges.json",
-#                                         topk_target_entities=1000)
-# common_detector._exec_command(string_return=False)
+common_detector = CommonIncomingCommand(source_dump_file="../files/in/wikidata_slice.json",
+                                        source_target_ids_file="../files/in/filt_sort_pg_slice.json",
+                                        out_file="in_out_edges_ooo.json",
+                                        topk_target_entities=1000)
+common_detector._exec_command(string_return=False)
 
-frequent_associations_detector = FrequentIncomingPropsByEntityCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\in_out_edges.json",
-                                                                      out_file_entities="in_entities_500001.json",
-                                                                      out_file_props="props_count_50000.json")
-frequent_associations_detector.exec_command()
+
+# frequent_associations_detector = FrequentIncomingPropsByEntityCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\in_out_edges1000.json",
+#                                                                       out_file_entities="in_entities_500001.json",
+#                                                                       out_file_props="props_count_50000.json")
+# frequent_associations_detector.exec_command()
+
+
+# aliases_tracker = AliasesPropertiesCommand(out_file="props_count_50000_described.json",
+#                                            source_file="props_count_50000.json",
+#                                            json_input=True)
+#
+# aliases_tracker.exec_command(string_return=False)
 
 
 

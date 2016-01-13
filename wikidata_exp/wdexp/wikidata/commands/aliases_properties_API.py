@@ -9,23 +9,25 @@ PROP_ID = "id"
 PROP_ALIASES = "aliases"
 PROP_LABEL = "label"
 PROP_DESCRIPTION = "description"
-PROP_COUNT = "times"
+PROP_COUNT = "count"
 
 # ###
 
 
 class AliasesPropertiesCommand(object):
-    def __init__(self, source_file, out_file):
+    def __init__(self, source_file, out_file, json_input=False):
         self._in_file = source_file
         self._out_file = out_file
+        self._is_json_input = json_input
 
 
     def exec_command(self, string_return=False):
         target_properties = self._get_target_properties_from_input_file()
         sorted_result_list = []
         for a_property_dict in target_properties:
-            sorted_result_list.append(self._get_info_of_property(a_property_dict))
-            print "Hice", a_property_dict[PROP_ID]
+            try:
+                sorted_result_list.append(self._get_info_of_property(a_property_dict))
+            except:
         if string_return:
             return json.dumps(sorted_result_list, indent=4, encoding='utf-8')
         else:
@@ -34,13 +36,17 @@ class AliasesPropertiesCommand(object):
 
 
     def _get_target_properties_from_input_file(self):
+
         result = []
         with open(self._in_file, "r") as in_stream:
-            for line in in_stream:
-                splitted = line.split(" : ")
-                if len(splitted) > 1:
-                    result.append({PROP_ID: splitted[0],
-                                   PROP_COUNT: int(splitted[1])})
+            if self._is_json_input:
+                return json.load(in_stream)
+            else:
+                for line in in_stream:
+                    splitted = line.split(" : ")
+                    if len(splitted) > 1:
+                        result.append({PROP_ID: splitted[0],
+                                       PROP_COUNT: int(splitted[1])})
         return result
 
 
@@ -50,7 +56,7 @@ class AliasesPropertiesCommand(object):
 
         result = {PROP_ID: a_property_dict[PROP_ID],
                   PROP_COUNT: a_property_dict[PROP_COUNT],
-                  PROP_ALIASES: self._get_prop_aliases(a_property_dict[PROP_ID], json_property),
+                  # PROP_ALIASES: self._get_prop_aliases(a_property_dict[PROP_ID], json_property),
                   PROP_LABEL: self._get_prop_label(a_property_dict[PROP_ID], json_property),
                   PROP_DESCRIPTION: self._get_prop_description(a_property_dict[PROP_ID], json_property)}
         return result
