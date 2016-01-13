@@ -28,6 +28,7 @@ class AliasesPropertiesCommand(object):
             try:
                 sorted_result_list.append(self._get_info_of_property(a_property_dict))
             except:
+                print "Error with property " + a_property_dict[PROP_ID]
         if string_return:
             return json.dumps(sorted_result_list, indent=4, encoding='utf-8')
         else:
