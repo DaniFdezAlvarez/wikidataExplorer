@@ -76,6 +76,7 @@ class FrequencyPropertiesCommand(object):
         with open(self._out_file, "w") as result_file:
                 result_file.write(self._get_string_return())
 
+
     def _get_string_return(self):
         list_count = sorted(self._property_counter_dict, key=self._property_counter_dict.get, reverse=True)
         result = ""
@@ -107,6 +108,7 @@ class FrequencyPropertiesCommand(object):
         except:
             self._err_count_item += 1
             print "Fallo en item"
+
 
     def _process_property(self, elem_id, desc_en, label_en, properties):
         try:

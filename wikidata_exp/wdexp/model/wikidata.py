@@ -4,16 +4,16 @@ __author__ = 'Dani'
 
 class WikidataEntity(object):
 
-    def __init__(self, entity_id, label=None, description=None, aliases=None, properties_id=None):
+    def __init__(self, entity_id, label=None, description=None, aliases=None, outcoming_properties_id=None):
         self._id = entity_id
         self._label = label
         self._description = description
         if aliases is None:
             aliases = []
         self._aliases = aliases
-        if properties_id is None:
-            properties_id = []
-        self._properties = properties_id
+        if outcoming_properties_id is None:
+            outcoming_properties_id = []
+        self._out_prop = outcoming_properties_id
 
 
     def __str__(self):
@@ -41,20 +41,21 @@ class WikidataEntity(object):
         return len(self._aliases)
 
     @property
-    def properties_id(self):
-        for a_prop in self._properties:
+    def outcoming_properties_id(self):
+        for a_prop in self._out_prop:
             yield a_prop
 
     @property
-    def n_properties(self):
-        return len(self._properties)
+    def n_outcoming_properties(self):
+        return len(self._out_prop)
 
 
 
 
 class WikidataProperty(object):
 
-    def __init__(self, property_id, label=None, description=None, aliases=None, trends=None):
+    def __init__(self, property_id, label=None, description=None, aliases=None, trends=None,
+                 outcoming_properties_id=None):
         self._id = property_id
         self._label = label
         self._description = description
@@ -64,6 +65,9 @@ class WikidataProperty(object):
         if trends is None:
             trends = []
         self._trends = trends
+        if outcoming_properties_id is None:
+            outcoming_properties_id = []
+        self._out_prop = outcoming_properties_id
 
 
     def __str__(self):
@@ -100,6 +104,16 @@ class WikidataProperty(object):
     @property
     def n_trends(self):
         return len(self._trends)
+
+
+    @property
+    def outcoming_properties_id(self):
+        for a_prop in self._out_prop:
+            yield a_prop
+
+    @property
+    def n_outcoming_properties(self):
+        return len(self._out_prop)
 
 
 ##### LITERAL_TYPES

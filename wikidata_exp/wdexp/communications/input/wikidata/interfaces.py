@@ -38,10 +38,10 @@ class EntityYielder(object):
 
 
 
-class PropertyYielder(object):
-    def yield_properties(self):
+class ElementYielder(object):
+    def yield_elements(self):
         """
-        Generator that yields WikidataProperty objects
+        Generator that yields WikidataProperty or WikidataEntity objects
         :return:
         """
         raise NotImplementedError()

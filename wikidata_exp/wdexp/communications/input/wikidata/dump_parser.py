@@ -1,17 +1,14 @@
 __author__ = 'Dani'
 import ijson
 
-from wdexp.communications.input.wikidata.interfaces import EntityYielder, PropertyYielder, TripleYielder
+from wdexp.communications.input.wikidata.interfaces import ElementYielder, TripleYielder
 from wdexp.model.wikidata import WikidataEntity, WikidataProperty, WikidataTriple
 
 
-class WikidataDumpParser(EntityYielder, PropertyYielder, TripleYielder):
+class WikidataDumpParser(ElementYielder, TripleYielder):
     def __init__(self, source_file):
         self._in_file = source_file
 
-
-    def yield_entities(self):
-        pass
 
     def yield_entity_triples(self):
         json_stream = open(self._in_file, "r")
@@ -76,8 +73,64 @@ class WikidataDumpParser(EntityYielder, PropertyYielder, TripleYielder):
                 datavalue_num_id = value
 
 
-    def yield_properties(self):
-        pass
+    def yield_elements(self):
+        json_stream = open(self._in_file)
+
+        elem_id = None
+        elem_type = None
+        desc_en = None
+        label_en = None
+        properties = []
+        current_claim_key = None
+
+        elem_count = 1
+
+        for prefix, event, value in ijson.parse(json_stream):
+            if event == 'end_map':
+                if prefix == 'item':
+                    if elem_type == 'item':
+                        yield WikidataEntity(entity_id=elem_id,
+                                             label=label_en,
+                                             description=desc_en,
+                                             outcoming_properties_id=properties)
+                    elif elem_type == 'property':
+                        yield WikidataProperty(property_id=elem_id,
+                                               label=label_en,
+                                               description=desc_en,
+                                               outcoming_properties_id=properties)
+                    elem_id = None
+                    elem_type = None
+                    desc_en = None
+                    current_claim_key = None
+                    label_en = None
+                    properties = []
+                    elem_count += 1
+                    if elem_count % 500 == 0:
+                        print 'Llevamos ' + str(elem_count) + ' elementos'
+                if prefix == 'item.claims.' + str(current_claim_key) + '.item':
+                    # print 'item.claims.' + str(current_claim_key) + '.item'
+                    properties.append(current_claim_key)
+            elif event == 'string':
+                if prefix == 'item.id':
+                    elem_id = value
+                elif prefix == 'item.type':
+                    elem_type = value
+                elif prefix == 'item.descriptions.en.value':
+                    desc_en = value
+                elif prefix == 'item.labels.en.value':
+                    label_en = value
+            elif event == 'map_key' and prefix == 'item.claims':
+                current_claim_key = value
+
+
+    def _process_current_data(self, elem_id, elem_type, desc_en, label_en, properties):
+        if elem_type == 'item':
+            self._process_item(properties)
+        elif elem_type == 'property':
+            self._process_property(elem_id, desc_en, label_en, properties)
+        else:
+            self._err_count_item += 1
+            print 'Elemento de tipo desconocido:', elem_type
 
 
     @staticmethod
