@@ -27,6 +27,40 @@ class TripleTracker(object):
         raise NotImplementedError()
 
 
+    def yield_incoming_triples(self, entity_id, limit=None):
+        """
+        Yields the triples that has entity_id as object.
+        If limit is None, it yields every existing triple.
+        Otherwise, yields triples until the number specified
+        in limit is reached.
+        :param entity_id:
+        :return:
+        """
+        raise NotImplementedError()
+
+    def yield_outcoming_triples(self, entity_id, limit=None):
+        """
+        Yields the triples that has entity_id as subject.
+        If limit is None, it yields every existing triple.
+        Otherwise, yields triples until the number specified
+        in limit is reached.
+        :param entity_id:
+        :return:
+        """
+        raise NotImplementedError()
+
+    def yield_subgraph_triples(self, entity_id, limit=None):
+        """
+        Yields the triples that has entity_id as object.
+        If limit is None, it yields every existing triple.
+        Otherwise, yields triples until the number specified
+        in limit is reached.
+        :param entity_id:
+        :return:
+        """
+        raise NotImplementedError()
+
+
 
 class EntityTracker(object):
 
