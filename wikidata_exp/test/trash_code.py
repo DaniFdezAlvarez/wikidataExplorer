@@ -1,7 +1,7 @@
 __author__ = 'Dani'
 
 from wdexp.communications.input.wikidata.dump_parser import WikidataDumpParser
-
+from wdexp.communications.input.wikidata.api_reader import WikidataApiReader
 
 parser = WikidataDumpParser(source_file="../files/in/wikidata_slice.json")
 #
@@ -14,7 +14,17 @@ parser = WikidataDumpParser(source_file="../files/in/wikidata_slice.json")
 #     print "--------"
 
 
-for elem in parser.yield_elements():
-    print elem, elem.n_outcoming_properties
-    for a_prop in elem.outcoming_properties_id:
-        print "----", a_prop
+# for elem in parser.yield_elements():
+#     print elem, elem.n_outcoming_properties
+#     for a_prop in elem.outcoming_properties_id:
+#         print "----", a_prop
+
+
+api_reader = WikidataApiReader()
+a_prop = api_reader.get_property("P31")
+print a_prop.id
+print a_prop.label
+print a_prop.description
+print "___"
+for b in a_prop.aliases:
+    print b

@@ -55,7 +55,7 @@ class WikidataEntity(object):
 class WikidataProperty(object):
 
     def __init__(self, property_id, label=None, description=None, aliases=None, trends=None,
-                 outcoming_properties_id=None):
+                 outcoming_properties_id=None, n_appearances=None):
         self._id = property_id
         self._label = label
         self._description = description
@@ -68,6 +68,7 @@ class WikidataProperty(object):
         if outcoming_properties_id is None:
             outcoming_properties_id = []
         self._out_prop = outcoming_properties_id
+        self._n_appearances = n_appearances
 
 
     def __str__(self):
@@ -114,6 +115,10 @@ class WikidataProperty(object):
     @property
     def n_outcoming_properties(self):
         return len(self._out_prop)
+
+    @property
+    def n_appearances(self):
+        return self._n_appearances
 
 
 ##### LITERAL_TYPES

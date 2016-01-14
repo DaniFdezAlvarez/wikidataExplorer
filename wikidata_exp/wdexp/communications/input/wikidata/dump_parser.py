@@ -1,11 +1,11 @@
 __author__ = 'Dani'
 import ijson
 
-from wdexp.communications.input.wikidata.interfaces import ElementYielder, TripleYielder
+from wdexp.communications.input.wikidata.interfaces import ElementTracker, TripleTracker
 from wdexp.model.wikidata import WikidataEntity, WikidataProperty, WikidataTriple
 
 
-class WikidataDumpParser(ElementYielder, TripleYielder):
+class WikidataDumpParser(ElementTracker, TripleTracker):
     def __init__(self, source_file):
         self._in_file = source_file
 

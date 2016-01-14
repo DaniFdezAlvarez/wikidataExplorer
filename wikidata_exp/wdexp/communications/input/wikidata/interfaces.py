@@ -1,7 +1,7 @@
 __author__ = 'Dani'
 
 
-class TripleYielder(object):
+class TripleTracker(object):
 
     def yield_triples(self):
         """
@@ -28,7 +28,8 @@ class TripleYielder(object):
 
 
 
-class EntityYielder(object):
+class EntityTracker(object):
+
     def yield_entities(self):
         """
         Generator that yields WikidataEntity objects
@@ -36,12 +37,40 @@ class EntityYielder(object):
         """
         raise NotImplementedError()
 
+    def get_entiry(self, entity_id):
+        """
+        It returns a WikidataEntity object with id entity_id
+        :param entity_id:
+        :return:
+        """
+        raise NotImplementedError()
 
 
-class ElementYielder(object):
+
+class ElementTracker(object):
+
     def yield_elements(self):
         """
         Generator that yields WikidataProperty or WikidataEntity objects
+        :return:
+        """
+        raise NotImplementedError()
+
+
+
+class PropertyTracker(object):
+
+    def yield_properties(self):
+        """
+        Generator that yields WikidataProperty objects
+        :return:
+        """
+        raise NotImplementedError()
+
+    def get_property(self, property_id):
+        """
+        It returns a WikidataProperty object with ID property_id
+        :param property_id:
         :return:
         """
         raise NotImplementedError()
