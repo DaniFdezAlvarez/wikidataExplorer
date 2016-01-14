@@ -37,7 +37,7 @@ class EntityTracker(object):
         """
         raise NotImplementedError()
 
-    def get_entiry(self, entity_id):
+    def get_entity(self, entity_id):
         """
         It returns a WikidataEntity object with id entity_id
         :param entity_id:

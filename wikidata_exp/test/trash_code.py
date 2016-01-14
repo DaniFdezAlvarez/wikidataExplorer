@@ -28,3 +28,12 @@ print a_prop.description
 print "___"
 for b in a_prop.aliases:
     print b
+
+print "------------"
+
+earth = api_reader.get_entity("Q2")
+print earth
+print earth.label
+print earth.description
+for alias in earth.aliases:
+    print alias

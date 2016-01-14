@@ -4,7 +4,8 @@ __author__ = 'Dani'
 
 class WikidataEntity(object):
 
-    def __init__(self, entity_id, label=None, description=None, aliases=None, outcoming_properties_id=None):
+    def __init__(self, entity_id, label=None, description=None, aliases=None,
+                 outcoming_properties_id=None, pg_score=None):
         self._id = entity_id
         self._label = label
         self._description = description
@@ -14,6 +15,7 @@ class WikidataEntity(object):
         if outcoming_properties_id is None:
             outcoming_properties_id = []
         self._out_prop = outcoming_properties_id
+        self._pg_score = pg_score
 
 
     def __str__(self):
@@ -48,6 +50,14 @@ class WikidataEntity(object):
     @property
     def n_outcoming_properties(self):
         return len(self._out_prop)
+
+    @property
+    def pg_score(self):
+        return self._pg_score
+
+    @pg_score.setter
+    def pg_score(self, value):
+        self._pg_score = value
 
 
 
@@ -119,6 +129,10 @@ class WikidataProperty(object):
     @property
     def n_appearances(self):
         return self._n_appearances
+
+    @n_appearances.setter
+    def n_appearances(self, value):
+        self._n_appearances = value
 
 
 ##### LITERAL_TYPES
