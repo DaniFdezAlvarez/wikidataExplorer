@@ -2,6 +2,7 @@ __author__ = 'Dani'
 
 from wdexp.communications.input.wikidata.dump_parser import WikidataDumpParser
 from wdexp.communications.input.wikidata.api_reader import WikidataApiReader
+from wdexp.communications.input.wikidata.sparql_endpoint import WikidataSparqlEndpoint
 
 parser = WikidataDumpParser(source_file="../files/in/wikidata_slice.json")
 #
@@ -20,20 +21,25 @@ parser = WikidataDumpParser(source_file="../files/in/wikidata_slice.json")
 #         print "----", a_prop
 
 
-api_reader = WikidataApiReader()
-a_prop = api_reader.get_property("P31")
-print a_prop.id
-print a_prop.label
-print a_prop.description
-print "___"
-for b in a_prop.aliases:
-    print b
+# api_reader = WikidataApiReader()
+# a_prop = api_reader.get_property("P31")
+# print a_prop.id
+# print a_prop.label
+# print a_prop.description
+# print "___"
+# for b in a_prop.aliases:
+#     print b
+#
+# print "------------"
+#
+# earth = api_reader.get_entity("Q2")
+# print earth
+# print earth.label
+# print earth.description
+# for alias in earth.aliases:
+#     print alias
 
-print "------------"
 
-earth = api_reader.get_entity("Q2")
-print earth
-print earth.label
-print earth.description
-for alias in earth.aliases:
-    print alias
+sparql_end = WikidataSparqlEndpoint()
+for a_triple in sparql_end.yield_incoming_triples("Q76665"):
+    print a_triple
