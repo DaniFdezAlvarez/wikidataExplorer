@@ -15,6 +15,11 @@ QUERY_INCOMING = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
                  'SELECT ?prop ?sub WHERE {{?sub ?prop wd:{} . ' \
                  'SERVICE wikibase:label {{bd:serviceParam wikibase:language "en" .}}}}'
 
+QUERY_OUTCOMING = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
+                  'PREFIX wd: <http://www.wikidata.org/entity/>  ' \
+                  'SELECT ?prop ?obj WHERE {{wd:{} ?prop ?obj . ' \
+                  'SERVICE wikibase:label {{bd:serviceParam wikibase:language "en" .}}}}'
+
 
 INCOMING_QUERY_PROP = "prop"
 INCOMING_QUERY_ENTITY = "sub"
@@ -39,6 +44,13 @@ class WikidataSparqlEndpoint(TripleTracker):
         json_raw = self._exec_sparql_query(sparql_query)
         for a_tuple_2 in self._get_prop_entity_tuples(json_raw, INCOMING_QUERY_PROP, INCOMING_QUERY_ENTITY):
             yield a_tuple_2[1], a_tuple_2[0], entity_id
+
+
+    def yield_outcoming_triples(self, entity_id, limit=None):
+        sparql_query = self._build_query(QUERY_OUTCOMING, entity_id)
+        json_raw = self._exec_sparql_query(sparql_query)
+        for a_tuple_2 in self._get_prop_entity_tuples(json_raw, OUTCOMING_QUERY_PROP, OUTCOMING_QUERY_ENTITY):
+            yield entity_id, a_tuple_2[0], a_tuple_2[1]
 
 
     @staticmethod
