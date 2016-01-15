@@ -42,21 +42,32 @@ class WikidataSparqlEndpoint(TripleTracker):
     def yield_incoming_triples(self, entity_id, limit=None):
         sparql_query = self._build_query(QUERY_INCOMING, entity_id)
         json_raw = self._exec_sparql_query(sparql_query)
+        limit = -1 if limit is None else limit
+        yielded = 0
         for a_tuple_2 in self._get_prop_entity_tuples(json_raw, INCOMING_QUERY_PROP, INCOMING_QUERY_ENTITY):
+            if yielded == limit:
+                break
             yield a_tuple_2[1], a_tuple_2[0], entity_id
+            yielded += 1
 
 
     def yield_outcoming_triples(self, entity_id, limit=None):
         sparql_query = self._build_query(QUERY_OUTCOMING, entity_id)
         json_raw = self._exec_sparql_query(sparql_query)
+        limit = -1 if limit is None else limit
+        yielded = 0
         for a_tuple_2 in self._get_prop_entity_tuples(json_raw, OUTCOMING_QUERY_PROP, OUTCOMING_QUERY_ENTITY):
+            if yielded == limit:
+                break
             yield entity_id, a_tuple_2[0], a_tuple_2[1]
+            yielded += 1
 
 
     def yield_subgraph_triples(self, entity_id, limit=None):
         yielded = 0
         for a_triple in self.yield_outcoming_triples(entity_id, limit):
             yield a_triple
+            yielded += 1
         if limit is not None:
             limit -= yielded
             if limit <= 0:
