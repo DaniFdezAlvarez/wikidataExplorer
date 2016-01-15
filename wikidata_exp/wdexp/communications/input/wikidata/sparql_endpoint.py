@@ -53,6 +53,18 @@ class WikidataSparqlEndpoint(TripleTracker):
             yield entity_id, a_tuple_2[0], a_tuple_2[1]
 
 
+    def yield_subgraph_triples(self, entity_id, limit=None):
+        yielded = 0
+        for a_triple in self.yield_outcoming_triples(entity_id, limit):
+            yield a_triple
+        if limit is not None:
+            limit -= yielded
+            if limit <= 0:
+                return
+        for a_triple in self.yield_incoming_triples(entity_id, limit):
+            yield a_triple
+
+
     @staticmethod
     def _build_query(query_skeleton, target_entity_node):
         return query_skeleton.format(target_entity_node)
