@@ -3,6 +3,10 @@ from decimal import *
 
 
 class EntityRankerCommand(object):
+    """
+    Source file format: json01_wikidata
+
+    """
 
     def __init__(self, source_file, out_file):
         self._in_file = source_file

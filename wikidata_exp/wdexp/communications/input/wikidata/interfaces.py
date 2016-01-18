@@ -108,3 +108,20 @@ class PropertyTracker(object):
         :return:
         """
         raise NotImplementedError()
+
+
+class IdTracker(object):
+
+    def yield_entity_ids(self):
+        """
+        It yields string ids of wikidata entities
+        :return:
+        """
+        raise NotImplementedError()
+
+    def yield_property_ids(self):
+        """
+        It yields string ids of wikidata properties
+        :return:
+        """
+        raise NotImplementedError()
