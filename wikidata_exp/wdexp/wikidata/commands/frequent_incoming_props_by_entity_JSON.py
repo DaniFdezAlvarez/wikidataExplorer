@@ -31,6 +31,7 @@ class FrequentIncomingPropsByEntityCommand(object):
 
     def exec_command(self, string_return=False):
         for a_dict in self._read_entities_dict():
+            print a_dict
             self._process_incoming_edges(a_dict)
         self._sort_results()
         if string_return:

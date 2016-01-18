@@ -31,10 +31,10 @@ INCOMING_QUERY_ENTITY = "sub"
 
 ### Outcoming
 
-QUERY_OUTCOMING = 'PREFIX wikibase: <http://wikiba.se/ontology#> ' \
-                  'PREFIX wd: <http://www.wikidata.org/entity/>  ' \
-                  'SELECT ?prop ?obj WHERE {{wd:{} ?prop ?obj . ' \
-                  'SERVICE wikibase:label {{bd:serviceParam wikibase:language "en" .}}}}'
+QUERY_OUTCOMING = """PREFIX wikibase: <http://wikiba.se/ontology#>
+                  PREFIX wd: <http://www.wikidata.org/entity/>
+                  SELECT ?prop ?obj WHERE {{wd:{} ?prop ?obj .
+                  SERVICE wikibase:label {{bd:serviceParam wikibase:language "en" .}}}}"""
 
 OUTCOMING_QUERY_PROP = "prop"
 OUTCOMING_QUERY_ENTITY = "obj"

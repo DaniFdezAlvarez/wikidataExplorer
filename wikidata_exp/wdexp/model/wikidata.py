@@ -5,16 +5,19 @@ __author__ = 'Dani'
 class WikidataEntity(object):
 
     def __init__(self, entity_id, label=None, description=None, aliases=None,
-                 outcoming_properties_id=None, pg_score=None):
+                 outcoming_properties_id=None, incoming_properties_id=None, pg_score=None):
         self._id = entity_id
         self._label = label
         self._description = description
         if aliases is None:
             aliases = []
         self._aliases = aliases
-        if outcoming_properties_id is None:
-            outcoming_properties_id = []
+        if outcoming_properties_id is None:  # Dict with key (id_property) and id (number of times)
+            outcoming_properties_id = {}
         self._out_prop = outcoming_properties_id
+        if incoming_properties_id is None:
+            incoming_properties_id = {}
+        self._in_prop = incoming_properties_id
         self._pg_score = pg_score
 
 
@@ -42,14 +45,51 @@ class WikidataEntity(object):
     def n_aliases(self):
         return len(self._aliases)
 
+
     @property
     def outcoming_properties_id(self):
+        for a_prop in self._out_prop:
+            for i in range(0, self._out_prop):
+                yield a_prop
+
+    @property
+    def n_outcoming_properties(self):
+        result = 0
+        for a_prop in self._out_prop:
+            result += self._out_prop[a_prop]
+        return result
+
+    @property
+    def distinct_outcoming_properties_id(self):
         for a_prop in self._out_prop:
             yield a_prop
 
     @property
-    def n_outcoming_properties(self):
+    def n_distinct_outcoming_properties_id(self):
         return len(self._out_prop)
+
+
+    @property
+    def incoming_properties_id(self):
+        for a_prop in self._in_prop:
+            for i in range(0, self._in_prop):
+                yield a_prop
+
+    @property
+    def n_incoming_properties(self):
+        result = 0
+        for a_prop in self._in_prop:
+            result += self._in_prop[a_prop]
+        return result
+
+    @property
+    def distinct_incoming_properties_id(self):
+        for a_prop in self._in_prop:
+            yield a_prop
+
+    @property
+    def n_distinct_incoming_properties_id(self):
+        return len(self._in_prop)
 
     @property
     def pg_score(self):
@@ -65,7 +105,7 @@ class WikidataEntity(object):
 class WikidataProperty(object):
 
     def __init__(self, property_id, label=None, description=None, aliases=None, trends=None,
-                 outcoming_properties_id=None, n_appearances=None, rank=None):
+                 outcoming_properties_id=None, incoming_properties_id=None, n_appearances=None, rank=None):
         self._id = property_id
         self._label = label
         self._description = description
@@ -75,9 +115,12 @@ class WikidataProperty(object):
         if trends is None:
             trends = []
         self._trends = trends
-        if outcoming_properties_id is None:
-            outcoming_properties_id = []
+        if outcoming_properties_id is None:  # Dict with key (id_property) and id (number of times)
+            outcoming_properties_id = {}
         self._out_prop = outcoming_properties_id
+        if incoming_properties_id is None:
+            incoming_properties_id = {}
+        self._in_prop = incoming_properties_id
         self._n_appearances = n_appearances
         self._rank = rank
 
@@ -124,11 +167,48 @@ class WikidataProperty(object):
     @property
     def outcoming_properties_id(self):
         for a_prop in self._out_prop:
-            yield a_prop
+            for i in range(0, self._out_prop):
+                yield a_prop
 
     @property
     def n_outcoming_properties(self):
+        result = 0
+        for a_prop in self._out_prop:
+            result += self._out_prop[a_prop]
+        return result
+
+    @property
+    def distinct_outcoming_properties_id(self):
+        for a_prop in self._out_prop:
+            yield a_prop
+
+    @property
+    def n_distinct_outcoming_properties_id(self):
         return len(self._out_prop)
+
+
+    @property
+    def incoming_properties_id(self):
+        for a_prop in self._in_prop:
+            for i in range(0, self._in_prop):
+                yield a_prop
+
+    @property
+    def n_incoming_properties(self):
+        result = 0
+        for a_prop in self._in_prop:
+            result += self._in_prop[a_prop]
+        return result
+
+    @property
+    def distinct_incoming_properties_id(self):
+        for a_prop in self._in_prop:
+            yield a_prop
+
+    @property
+    def n_distinct_incoming_properties_id(self):
+        return len(self._in_prop)
+
 
     @property
     def n_appearances(self):

@@ -5,7 +5,7 @@ from decimal import *
 
 
 
-class Json01WikidataParser(IdTracker):
+class Json01IdsParser(IdTracker):
     """
     FORMAT JSON01:
 
@@ -26,7 +26,7 @@ class Json01WikidataParser(IdTracker):
 	    "Q7432": 0.033999504701633765,
         ...
     }
-    
+
 
     """
 

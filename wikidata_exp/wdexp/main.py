@@ -47,12 +47,12 @@ from wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import Frequ
 # aol_counter.exec_command(6)
 
 
-graph_builder = GraphEntitiesCommand(out_file="../files/out/complete_with_alias.txt",
-                                     source_file="../files/in/wikidata_slice.json")
-graph = graph_builder.exec_command(object_return=True)
-
-page_ranker = PageRankCommand(networkx_graph=graph, out_file="page_rank.txt")
-page_ranker.exec_command()
+# graph_builder = GraphEntitiesCommand(out_file="../files/out/complete_with_alias.txt",
+#                                      source_file="../files/in/wikidata_slice.json")
+# graph = graph_builder.exec_command(object_return=True)
+#
+# page_ranker = PageRankCommand(networkx_graph=graph, out_file="page_rank.txt")
+# page_ranker.exec_command()
 
 
 # page_rank_filter = PageRankFilterCommand(source_file="",
@@ -88,10 +88,10 @@ page_ranker.exec_command()
 # common_detector._exec_command(string_return=False)
 
 
-# frequent_associations_detector = FrequentIncomingPropsByEntityCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\in_out_edges1000.json",
-#                                                                       out_file_entities="in_entities_500001.json",
-#                                                                       out_file_props="props_count_50000.json")
-# frequent_associations_detector.exec_command()
+frequent_associations_detector = FrequentIncomingPropsByEntityCommand(source_file="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\in_out_edges1000.json",
+                                                                      out_file_entities="in_entities_500001.json",
+                                                                      out_file_props="props_count_50000.json")
+frequent_associations_detector.exec_command()
 
 
 # aliases_tracker = AliasesPropertiesCommand(out_file="props_count_50000_described.json",
