@@ -65,7 +65,7 @@ class WikidataEntity(object):
 class WikidataProperty(object):
 
     def __init__(self, property_id, label=None, description=None, aliases=None, trends=None,
-                 outcoming_properties_id=None, n_appearances=None):
+                 outcoming_properties_id=None, n_appearances=None, rank=None):
         self._id = property_id
         self._label = label
         self._description = description
@@ -79,6 +79,7 @@ class WikidataProperty(object):
             outcoming_properties_id = []
         self._out_prop = outcoming_properties_id
         self._n_appearances = n_appearances
+        self._rank = rank
 
 
     def __str__(self):
@@ -136,6 +137,14 @@ class WikidataProperty(object):
     @n_appearances.setter
     def n_appearances(self, value):
         self._n_appearances = value
+
+    @property
+    def rank(self):
+        return self._rank
+
+    @rank.setter
+    def rank(self, value):
+        self._rank = value
 
 
 ##### LITERAL_TYPES
