@@ -112,6 +112,9 @@ class WikidataProperty(object):
         for a_trend in self._trends:
             yield a_trend
 
+    def add_trend(self, a_trend):
+        self._trends.append(a_trend)
+
     @property
     def n_trends(self):
         return len(self._trends)
