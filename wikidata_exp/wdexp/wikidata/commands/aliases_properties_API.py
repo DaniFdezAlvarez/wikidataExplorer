@@ -4,14 +4,6 @@ from wdexp.communications.input.wikidata.csv01_property_parser import Ccv01Prope
 from wdexp.communications.input.wikidata.json03_properties_parser import Json03PropertyParser
 from wdexp.communications.input.wikidata.api_reader import WikidataApiReader
 from wdexp.communications.output.wikidata.json_property_dumper import JsonPropertyDumper, P_ID, P_LABEL, P_APPEARANCES, P_DESC
-import json
-
-
-PROP_ID = "id"
-PROP_ALIASES = "aliases"
-PROP_LABEL = "label"
-PROP_DESCRIPTION = "description"
-PROP_COUNT = "count"
 
 
 class AliasesPropertiesCommand(object):
@@ -47,15 +39,8 @@ class AliasesPropertiesCommand(object):
 
 
     def _get_complete_property(self, anemic_property):
-        api_property = self._api_reader.get_property(anemic_property.id)
+        return self._api_reader.get_property(anemic_property.id)
 
-
-        result = {PROP_ID: anemic_property.id,
-                  PROP_COUNT: anemic_property.n_appearances,
-                  PROP_LABEL: api_property.label,
-                  PROP_DESCRIPTION: api_property.description}
-        # return result
-        return api_property
 
 
 
