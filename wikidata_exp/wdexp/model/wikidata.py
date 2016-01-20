@@ -100,6 +100,19 @@ class WikidataEntity(object):
         self._pg_score = value
 
 
+    def n_times_incoming_property(self, a_prop):
+        if a_prop in self._in_prop:
+            return self._in_prop[a_prop]
+        else:
+            return 0
+
+    def n_times_outcoming_prop(self, a_prop):
+        if a_prop in self._out_prop:
+            return self._out_prop[a_prop]
+        else:
+            return 0
+
+
 
 
 class WikidataProperty(object):
@@ -225,6 +238,19 @@ class WikidataProperty(object):
     @rank.setter
     def rank(self, value):
         self._rank = value
+
+
+    def n_times_incoming_property(self, a_prop):
+        if a_prop in self._in_prop:
+            return self._in_prop[a_prop]
+        else:
+            return 0
+
+    def n_times_outcoming_prop(self, a_prop):
+        if a_prop in self._out_prop:
+            return self._out_prop[a_prop]
+        else:
+            return 0
 
 
 ##### LITERAL_TYPES

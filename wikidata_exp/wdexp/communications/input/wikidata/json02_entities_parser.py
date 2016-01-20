@@ -12,15 +12,10 @@ OUTCOMING_EDGES = "out_edges"
 LABEL = "label"
 DESCRIPTION = "desc"
 
-PROP_ID = "id"
-PROP_COUNT = "count"
-
 
 class Json02EntitiesParser(EntityTracker):
     """
     FORMAT JSON02
-
-    FORMAT JSON01:
 
     Summary: Dict that contains dicts about entities. The first key is the entity ID,
     and the value of that key is a new dict with all the corresponding info.

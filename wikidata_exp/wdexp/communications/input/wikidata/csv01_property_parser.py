@@ -29,6 +29,6 @@ class Ccv01PropertiesParser(PropertyTracker):
                 splitted = line.split(" : ")
                 if len(splitted) > 1:
                     yield WikidataProperty(property_id=splitted[0],
-                                           n_appearances=int(splitted[0]))
+                                           n_appearances=int(splitted[1]))
 
 
