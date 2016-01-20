@@ -70,9 +70,8 @@ class CategoryDetectionCommand(object):
                 result[NO_TAXON].append(a_dict)
             targeted += 1
             print targeted
-        print result
         if string_return:
-            return str(result)
+            return json.dumps(result, indent=4)
         else:
             with open(self._out_file, "w") as out_stream:
                 json.dump(result, out_stream, indent=4)
