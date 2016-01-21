@@ -41,5 +41,16 @@ parser = WikidataDumpParser(source_file="../files/in/wikidata_slice.json")
 
 
 sparql_end = WikidataSparqlEndpoint()
-for a_triple in sparql_end.yield_subgraph_triples("Q76665", 10):
+for a_triple in sparql_end.yield_subgraph_triples("Q76665"):
     print a_triple
+
+print "____"
+
+for an_entity in sparql_end.yield_classes_of_entity("Q5", 5):
+    print an_entity
+
+print "____"
+
+for an_entity in sparql_end.yield_instances_of_entity("Q5", 5):
+    print an_entity
+

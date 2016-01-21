@@ -61,6 +61,28 @@ class TripleTracker(object):
         raise NotImplementedError()
 
 
+    def yield_instances_of_entity(self, entity_id, limit=None):
+        """
+        It yields entity ids that are subjects in triples such as
+        (result instanceof entity_id)
+        :param entity_id:
+        :param limit:
+        :return:
+        """
+        raise NotImplementedError()
+
+    def yield_classes_of_entity(self, entity_id, limit=None):
+        """
+        It yields entity ids that are objects in triples such as
+        (entity_id instanceof result)
+
+        :param entity_id:
+        :param limit:
+        :return:
+        """
+        raise NotImplementedError()
+
+
 
 class EntityTracker(object):
 

@@ -17,6 +17,10 @@ class TestCategoryDetectionSparql(unittest.TestCase):
         result = categorizer._exec_command(string_return=True)
         result = json.loads(result)
 
+        print "------"
+
+        # print result
+
         self.assertEqual(4, len(result))
         self.assertIn("no_taxon", result)
         self.assertIn("both", result)
@@ -26,15 +30,15 @@ class TestCategoryDetectionSparql(unittest.TestCase):
 
         self.assertEqual(0, len(result["no_taxon"]))
         self.assertEqual(6, len(result["is_instance"]))
-        self.assertEqual(12, len(result["both"]))
-        self.assertEqual(6, len(result["have_instances"]))
+        self.assertEqual(18, len(result["both"]))
+        self.assertEqual(0, len(result["have_instances"]))
 
         an_entity = result["is_instance"][0]
 
         self.assertEqual(5, len(an_entity))
         self.assertEqual("Q148", an_entity["id"])
-        self.assertEqual("state in East Asia", an_entity["descriptions"])
-        self.assertEqual("People's Republic of China", an_entity["labels"])
+        self.assertEqual("state in East Asia", an_entity["description"])
+        self.assertEqual("People's Republic of China", an_entity["label"])
         self.assertEqual("0.014571185387097224", an_entity["pg_score"])
         self.assertEqual(4, len(an_entity["aliases"]))
 

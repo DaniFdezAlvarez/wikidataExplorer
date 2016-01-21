@@ -17,16 +17,15 @@ SOURCE_DISCARDED_KEY = "discarded"
 SOURCE_ID = "id"
 SOURCE_ALIASES = "aliases"
 SOURCE_DESC = "descriptions"
-SOURCE_LABEL = "label"
+SOURCE_LABEL = "labels"
 SOURCE_PG_SCORE = "pg_score"
 
 
 class Json04EntitiesParser(EntityTracker):
 
 
-    def __init__(self, source_file=None, string_return=False, mode=MODE_ACCEPTED):
+    def __init__(self, source_file=None, mode=MODE_ACCEPTED):
         self._in_file = source_file
-        self._string_return = string_return
         self._mode = mode
 
 

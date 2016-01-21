@@ -8,7 +8,7 @@ def write_json_object(json_object, path, indent=None):
         json.dump(json_object, out_stream, indent=indent)
 
 
-def json_to_string(json_object, indent):
+def json_to_string(json_object, indent=None):
     return json.dumps(json_object, indent=indent)
 
 

@@ -7,6 +7,7 @@ import requests
 import urllib
 from requests.adapters import HTTPAdapter
 
+
 class WikidataSparqlEndpoint(TripleTracker):
 
 
@@ -34,6 +35,7 @@ class WikidataSparqlEndpoint(TripleTracker):
             yielded += 1
 
 
+
     def yield_subgraph_triples(self, entity_id, limit=None):
         yielded = 0
         for a_triple in self.yield_outcoming_triples(entity_id, limit):
@@ -50,7 +52,6 @@ class WikidataSparqlEndpoint(TripleTracker):
     @staticmethod
     def _build_query(query_skeleton, target_entity_node):
         return query_skeleton.format(target_entity_node)
-
 
     @staticmethod
     def _exec_sparql_query(sparql_query):
@@ -79,3 +80,35 @@ class WikidataSparqlEndpoint(TripleTracker):
                     str(a_candidate[prop_param][VALUE_RESULT][len(BASE_WIKIDATA_PROPERTY_URL) - 1:]),
                     str(a_candidate[entity_param][VALUE_RESULT][len(BASE_WIKIDATA_ENTITY_URL) - 1:])
                 )
+
+
+    def yield_instances_of_entity(self, entity_id, limit=None):
+        sparql_query = self._build_query(QUERY_HAS_INSTANCES, entity_id)
+        if limit is not None:
+            sparql_query += " LIMIT " + str(limit)
+        json_raw = self._exec_sparql_query(sparql_query)
+        for an_entity_id in self._get_entities_in_query(json_raw, PARAM_ENTITY_HAS_INSTANCES):
+            yield an_entity_id
+
+
+    def yield_classes_of_entity(self, entity_id, limit=None):
+        sparql_query = self._build_query(QUERY_IS_INSTANCE, entity_id)
+        if limit is not None:
+            sparql_query += " LIMIT " + str(limit)
+        json_raw = self._exec_sparql_query(sparql_query)
+        for an_entity_id in self._get_entities_in_query(json_raw, PARAM_ENTITY_IS_INSTANCE):
+            yield an_entity_id
+
+
+    @staticmethod
+    def _get_entities_in_query(json_raw, entity_param):
+        result = []
+        target_list = json_raw["results"]["bindings"]
+        for a_candidate in target_list:
+            if a_candidate[entity_param][TYPE_RESULT] == URI_RESULT and \
+                    a_candidate[entity_param][VALUE_RESULT].startswith(BASE_WIKIDATA_ENTITY_URL):
+                result.append(str(a_candidate[entity_param][VALUE_RESULT][len(BASE_WIKIDATA_ENTITY_URL)-1:]))
+        return result
+
+
+
