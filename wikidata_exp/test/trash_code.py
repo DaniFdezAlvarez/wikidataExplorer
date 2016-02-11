@@ -54,3 +54,4 @@ print "____"
 for an_entity in sparql_end.yield_instances_of_entity("Q5", 5):
     print an_entity
 
+
