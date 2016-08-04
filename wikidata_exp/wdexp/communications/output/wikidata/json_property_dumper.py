@@ -1,6 +1,6 @@
 __author__ = 'Dani'
 
-from wdexp.communications.output.wikidata.interfaces import PropertyDumper
+from wikidata_exp.wdexp.communications.output.wikidata.interfaces import PropertyDumper
 import json
 
 PERSIST_P_ID = "id"
@@ -54,6 +54,7 @@ class JsonPropertyDumper(PropertyDumper):
     def persist_properties(self, list_of_properties):
         result = []
         for a_prop in list_of_properties:
+            print a_prop.n_appearances
             result.append(self._json_of_property(a_prop))
         if self._string_return:
             return json.dumps(result, indent=self._indent)

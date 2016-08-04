@@ -1,9 +1,12 @@
-__author__ = 'Dani'
-
-from wdexp.communications.input.wikidata.interfaces import EntityTracker, PropertyTracker
-from wdexp.model.wikidata import WikidataProperty, WikidataEntity
 import requests
 from requests.adapters import HTTPAdapter
+
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import EntityTracker, PropertyTracker
+from wikidata_exp.wdexp.model.wikidata import WikidataEntity, WikidataProperty
+
+__author__ = 'Dani'
+
+
 
 
 _BASE_API = "https://www.wikidata.org/w/api.php?action=wbgetentities&ids={}&languages=en&format=json"

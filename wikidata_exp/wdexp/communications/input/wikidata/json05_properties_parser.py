@@ -1,13 +1,12 @@
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import PropertyTracker
+from wikidata_exp.wdexp.model.wikidata import WikidataProperty
+
 __author__ = 'Dani'
 
-from wdexp.communications.input.wikidata.interfaces import PropertyTracker
-from wdexp.model.wikidata import WikidataProperty
 import json
 
 PROP_ID = "id"
 PROP_COUNT = "count"
-PROP_LABEL = "label"
-PROP_DESC = "description"
 
 
 class Json05PropertiesParser(PropertyTracker):

@@ -1,0 +1,4354 @@
+{
+    "P530": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 194, 
+        "label": "diplomatic relation", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "diplomatic relations of the country"
+    }, 
+    "P720": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 223, 
+        "label": "asteroid spectral type", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -1.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "spectral classifications of asteroids based on  spectral shape, color, and albedo"
+    }, 
+    "P7": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 287, 
+        "label": "brother", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "subject has the object as their brother"
+    }, 
+    "P689": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 129, 
+        "label": "afflicts", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "type of organism which a condition or disease afflicts"
+    }, 
+    "P725": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 204, 
+        "label": "voice actor", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "performer of a spoken role in a creative work such as animation, video game, radio drama, or dubbing over [use character role\" (P453) as qualifier] [use \"cast member\" (P161) for live acting]\""
+    }, 
+    "P682": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 39, 
+        "label": "biological process", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "is involved in the biological process"
+    }, 
+    "P680": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 53, 
+        "label": "molecular function", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "represents gene ontology function annotations"
+    }, 
+    "P681": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 40, 
+        "label": "cell component", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "component of the cell in which this item is present"
+    }, 
+    "P532": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 299, 
+        "label": "port of registry", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "ship's port of registry. This is generally painted on the ship's stern (for the home port\", see Property:P504)\""
+    }, 
+    "P1462": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 196, 
+        "label": "standards body", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "organisation that published or maintains the standard"
+    }, 
+    "P205": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 304, 
+        "label": "basin country", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "countries that have drainage to/from or border the body of water"
+    }, 
+    "P2079": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 284, 
+        "label": "fabrication method", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "method, process or technique used to grow, cook, weave, build, assemble, manufacture the item"
+    }, 
+    "P1068": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 308, 
+        "label": "instruction set", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "instruction set on which the processor architecture is based"
+    }, 
+    "P607": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 49, 
+        "label": "conflict", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "battles, wars or engagements in which the person or item participated"
+    }, 
+    "P534": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 291, 
+        "label": "streak color", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "color of a mineral or material when abraded"
+    }, 
+    "P608": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 259, 
+        "label": "exhibition history", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "exhibitions where the item was displayed"
+    }, 
+    "P112": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 283, 
+        "label": "founder", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "founder or co-founder of this organization, religion or place"
+    }, 
+    "P937": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 58, 
+        "label": "work location", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "location where persons were active"
+    }, 
+    "P361": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 43, 
+        "label": "part of", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "subject is a part of that object. Inverse property of has part\"\""
+    }, 
+    "P790": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 248, 
+        "label": "approved by", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "item is approved by other item(s) [qualifier: statement is approved by other item(s)]"
+    }, 
+    "P136": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 20, 
+        "label": "genre", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "genre of a creative work or genre in which an artist works. Should not be used to relate creative works to their topics like Russia (Q159), People's Republic of China (Q148), Jesus Christ (Q302), for which main subject (P921) should be used instead"
+    }, 
+    "P137": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 59, 
+        "label": "operator", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person or organization that operates the equipment, facility, or service"
+    }, 
+    "P131": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 7, 
+        "label": "located in the administrative territorial entity", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the item is located on the territory of the following administrative entity. Use P276 (location) for specifying the location of non-administrative places and for items about events."
+    }, 
+    "P437": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 91, 
+        "label": "distribution", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "method (or type) of distribution for the subject"
+    }, 
+    "P138": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 81, 
+        "label": "named after", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "entity or event that inspired the subject's name, or namesake (in at least one language)"
+    }, 
+    "P1040": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 256, 
+        "label": "film editor", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "Person who works with the raw footage, selecting shots and combining them into sequences to create a finished motion picture"
+    }, 
+    "P793": {
+        "deviation": 0.888888888888889, 
+        "average": 1.3333333333333333, 
+        "rank": 88, 
+        "label": "significant event", 
+        "max_gap": 2.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "significant or notable events associated with the subject"
+    }, 
+    "P831": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 306, 
+        "label": "parent club", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "parent club of this team"
+    }, 
+    "P1158": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 254, 
+        "label": "location of landing", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "location where the craft landed"
+    }, 
+    "P832": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 294, 
+        "label": "public holiday", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "official public holiday that occurs in this place in its honor, usually a non-working day"
+    }, 
+    "P58": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 102, 
+        "label": "screenwriter", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "author(s) of the screenplay or script for this work"
+    }, 
+    "P1049": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 217, 
+        "label": "deity of", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "religion or group/civilization that worships a given deity"
+    }, 
+    "P1995": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 124, 
+        "label": "medical specialty", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "main medical specialty concerned with a specific condition"
+    }, 
+    "P1419": {
+        "deviation": 0.0, 
+        "average": -2.0, 
+        "rank": 279, 
+        "label": "shape", 
+        "max_gap": 0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "geometric shape of an object"
+    }, 
+    "P522": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 222, 
+        "label": "type of orbit", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "orbit a satellite has around its central body"
+    }, 
+    "P520": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 183, 
+        "label": "armament", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "equippable weapon item for the subject"
+    }, 
+    "P1389": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 141, 
+        "label": "product certification", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "certification for a product, qualify with P1001 (applies to jurisdiction\") if needed\""
+    }, 
+    "P693": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 274, 
+        "label": "cleavage", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "way that crystals or minerals cleave"
+    }, 
+    "P289": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 140, 
+        "label": "vessel class", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "vessel classification (e.g. Nelson-class battleship)"
+    }, 
+    "P1411": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 162, 
+        "label": "nominated for", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "award nomination received by a person, organisation or creative work (inspired from award received\" (Property:P166))\""
+    }, 
+    "P287": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 209, 
+        "label": "designer", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "designer of this item"
+    }, 
+    "P2377": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 246, 
+        "label": "MediaWiki hooks used", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "MediaWiki hooks used by this extension"
+    }, 
+    "P1412": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 21, 
+        "label": "languages spoken, written or signed", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "language(s) that a person speaks or writes. Can include native languages"
+    }, 
+    "P282": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 181, 
+        "label": "writing system", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "alphabet, character set or other system of writing used by subject language"
+    }, 
+    "P1414": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 177, 
+        "label": "GUI toolkit or framework", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "framework or toolkit a program uses to display the graphical user interface"
+    }, 
+    "P914": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 156, 
+        "label": "USK rating", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "German video game content rating - see talk page for appropriate values"
+    }, 
+    "P1416": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 127, 
+        "label": "affiliation", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "organization that a person is affiliated with"
+    }, 
+    "P206": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 190, 
+        "label": "located next to body of water", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "sea, lake or river"
+    }, 
+    "P1142": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 114, 
+        "label": "political ideology", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "political ideology of this organization"
+    }, 
+    "P991": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 179, 
+        "label": "successful candidate", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person(s) elected after the election"
+    }, 
+    "P750": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 182, 
+        "label": "distributor", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "distributor of a creative work"
+    }, 
+    "P921": {
+        "deviation": 0.888888888888889, 
+        "average": -1.3333333333333333, 
+        "rank": 78, 
+        "label": "main subject", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            0.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "primary topic of a work"
+    }, 
+    "P1303": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 67, 
+        "label": "instrument", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "instrument that a person plays"
+    }, 
+    "P166": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 17, 
+        "label": "award received", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "award or recognition received by a person, organisation or creative work"
+    }, 
+    "P371": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 275, 
+        "label": "presenter", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "someone who takes a main role in presenting a radio or television program"
+    }, 
+    "P611": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 117, 
+        "label": "religious order", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "order of monks or nuns which the monastery housed"
+    }, 
+    "P127": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 82, 
+        "label": "owned by", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "owner of the subject"
+    }, 
+    "P527": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 75, 
+        "label": "has part", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "part of this subject, also valuable subclass or exemplar. Inverse property of part of\".\""
+    }, 
+    "P57": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 56, 
+        "label": "director", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "director(s) of this motion picture, play, video game or similar"
+    }, 
+    "P123": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 63, 
+        "label": "publisher", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "organization responsible for publishing books, periodicals or software"
+    }, 
+    "P122": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 224, 
+        "label": "basic form of government", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "the subject's government"
+    }, 
+    "P121": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 212, 
+        "label": "item operated", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "object used by the subject"
+    }, 
+    "P39": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 19, 
+        "label": "position held", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "subject currently or formerly holds the object position or public office"
+    }, 
+    "P81": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 101, 
+        "label": "connecting line", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "railway or public transport line(s) subject is directly connected to"
+    }, 
+    "P87": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 240, 
+        "label": "librettist", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "author of the libretto (words) of an opera, operetta, oratorio or cantata, or of the book of a musical"
+    }, 
+    "P86": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 111, 
+        "label": "composer", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "person(s) who wrote the music; also use P676 for lyricist"
+    }, 
+    "P85": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 265, 
+        "label": "anthem", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "name of the subject's anthem"
+    }, 
+    "P84": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 145, 
+        "label": "architect", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person or architectural firm that designed this building"
+    }, 
+    "P840": {
+        "deviation": 0.888888888888889, 
+        "average": 1.3333333333333333, 
+        "rank": 70, 
+        "label": "narrative location", 
+        "max_gap": 2.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the narrative of the work is set in this location"
+    }, 
+    "P1269": {
+        "deviation": 0.6666666666666666, 
+        "average": -1.0, 
+        "rank": 90, 
+        "label": "facet of", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            0.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "topic of which this item is an aspect, item that offers a broader perspective on the same topic"
+    }, 
+    "P92": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 264, 
+        "label": "main regulatory text", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "text setting the main rules by which the subject is regulated"
+    }, 
+    "P1071": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 192, 
+        "label": "location of final assembly", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "place where the item was made; location of final assembly"
+    }, 
+    "P2371": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 303, 
+        "label": "FAO risk status", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "UN Food and Agriculture Organization designation of status for a domesticated breed"
+    }, 
+    "P1408": {
+        "deviation": 0.888888888888889, 
+        "average": -0.3333333333333333, 
+        "rank": 229, 
+        "label": "licensed to broadcast to", 
+        "max_gap": 2.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "place that a radio/TV station is licensed/required to broadcast to"
+    }, 
+    "P1399": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 138, 
+        "label": "convicted of", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "crime a person was convicted of"
+    }, 
+    "P291": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 155, 
+        "label": "place of publication", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "geographical place of publication of the edition (use 1st edition when referring to works)"
+    }, 
+    "P1547": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 278, 
+        "label": "depends on software", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "subject software depends on object software"
+    }, 
+    "P201": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 288, 
+        "label": "lake outflow", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "rivers and other outflows waterway names. If evaporation or seepage are notable outflows, they may be included. Some terms may not be place names, e.g. evaporation"
+    }, 
+    "P512": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 71, 
+        "label": "academic degree", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "academic degree that the person holds"
+    }, 
+    "P1654": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 201, 
+        "label": "wing configuration", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "configuration of wing(s) used by an aircraft"
+    }, 
+    "P747": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 207, 
+        "label": "edition(s)", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "linking to an edition of this item"
+    }, 
+    "P669": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 97, 
+        "label": "located on street", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "street, or road, where the item is located. To add the number, use Property:P670 street number\" as qualifier\""
+    }, 
+    "P186": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 36, 
+        "label": "material used", 
+        "max_gap": 2.0, 
+        "scores": [
+            0.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "material the subject is made of or derived from"
+    }, 
+    "P1312": {
+        "deviation": 0.888888888888889, 
+        "average": 1.3333333333333333, 
+        "rank": 188, 
+        "label": "has facet polytope", 
+        "max_gap": 2.0, 
+        "scores": [
+            0.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "facet of a polytope, in the next-lower dimension"
+    }, 
+    "P1313": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 149, 
+        "label": "office held by head of government", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "political office that is fulfilled by the head of the government of this item"
+    }, 
+    "P741": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 148, 
+        "label": "playing hand", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "hand used to play a racket sport"
+    }, 
+    "P740": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 202, 
+        "label": "location of formation", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "location where a group or organization was formed"
+    }, 
+    "P193": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 250, 
+        "label": "main building contractor", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the main organization responsible for construction of this structure or building"
+    }, 
+    "P190": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 106, 
+        "label": "sister city", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "twin towns, sister cities, twinned municipalities and other localities that have a partnership or cooperative agreement, either legally or informally acknowledged by their governments"
+    }, 
+    "P664": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 186, 
+        "label": "organizer", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person or institution organizing an event"
+    }, 
+    "P452": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 100, 
+        "label": "industry", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "industry of company or organization"
+    }, 
+    "P194": {
+        "deviation": 0.4444444444444444, 
+        "average": -1.6666666666666667, 
+        "rank": 205, 
+        "label": "legislative body", 
+        "max_gap": 1.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "legislative body governing this entity; political institution with elected representatives, such as a parliament/legislature or council"
+    }, 
+    "P748": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 258, 
+        "label": "appointed by", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "who appointed the person to the office, can be used as a qualifier"
+    }, 
+    "P98": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 139, 
+        "label": "editor", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "editor of a compiled work such as a book or academic journal"
+    }, 
+    "P113": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 255, 
+        "label": "airline hub", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "airport that serves as a hub for an airline"
+    }, 
+    "P110": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 238, 
+        "label": "illustrator", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "illustrator of a book"
+    }, 
+    "P111": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 293, 
+        "label": "measured physical quantity", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "physical property measured by a unit"
+    }, 
+    "P114": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 235, 
+        "label": "airline alliance", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "the alliance the airline belongs to"
+    }, 
+    "P126": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 85, 
+        "label": "maintained by", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person or organization in charge of keeping the subject (for instance an infrastructure) in functioning order"
+    }, 
+    "P91": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 130, 
+        "label": "sexual orientation", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the sexual orientation of the person - use IF AND ONLY IF they have stated it themselves, unambiguously, or it has been widely agreed upon by historians after their death"
+    }, 
+    "P1884": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 164, 
+        "label": "hair color", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "person's hair color. Use P585 as qualifier if there's more than one value."
+    }, 
+    "P119": {
+        "deviation": 0.888888888888889, 
+        "average": 1.3333333333333333, 
+        "rank": 64, 
+        "label": "place of burial", 
+        "max_gap": 2.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "location of grave, resting place, place of ash-scattering, etc, (e.g. town/city or cemetery) for a person. There may be several places: e.g. re-burials, cenotaphs, parts of body buried separately."
+    }, 
+    "P805": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 298, 
+        "label": "subject of", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "(qualifier only) item which describes the relation identified in this statement"
+    }, 
+    "P179": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.3333333333333333, 
+        "rank": 74, 
+        "label": "series", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "the subject is part of a series, whose sum constitutes the object"
+    }, 
+    "P97": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 122, 
+        "label": "noble title", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "titles held by the person"
+    }, 
+    "P853": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 161, 
+        "label": "CERO rating", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "Japanese video game rating system - see talk page for appropriate values"
+    }, 
+    "P852": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 128, 
+        "label": "ESRB rating", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "North American video game content rating - appropriate values are on property's talk page"
+    }, 
+    "P690": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 203, 
+        "label": "space group", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "symmetry classification for 2 and 3 dimensional patterns or crystals"
+    }, 
+    "P16": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 77, 
+        "label": "highway system", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "system (or specific country specific road type) of which the highway is a part"
+    }, 
+    "P17": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 2, 
+        "label": "country", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            0.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "sovereign state of this item"
+    }, 
+    "P19": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 10, 
+        "label": "place of birth", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the most specific known (e.g. city instead of country, or hospital instead of city)"
+    }, 
+    "P1064": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 113, 
+        "label": "track gauge", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            0.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "spacing of the rails on a railway track"
+    }, 
+    "P1066": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 189, 
+        "label": "student of", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person who has taught this person"
+    }, 
+    "P1809": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 269, 
+        "label": "choreographer", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "person(s) who did the choreography"
+    }, 
+    "P509": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 68, 
+        "label": "cause of death", 
+        "max_gap": 2.0, 
+        "scores": [
+            0.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "underlying or immediate cause of death.  Underlying cause (e.g. car accident, stomach cancer) preferred.  Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide"
+    }, 
+    "P277": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 121, 
+        "label": "programming language", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the programming language(s) in which the software is developed"
+    }, 
+    "P2358": {
+        "deviation": 0.0, 
+        "average": 1.0, 
+        "rank": 218, 
+        "label": "Roman praenomen", 
+        "max_gap": 0, 
+        "scores": [
+            1.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "standard part of the name of a Roman, link to items for specific Roman praenomen only."
+    }, 
+    "P1532": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 260, 
+        "label": "country for sport", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "country a person or a team represents when playing a sport"
+    }, 
+    "P180": {
+        "deviation": 0.8888888888888888, 
+        "average": -0.6666666666666666, 
+        "rank": 47, 
+        "label": "depicts", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            0.0, 
+            0.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "depicted entity (see also P921: subject heading)"
+    }, 
+    "P183": {
+        "deviation": 2.0, 
+        "average": 0.0, 
+        "rank": 160, 
+        "label": "endemic to", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "sole location or habitat type where the taxon lives"
+    }, 
+    "P344": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 115, 
+        "label": "director of photography", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "person responsible for the framing, lighting and filtration of the subject work"
+    }, 
+    "P930": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 158, 
+        "label": "type of electrification", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "electrification system scheme and/or voltage"
+    }, 
+    "P9": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 309, 
+        "label": "sister", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "subject has the object as their sister (female sibling)"
+    }, 
+    "P1002": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 230, 
+        "label": "engine configuration", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "configuration of an engine's cylinders"
+    }, 
+    "P1001": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 142, 
+        "label": "applies to jurisdiction", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the item (an institution, law, public office ...) belongs to or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)"
+    }, 
+    "P1321": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 216, 
+        "label": "place of origin (Switzerland)", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "lieu d'origine of a Swiss national. Not be confused with place of birth or place of residence"
+    }, 
+    "P469": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 263, 
+        "label": "lakes on river", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "lakes and reservoirs the river flows through, flows into or flows out of"
+    }, 
+    "P1080": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.3333333333333333, 
+        "rank": 89, 
+        "label": "from fictional universe", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "subject's fictional entity is in the object narrative. See also P1441 and P1445"
+    }, 
+    "P462": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 170, 
+        "label": "color", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "color of subject"
+    }, 
+    "P588": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 226, 
+        "label": "coolant", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "substance used by the subject to dissipate excess thermal energy"
+    }, 
+    "P460": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 116, 
+        "label": "said to be the same as", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "this item is said to be the same as that item, but the statement is disputed"
+    }, 
+    "P421": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 54, 
+        "label": "located in time zone", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "time zone for this item"
+    }, 
+    "P466": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 221, 
+        "label": "occupant", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person or organization occupying a building or facility"
+    }, 
+    "P676": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 147, 
+        "label": "lyrics by", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "author of song lyrics; also use P86 for music composer"
+    }, 
+    "P674": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 180, 
+        "label": "characters", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "characters which appear in this item (plays, operas, operettas, books...)"
+    }, 
+    "P264": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 33, 
+        "label": "record label", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "brand and trademark associated with the marketing of subject music recordings and music videos"
+    }, 
+    "P1366": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 307, 
+        "label": "replaced by", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "Person or state or item who replaces another in an office, position, etc. Use P156 (followed by) if the item is not replaced, e.g. books in a series"
+    }, 
+    "P176": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 80, 
+        "label": "manufacturer", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "manufacturer or producer of this product"
+    }, 
+    "P108": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 38, 
+        "label": "employer", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "organization for which the subject works or worked"
+    }, 
+    "P140": {
+        "deviation": 0.888888888888889, 
+        "average": 0.3333333333333333, 
+        "rank": 60, 
+        "label": "religion", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "religion of a person, organization or religious building (MUST be claimed by the subject or documented by historical sources)"
+    }, 
+    "P105": {
+        "deviation": 0.888888888888889, 
+        "average": -1.3333333333333333, 
+        "rank": 6, 
+        "label": "taxon rank", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            0.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "level in a taxonomic hierarchy"
+    }, 
+    "P106": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 4, 
+        "label": "occupation", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "occupation of a person; see also field of work\" (Property:P101), \"position held\" (Property:P39)\""
+    }, 
+    "P101": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 104, 
+        "label": "field of work", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "fields of work related to this item (physics, history). For occupation like physicist, historian see P106. Note: Can be used in any item, including person"
+    }, 
+    "P103": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 50, 
+        "label": "native language", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "language that a person learned natively"
+    }, 
+    "P102": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 26, 
+        "label": "member of political party", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the political party of which this politician is or has been a member"
+    }, 
+    "P25": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 239, 
+        "label": "mother", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "female parent"
+    }, 
+    "P27": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 8, 
+        "label": "country of citizenship", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the object is a country that recognizes the subject as its citizen"
+    }, 
+    "P26": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 253, 
+        "label": "spouse", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the subject has the object as their spouse (husband, wife, partner, etc.). Use cohabitant\" (P451) for non-married companions\""
+    }, 
+    "P1716": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 245, 
+        "label": "brand", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "brand of a product"
+    }, 
+    "P20": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 16, 
+        "label": "place of death", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the most specific known (e.g. city instead of country, or hospital instead of city)"
+    }, 
+    "P22": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 213, 
+        "label": "father", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "male parent"
+    }, 
+    "P2058": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 270, 
+        "label": "depositor", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "depositor/depositaries for the treaty"
+    }, 
+    "P908": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 133, 
+        "label": "PEGI rating", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "European video game rating system - see talk page for appropriate values"
+    }, 
+    "P828": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 280, 
+        "label": "has cause", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "underlying cause, thing that ultimately resulted in this effect"
+    }, 
+    "P470": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 178, 
+        "label": "Eight Banner register", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "Manchu household register for people of the Qing Dynasty"
+    }, 
+    "P1387": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 310, 
+        "label": "political alignment", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "political position within the political spectrum"
+    }, 
+    "P641": {
+        "deviation": 0.6666666666666666, 
+        "average": 0.0, 
+        "rank": 12, 
+        "label": "sport", 
+        "max_gap": 2.0, 
+        "scores": [
+            -1.0, 
+            0.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "sport in which the entity participates or belongs to"
+    }, 
+    "P376": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 125, 
+        "label": "located on astronomical body", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            -1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "astronomical body on which features or places are situated"
+    }, 
+    "P872": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 292, 
+        "label": "printed by", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "organization that printed the creative work (if different from publisher\")\""
+    }, 
+    "P375": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 118, 
+        "label": "space launch vehicle", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "rocket or other vehicle for launching subject payload into space"
+    }, 
+    "P479": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 120, 
+        "label": "input device", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "input method or device used to interact with a software product"
+    }, 
+    "P411": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 126, 
+        "label": "canonization status", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "stage in the process of attaining sainthood per the subject's religious organization"
+    }, 
+    "P175": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 45, 
+        "label": "performer", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "musician, music group, or other performer associated with this work"
+    }, 
+    "P589": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 267, 
+        "label": "point group", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "crystal subdivision"
+    }, 
+    "P880": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 214, 
+        "label": "CPU", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "central processing unit found within the subject item"
+    }, 
+    "P579": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 110, 
+        "label": "IMA status and/or rank", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "status given to each mineral by the IMA (International Mineralogical Association)"
+    }, 
+    "P463": {
+        "deviation": 0.888888888888889, 
+        "average": -0.3333333333333333, 
+        "rank": 30, 
+        "label": "member of", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            -1.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "part of a specific organization or club. Do not use for membership in ethnic or social groups, nor for holding a position such as a member of parliament (use P39 for that)."
+    }, 
+    "P765": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 169, 
+        "label": "surface played on", 
+        "max_gap": 4.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "the surface on which the tournament is played"
+    }, 
+    "P425": {
+        "deviation": 0.4444444444444444, 
+        "average": -1.6666666666666667, 
+        "rank": 305, 
+        "label": "field of this occupation", 
+        "max_gap": 1.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "activity corresponding to this occupation"
+    }, 
+    "P178": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 107, 
+        "label": "developer", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "organisation or person that developed this item"
+    }, 
+    "P276": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 18, 
+        "label": "location", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "location the item, physical object or event is within. In case of an administrative entity use P131. In case of a distinct terrain feature use P706."
+    }, 
+    "P275": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 109, 
+        "label": "license", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            -1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "license under which this copyrighted work is released"
+    }, 
+    "P272": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 76, 
+        "label": "production company", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "company that produced this film, audio or performing arts work"
+    }, 
+    "P971": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 51, 
+        "label": "category combines topics", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            -1.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "this category combines these two or more topics"
+    }, 
+    "P170": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 44, 
+        "label": "creator", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "maker of a creative work or other object (where no more specific property exists)"
+    }, 
+    "P171": {
+        "deviation": 0.888888888888889, 
+        "average": -1.3333333333333333, 
+        "rank": 9, 
+        "label": "parent taxon", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            0.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "parent taxon of the taxon in question"
+    }, 
+    "P172": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 86, 
+        "label": "ethnic group", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "subject's ethnicity (consensus is that a VERY high standard of proof is needed for this field to be used. In general this means 1) the subject claims it him/herself, or 2) it is widely agreed on by scholars, or 3) is fictional and portrayed as such)."
+    }, 
+    "P1441": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 94, 
+        "label": "present in work", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "work in which this fictional entity (Q14897293) is present. See also P:1080 for in-universe information"
+    }, 
+    "P972": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 175, 
+        "label": "catalog", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "catalog for the item, or, as a qualifier of P528 \u00e2\u20ac\u201c catalog for which the 'catalog code' is valid"
+    }, 
+    "P279": {
+        "deviation": 0.0, 
+        "average": -2.0, 
+        "rank": 11, 
+        "label": "subclass of", 
+        "max_gap": 0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "all instances of these items are instances of those items; this item is a class of that item. Not to be confused with Property:P31 (instance of)."
+    }, 
+    "P177": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 163, 
+        "label": "crosses", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "obstacle (body of water, road, ...) which this bridge crosses over or this tunnel goes under"
+    }, 
+    "P516": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 210, 
+        "label": "powerplant", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "equipment or engine used to power the subject"
+    }, 
+    "P38": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 236, 
+        "label": "currency", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "currency used by item"
+    }, 
+    "P1434": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 206, 
+        "label": "describes the fictional universe", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the subject is a work describing a fictional universe, i.e. whose plot occurs in this universe."
+    }, 
+    "P1433": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 37, 
+        "label": "published in", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "larger work that a given work was published in"
+    }, 
+    "P1431": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 285, 
+        "label": "executive producer", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "executive producer of a movie or TV show"
+    }, 
+    "P517": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 295, 
+        "label": "interaction", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "with which of the 4 fundamental forces does the particle interact? strong interaction Q11415, electromagnetic: Q849919, weak interaction: Q11418, gravitation: Q11412"
+    }, 
+    "P870": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 144, 
+        "label": "instrumentation", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "combination of musical instruments employed in a composition"
+    }, 
+    "P30": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 61, 
+        "label": "continent", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "continent of which the subject is a part. Use for countries, locations in Antarctica, and items located in countries that belong to more than one continent, e.g. Russian cities."
+    }, 
+    "P31": {
+        "deviation": 0.0, 
+        "average": -2.0, 
+        "rank": 1, 
+        "label": "instance of", 
+        "max_gap": 0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "this item is a specific example and a member of that class. Not to be confused with Property:P279 (subclass of)."
+    }, 
+    "P36": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 242, 
+        "label": "capital", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "location (city, municipality) of governmental seat of the country, or administrative territorial entity"
+    }, 
+    "P37": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 136, 
+        "label": "official language", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "language designated as official by this item"
+    }, 
+    "P35": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 276, 
+        "label": "head of state", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "official with the highest formal authority in a country"
+    }, 
+    "P400": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 57, 
+        "label": "platform", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "platform for which a work has been developed or released / specific platform version of a software developed"
+    }, 
+    "P1454": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 99, 
+        "label": "legal form", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "legal form of an organization"
+    }, 
+    "P403": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 92, 
+        "label": "mouth of the watercourse", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the body of water to which the watercourse drains"
+    }, 
+    "P404": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 69, 
+        "label": "game mode", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "available playing mode(s) in a video game"
+    }, 
+    "P118": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 105, 
+        "label": "league", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "league in which the team plays or has played in"
+    }, 
+    "P408": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 173, 
+        "label": "software engine", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "software engine employed by the subject item"
+    }, 
+    "P360": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 27, 
+        "label": "is a list of", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "this is a list of the following items"
+    }, 
+    "P814": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 96, 
+        "label": "IUCN protected areas category", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "protected areas category by the World Commission on Protected Areas. Used with dedicated items for each category."
+    }, 
+    "P6": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 300, 
+        "label": "head of government", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "head of the executive power of a town, city, municipality, state, country, or other governmental body"
+    }, 
+    "P364": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 23, 
+        "label": "original language of work", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "language in which a work was originally created"
+    }, 
+    "P366": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 83, 
+        "label": "use", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "main use of the subject (includes current and former usage)"
+    }, 
+    "P710": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 151, 
+        "label": "participant", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "person, group of people or organization that actively takes/took part in the event"
+    }, 
+    "P1340": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 176, 
+        "label": "eye color", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "color of the irises of a person's eyes"
+    }, 
+    "P1343": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 32, 
+        "label": "described by source", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "dictionary, encyclopaedia, etc. where this item is described"
+    }, 
+    "P1344": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 28, 
+        "label": "participant of", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "event a person or an organization was a participant in, inverse of P710 or P1923"
+    }, 
+    "P1347": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 252, 
+        "label": "military casualty classification", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "allowed values:  killed in action (Q210392), missing in action (Q2344557), died of wounds (Q16861372), prisoner of war (Q179637), killed in flight accident (Q16861407), others used in military casualty classification"
+    }, 
+    "P1346": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 208, 
+        "label": "winner", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "winner of an event"
+    }, 
+    "P488": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 237, 
+        "label": "chairperson", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "presiding member of an organization, group or body"
+    }, 
+    "P156": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 282, 
+        "label": "followed by", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "The immediately following item in some series of which the subject is part. Use P1366 (replaced by) if the item is replaced, e.g. political offices, states"
+    }, 
+    "P241": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 65, 
+        "label": "military branch", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the branch to which this military unit, award, or person belongs, e.g. Royal Navy"
+    }, 
+    "P162": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 95, 
+        "label": "producer", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "producer(s) of this film or music work (film: not executive producers, associate producers, etc.)"
+    }, 
+    "P161": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 34, 
+        "label": "cast member", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "actor performing live for a camera or audience [use character role\" (P453) as qualifier] [use \"voice actor\" (P725) for voice-only role]\""
+    }, 
+    "P263": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 296, 
+        "label": "official residence", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the residence at which heads of government and other senior figures officially reside"
+    }, 
+    "P485": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 227, 
+        "label": "archives at", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the institution holding the subject's archives"
+    }, 
+    "P744": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 277, 
+        "label": "asteroid family", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "population of asteroids that share similar proper orbital elements"
+    }, 
+    "P1637": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 273, 
+        "label": "undercarriage", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "type of aircraft landing gear the item is equipped with"
+    }, 
+    "P1427": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 266, 
+        "label": "start point", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "starting place of this journey, flight, voyage, trek, migration etc. (excl. spaceflight launch)"
+    }, 
+    "P47": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 132, 
+        "label": "shares border with", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "countries or administrative subdivisions, of equal level, that this item borders, either by land or water"
+    }, 
+    "P1731": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 243, 
+        "label": "Fach", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "describes the special ablilites of an operatic singers voice"
+    }, 
+    "P2348": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 200, 
+        "label": "period", 
+        "max_gap": 4.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "historic period or era in which the subject occured"
+    }, 
+    "P155": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 301, 
+        "label": "follows", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "The immediately prior item in some series of which the subject is part. Use P1365 (replaces) if the preceding item was replaced, e.g. political offices, states and there is no identity between precedent and following geographic unit"
+    }, 
+    "P40": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 289, 
+        "label": "child", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "subject has the object in their family as their offspring son or daughter (independently of their age)"
+    }, 
+    "P413": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 66, 
+        "label": "position played on team / speciality", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "position or specialism of a player on a team, e.g. Small Forward"
+    }, 
+    "P412": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 93, 
+        "label": "voice type", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "person's voice type. expected values: soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass (and derivatives)"
+    }, 
+    "P1444": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 247, 
+        "label": "destination point", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "intended destination for this route (journey, flight, sailing, exploration, migration etc.)"
+    }, 
+    "P410": {
+        "deviation": 0.6666666666666666, 
+        "average": 0.0, 
+        "rank": 108, 
+        "label": "military rank", 
+        "max_gap": 2.0, 
+        "scores": [
+            0.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "military rank achieved by a person (should usually have a start date\" qualifier)\""
+    }, 
+    "P417": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 197, 
+        "label": "patron saint", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "patron saint adopted by the subject"
+    }, 
+    "P459": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 302, 
+        "label": "determination method", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "qualifier stating how a value has been determined"
+    }, 
+    "P415": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 225, 
+        "label": "radio format", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "describes the overall content broadcast on a radio station"
+    }, 
+    "P414": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 119, 
+        "label": "stock exchange", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "exchange on which this company is traded"
+    }, 
+    "P1456": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 268, 
+        "label": "list of monuments", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "link to the list of heritage monuments in the place/area"
+    }, 
+    "P826": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 154, 
+        "label": "tonality", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "key of a musical composition"
+    }, 
+    "P2012": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 220, 
+        "label": "cuisine", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -1.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "type of food served by a restaurant or restaurant chain"
+    }, 
+    "P825": {
+        "deviation": 0.4444444444444445, 
+        "average": 0.6666666666666666, 
+        "rank": 251, 
+        "label": "dedicated to", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            0.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person or organization to whom the subject was dedicated"
+    }, 
+    "P624": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 261, 
+        "label": "guidance system", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "guidance system of a missile"
+    }, 
+    "P703": {
+        "deviation": 0.888888888888889, 
+        "average": -1.3333333333333333, 
+        "rank": 25, 
+        "label": "found in taxon", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            0.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "the taxon in which the molecule or substance can be found"
+    }, 
+    "P184": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 271, 
+        "label": "doctoral advisor", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "person who supervised the doctorate or PhD thesis of the subject"
+    }, 
+    "P708": {
+        "deviation": 1.5, 
+        "average": 0.5, 
+        "rank": 103, 
+        "label": "diocese", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "administrative division of the church to which the element belongs"
+    }, 
+    "P150": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 262, 
+        "label": "contains administrative territorial entity", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "(list of) direct subdivisions of an administrative territorial entity"
+    }, 
+    "P553": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 143, 
+        "label": "website account on", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "a website that the person or organization has an account on (use with P554) Note: only used with reliable source or if the person or organization disclosed it."
+    }, 
+    "P552": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 185, 
+        "label": "handedness", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "handedness of the person"
+    }, 
+    "P702": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 244, 
+        "label": "encoded by", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the gene that encodes some gene product"
+    }, 
+    "P551": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 135, 
+        "label": "residence", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the place where the person is, or has been, resident"
+    }, 
+    "P556": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 152, 
+        "label": "crystal system", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "type of crystal for minerals\u00c2\u00a0and/or for crystal coumpounds"
+    }, 
+    "P629": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 232, 
+        "label": "edition or translation of", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "is an edition or translation of this entity"
+    }, 
+    "P159": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 55, 
+        "label": "headquarters location", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "specific location where an organization's HQ is or has been situated"
+    }, 
+    "P1192": {
+        "deviation": 0.888888888888889, 
+        "average": 1.3333333333333333, 
+        "rank": 168, 
+        "label": "connecting service", 
+        "max_gap": 2.0, 
+        "scores": [
+            0.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "service stopping at a station"
+    }, 
+    "P1596": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 231, 
+        "label": "penalty", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "penalty passed, at a trial"
+    }, 
+    "P397": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 211, 
+        "label": "parent astronomical body", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "major astronomical body the item belongs to"
+    }, 
+    "P196": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 35, 
+        "label": "minor planet group", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "is in grouping of minor planets according to similar orbital characteristics"
+    }, 
+    "P1382": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 290, 
+        "label": "coincident with", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "object that is partially part of, but not fully part of (P361), the subject"
+    }, 
+    "P407": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 22, 
+        "label": "language of work or name", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "for works (for original language use P364 and for persons P103 and P1412)"
+    }, 
+    "P495": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 24, 
+        "label": "country of origin", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "country of origin of the creative work or subject item"
+    }, 
+    "P706": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 98, 
+        "label": "located on terrain feature", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "located on the specified landform or body of water. Should not be used when the value is only political/administrative (provinces, states, countries, etc.)."
+    }, 
+    "P1990": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 228, 
+        "label": "species kept", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "taxa, preferably species, present at a zoo, botanical garden,  collection, or other institution. NOT specific animals, not for any geographic location"
+    }, 
+    "P2239": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 153, 
+        "label": "first aid measures", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "actions to take to help a person in the case of accidents, injuries and accidental exposures to harmful chemicals"
+    }, 
+    "P1027": {
+        "deviation": 0.888888888888889, 
+        "average": 0.3333333333333333, 
+        "rank": 241, 
+        "label": "conferred by", 
+        "max_gap": 2.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "person or organization who awards a prize to or bestows an honor upon a recipient"
+    }, 
+    "P135": {
+        "deviation": 0.888888888888889, 
+        "average": -1.3333333333333333, 
+        "rank": 87, 
+        "label": "movement", 
+        "max_gap": 2.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            0.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "literary, artistic or philosophical movement associated with this person or work"
+    }, 
+    "P749": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 219, 
+        "label": "parent organization", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "a parent company of an organisation, opposite of subsidiaries (P355)"
+    }, 
+    "P54": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 13, 
+        "label": "member of sports team", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "sports teams or clubs that the subject currently represents or formerly represented"
+    }, 
+    "P21": {
+        "deviation": 1.3333333333333333, 
+        "average": -1.0, 
+        "rank": 3, 
+        "label": "sex or gender", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "Sexual identity of subject: male (Q6581097), female (Q6581072), intersex (Q1097630), transgender female (Q1052281),  transgender male (Q2449503). Animals: male animal (Q44148), female animal (Q43445). Groups of same gender use subclass of\" (P279)\""
+    }, 
+    "P195": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 31, 
+        "label": "collection", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "art, museum or bibliographic collection the subject is part of"
+    }, 
+    "P50": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 42, 
+        "label": "author", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "main creator(s) of a written work"
+    }, 
+    "P910": {
+        "deviation": 0.0, 
+        "average": -2.0, 
+        "rank": 150, 
+        "label": "topic's main category", 
+        "max_gap": 0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "main category"
+    }, 
+    "P53": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 146, 
+        "label": "noble family", 
+        "max_gap": 4.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "include dynasty and nobility houses"
+    }, 
+    "P737": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 257, 
+        "label": "influenced by", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "this person, idea, etc. is informed by that other person, idea, etc., e.g. Heidegger has influence Aristotle\".\""
+    }, 
+    "P734": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 29, 
+        "label": "family name", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "surname or last name of a person"
+    }, 
+    "P735": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 5, 
+        "label": "given name", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "first name or another given name of this person. Values used with the property shouldn't link disambiguations nor family names."
+    }, 
+    "P541": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 137, 
+        "label": "office contested", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "title of office which election will determine the next holder of"
+    }, 
+    "P1057": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 48, 
+        "label": "chromosome", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "chromosome on which an entity is localized"
+    }, 
+    "P2061": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 167, 
+        "label": "aspect ratio", 
+        "max_gap": 3.0, 
+        "scores": [
+            2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "image width to height ratio of films, pictures photographs"
+    }, 
+    "P59": {
+        "deviation": 1.1111111111111112, 
+        "average": 0.6666666666666666, 
+        "rank": 72, 
+        "label": "constellation", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)"
+    }, 
+    "P784": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 187, 
+        "label": "mushroom cap shape", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            1.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": ""
+    }, 
+    "P1576": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 193, 
+        "label": "lifestyle", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "typical way of life of an individual, group, or culture"
+    }, 
+    "P618": {
+        "deviation": 0.4444444444444444, 
+        "average": -1.3333333333333333, 
+        "rank": 297, 
+        "label": "source of energy", 
+        "max_gap": 1.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "describes the source of energy an animated object (machine or animal) uses"
+    }, 
+    "P739": {
+        "deviation": 1.5555555555555556, 
+        "average": -0.3333333333333333, 
+        "rank": 165, 
+        "label": "ammunition", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "cartridge or other ammunition used by the subject weapon"
+    }, 
+    "P141": {
+        "deviation": 1.3333333333333333, 
+        "average": 0.0, 
+        "rank": 41, 
+        "label": "IUCN conservation status", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Unknown", 
+        "desc": "conservation status assigned by the International Union for Conservation of Nature"
+    }, 
+    "P636": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 131, 
+        "label": "route of administration", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "path by which a drug, fluid, poison, or other substance is taken into the body"
+    }, 
+    "P143": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 199, 
+        "label": "imported from", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "source of this claim's value (use only in References section)"
+    }, 
+    "P144": {
+        "deviation": 0.4444444444444444, 
+        "average": -1.6666666666666667, 
+        "rank": 166, 
+        "label": "based on", 
+        "max_gap": 1.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "the work(s) used as basis for subject"
+    }, 
+    "P631": {
+        "deviation": 1.3333333333333333, 
+        "average": 1.0, 
+        "rank": 233, 
+        "label": "structural engineer", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "person, group or organisation responsible for the structural engineering of a building or structure"
+    }, 
+    "P149": {
+        "deviation": 0.4444444444444444, 
+        "average": -1.3333333333333333, 
+        "rank": 73, 
+        "label": "architectural style", 
+        "max_gap": 1.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "architectural style of a structure or architect"
+    }, 
+    "P306": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 159, 
+        "label": "operating system", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            1.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "operating system (OS) on which a software works or the OS installed on hardware"
+    }, 
+    "P915": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 84, 
+        "label": "filming location", 
+        "max_gap": 1.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "actual place where this scene/film was shot"
+    }, 
+    "P1201": {
+        "deviation": 1.111111111111111, 
+        "average": 0.3333333333333333, 
+        "rank": 215, 
+        "label": "space tug", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            0.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "spacecraft vehicle designed to move the payload from a reference orbit to the target orbit, or direct it to an interplanetary trajectory"
+    }, 
+    "P301": {
+        "deviation": 0.4444444444444444, 
+        "average": -1.6666666666666667, 
+        "rank": 157, 
+        "label": "category's main topic", 
+        "max_gap": 1.0, 
+        "scores": [
+            -1.0, 
+            -2.0, 
+            -2.0
+        ], 
+        "class": "TOPIC (clear)", 
+        "desc": "primary topic of the subject Wikimedia category"
+    }, 
+    "P559": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 286, 
+        "label": "terminus", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the feature (intersecting road, train station, etc.) at the end of a linear feature"
+    }, 
+    "P61": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 46, 
+        "label": "discoverer or inventor", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "discovered, first described, or invented by"
+    }, 
+    "P65": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 52, 
+        "label": "site of astronomical discovery", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "the place where an astronomical object was discovered (observatory, satellite)"
+    }, 
+    "P69": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.3333333333333333, 
+        "rank": 14, 
+        "label": "educated at", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "educational institution attended by the subject"
+    }, 
+    "P912": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 281, 
+        "label": "has facility", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "the subject item has this type of facility, e.g. toilet, car park"
+    }, 
+    "P1879": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 311, 
+        "label": "income classification (Philippines)", 
+        "max_gap": 3.0, 
+        "scores": [
+            1.0, 
+            -2.0, 
+            -1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "classification grade of a Philippine local government unit based on income"
+    }, 
+    "P783": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 171, 
+        "label": "hymenium type", 
+        "max_gap": 4.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "type of spore-bearing surface or that mushroom"
+    }, 
+    "P1050": {
+        "deviation": 0.4444444444444444, 
+        "average": 1.6666666666666667, 
+        "rank": 123, 
+        "label": "medical condition", 
+        "max_gap": 1.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "disease or other health problem affecting an individual human or other animal"
+    }, 
+    "P467": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 272, 
+        "label": "legislated by", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "indicates that an act or bill was passed by a legislature.  The value can be a particular session of the legislature"
+    }, 
+    "P780": {
+        "deviation": 0.888888888888889, 
+        "average": 0.3333333333333333, 
+        "rank": 134, 
+        "label": "symptoms", 
+        "max_gap": 2.0, 
+        "scores": [
+            -1.0, 
+            1.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "possible symptoms of a medical condition"
+    }, 
+    "P787": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 198, 
+        "label": "spore print color", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "color of a mushroom spore print (see documentation for allowed values)"
+    }, 
+    "P786": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 191, 
+        "label": "stipe character", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "indicates whether a mushroom has a universal or partial veil"
+    }, 
+    "P785": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 174, 
+        "label": "hymenium attachment", 
+        "max_gap": 4.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "how the hymenium of the mushroom attaches to the stem"
+    }, 
+    "P1056": {
+        "deviation": 1.777777777777778, 
+        "average": -0.6666666666666666, 
+        "rank": 234, 
+        "label": "product", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            -2.0, 
+            2.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "material or product produced by a business, industry, facility, or process"
+    }, 
+    "P1435": {
+        "deviation": 1.1111111111111112, 
+        "average": -0.6666666666666666, 
+        "rank": 15, 
+        "label": "heritage status", 
+        "max_gap": 3.0, 
+        "scores": [
+            -2.0, 
+            -1.0, 
+            1.0
+        ], 
+        "class": "Topic (likely)", 
+        "desc": "the heritage status of a historical site"
+    }, 
+    "P448": {
+        "deviation": 1.5555555555555556, 
+        "average": 0.3333333333333333, 
+        "rank": 112, 
+        "label": "location of spacecraft launch", 
+        "max_gap": 4.0, 
+        "scores": [
+            -2.0, 
+            2.0, 
+            1.0
+        ], 
+        "class": "Unknown", 
+        "desc": "site or launch pad from where the spacecraft was or will be launched"
+    }, 
+    "P789": {
+        "deviation": 0.0, 
+        "average": 2.0, 
+        "rank": 195, 
+        "label": "edibility", 
+        "max_gap": 0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            2.0
+        ], 
+        "class": "INSTANCE (Clear)", 
+        "desc": "whether something can be eaten or not"
+    }, 
+    "P788": {
+        "deviation": 1.777777777777778, 
+        "average": 0.6666666666666666, 
+        "rank": 172, 
+        "label": "mushroom ecological type", 
+        "max_gap": 4.0, 
+        "scores": [
+            2.0, 
+            2.0, 
+            -2.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": ""
+    }, 
+    "P945": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 249, 
+        "label": "allegiance", 
+        "max_gap": 2.0, 
+        "scores": [
+            2.0, 
+            0.0, 
+            1.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "the country (or other power) that the person, or organization, served"
+    }, 
+    "P944": {
+        "deviation": 1.111111111111111, 
+        "average": 0.3333333333333333, 
+        "rank": 184, 
+        "label": "Code of nomenclature", 
+        "max_gap": 3.0, 
+        "scores": [
+            -1.0, 
+            0.0, 
+            2.0
+        ], 
+        "class": "Unknown", 
+        "desc": "the Code that governs the scientific name of this taxon"
+    }, 
+    "P1196": {
+        "deviation": 0.8888888888888888, 
+        "average": 0.6666666666666666, 
+        "rank": 62, 
+        "label": "manner of death", 
+        "max_gap": 2.0, 
+        "scores": [
+            0.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "circumstances of a person's death; one of: natural causes, accident, suicide, homicide, pending investigation or special 'unknown value'.  Use 'cause of death' (P509) for more immediate or underlying causes and events, e.g. heart attack, car accident"
+    }, 
+    "P449": {
+        "deviation": 0.6666666666666666, 
+        "average": 1.0, 
+        "rank": 79, 
+        "label": "original network", 
+        "max_gap": 2.0, 
+        "scores": [
+            1.0, 
+            2.0, 
+            0.0
+        ], 
+        "class": "Instance (likely)", 
+        "desc": "network(s) the radio or television show was originally aired on, not including later re-runs or additional syndication"
+    }
+}

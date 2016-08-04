@@ -1,7 +1,7 @@
 __author__ = 'Dani'
 
-from wdexp.communications.input.wikidata.interfaces import PropertyTracker
-from wdexp.model.wikidata import WikidataProperty
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import PropertyTracker
+from wikidata_exp.wdexp.model.wikidata import WikidataProperty
 
 
 class Ccv01PropertiesParser(PropertyTracker):

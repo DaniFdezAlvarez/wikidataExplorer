@@ -1,8 +1,9 @@
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import ElementTracker, TripleTracker
+from wikidata_exp.wdexp.model.wikidata import WikidataTriple, WikidataEntity, WikidataProperty
+
 __author__ = 'Dani'
 import ijson
 
-from wdexp.communications.input.wikidata.interfaces import ElementTracker, TripleTracker
-from wdexp.model.wikidata import WikidataEntity, WikidataProperty, WikidataTriple
 
 
 class WikidataDumpParser(ElementTracker, TripleTracker):

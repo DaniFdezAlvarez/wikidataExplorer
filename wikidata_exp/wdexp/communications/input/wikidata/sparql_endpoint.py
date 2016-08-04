@@ -1,8 +1,8 @@
 __author__ = 'Dani'
 
 
-from wdexp.communications.input.wikidata.interfaces import TripleTracker
-from wdexp.communications.input.wikidata.SPARQL_QUERIES import *
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import TripleTracker
+from wikidata_exp.wdexp.communications.input.wikidata.SPARQL_QUERIES import *
 import requests
 import urllib
 from requests.adapters import HTTPAdapter

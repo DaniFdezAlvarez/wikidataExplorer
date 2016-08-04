@@ -1,0 +1,1868 @@
+[
+    {
+        "count": 15011249, 
+        "description": "this item is a specific example and a member of that class. Not to be confused with Property:P279 (subclass of).", 
+        "id": "P31", 
+        "label": "instance of"
+    }, 
+    {
+        "count": 3821564, 
+        "description": "sovereign state of this item", 
+        "id": "P17", 
+        "label": "country"
+    }, 
+    {
+        "count": 2808680, 
+        "description": "Sexual identity of subject: male (Q6581097), female (Q6581072), intersex (Q1097630), transgender female (Q1052281),  transgender male (Q2449503). Animals: male animal (Q44148), female animal (Q43445). Groups of same gender use \"subclass of\" (P279)", 
+        "id": "P21", 
+        "label": "sex or gender"
+    }, 
+    {
+        "count": 2151386, 
+        "description": "occupation of a person; see also \"field of work\" (Property:P101), \"position held\" (Property:P39)", 
+        "id": "P106", 
+        "label": "occupation"
+    }, 
+    {
+        "count": 2135148, 
+        "description": "first name or another given name of this person. Values used with the property shouldn't link disambiguations nor family names.", 
+        "id": "P735", 
+        "label": "given name"
+    }, 
+    {
+        "count": 2084214, 
+        "description": "level in a taxonomic hierarchy", 
+        "id": "P105", 
+        "label": "taxon rank"
+    }, 
+    {
+        "count": 2024576, 
+        "description": "the item is located on the territory of the following administrative entity. Use P276 (location) for specifying the location of non-administrative places and for items about events.", 
+        "id": "P131", 
+        "label": "located in the administrative territorial entity"
+    }, 
+    {
+        "count": 1782950, 
+        "description": "the object is a country that recognizes the subject as its citizen", 
+        "id": "P27", 
+        "label": "country of citizenship"
+    }, 
+    {
+        "count": 1533097, 
+        "description": "parent taxon of the taxon in question", 
+        "id": "P171", 
+        "label": "parent taxon"
+    }, 
+    {
+        "count": 676594, 
+        "description": "the most specific known (e.g. city instead of country, or hospital instead of city)", 
+        "id": "P19", 
+        "label": "place of birth"
+    }, 
+    {
+        "count": 409085, 
+        "description": "all instances of these items are instances of those items; this item is a class of that item. Not to be confused with Property:P31 (instance of).", 
+        "id": "P279", 
+        "label": "subclass of"
+    }, 
+    {
+        "count": 376454, 
+        "description": "sport in which the entity participates or belongs to", 
+        "id": "P641", 
+        "label": "sport"
+    }, 
+    {
+        "count": 336590, 
+        "description": "sports teams or clubs that the subject currently represents or formerly represented", 
+        "id": "P54", 
+        "label": "member of sports team"
+    }, 
+    {
+        "count": 319180, 
+        "description": "educational institution attended by the subject", 
+        "id": "P69", 
+        "label": "educated at"
+    }, 
+    {
+        "count": 316889, 
+        "description": "the heritage status of a historical site", 
+        "id": "P1435", 
+        "label": "heritage status"
+    }, 
+    {
+        "count": 302313, 
+        "description": "the most specific known (e.g. city instead of country, or hospital instead of city)", 
+        "id": "P20", 
+        "label": "place of death"
+    }, 
+    {
+        "count": 283668, 
+        "description": "award or recognition received by a person, organisation or creative work", 
+        "id": "P166", 
+        "label": "award received"
+    }, 
+    {
+        "count": 280651, 
+        "description": "location the item, physical object or event is within. In case of an administrative entity use P131. In case of a distinct terrain feature use P706.", 
+        "id": "P276", 
+        "label": "location"
+    }, 
+    {
+        "count": 260830, 
+        "description": "subject currently or formerly holds the object position or public office", 
+        "id": "P39", 
+        "label": "position held"
+    }, 
+    {
+        "count": 256590, 
+        "description": "genre of a creative work or genre in which an artist works. Should not be used to relate creative works to their topics like Russia (Q159), People's Republic of China (Q148), Jesus Christ (Q302), for which main subject (P921) should be used instead", 
+        "id": "P136", 
+        "label": "genre"
+    }, 
+    {
+        "count": 226657, 
+        "description": "language(s) that a person speaks or writes. Can include native languages", 
+        "id": "P1412", 
+        "label": "languages spoken, written or signed"
+    }, 
+    {
+        "count": 215560, 
+        "description": "for works (for original language use P364 and for persons P103 and P1412)", 
+        "id": "P407", 
+        "label": "language of work or name"
+    }, 
+    {
+        "count": 213155, 
+        "description": "language in which a work was originally created", 
+        "id": "P364", 
+        "label": "original language of work"
+    }, 
+    {
+        "count": 197858, 
+        "description": "country of origin of the creative work or subject item", 
+        "id": "P495", 
+        "label": "country of origin"
+    }, 
+    {
+        "count": 195815, 
+        "description": "the taxon in which the molecule or substance can be found", 
+        "id": "P703", 
+        "label": "found in taxon"
+    }, 
+    {
+        "count": 172609, 
+        "description": "the political party of which this politician is or has been a member", 
+        "id": "P102", 
+        "label": "member of political party"
+    }, 
+    {
+        "count": 161959, 
+        "description": "this is a list of the following items", 
+        "id": "P360", 
+        "label": "is a list of"
+    }, 
+    {
+        "count": 151155, 
+        "description": "event a person or an organization was a participant in, inverse of P710 or P1923", 
+        "id": "P1344", 
+        "label": "participant of"
+    }, 
+    {
+        "count": 150952, 
+        "description": "surname or last name of a person", 
+        "id": "P734", 
+        "label": "family name"
+    }, 
+    {
+        "count": 114524, 
+        "description": "part of a specific organization or club. Do not use for membership in ethnic or social groups, nor for holding a position such as a member of parliament (use P39 for that).", 
+        "id": "P463", 
+        "label": "member of"
+    }, 
+    {
+        "count": 113736, 
+        "description": "art, museum or bibliographic collection the subject is part of", 
+        "id": "P195", 
+        "label": "collection"
+    }, 
+    {
+        "count": 102202, 
+        "description": "dictionary, encyclopaedia, etc. where this item is described", 
+        "id": "P1343", 
+        "label": "described by source"
+    }, 
+    {
+        "count": 96007, 
+        "description": "brand and trademark associated with the marketing of subject music recordings and music videos", 
+        "id": "P264", 
+        "label": "record label"
+    }, 
+    {
+        "count": 91282, 
+        "description": "actor performing live for a camera or audience [use \"character role\" (P453) as qualifier] [use \"voice actor\" (P725) for voice-only role]", 
+        "id": "P161", 
+        "label": "cast member"
+    }, 
+    {
+        "count": 90353, 
+        "description": "is in grouping of minor planets according to similar orbital characteristics", 
+        "id": "P196", 
+        "label": "minor planet group"
+    }, 
+    {
+        "count": 87941, 
+        "description": "material the subject is made of or derived from", 
+        "id": "P186", 
+        "label": "material used"
+    }, 
+    {
+        "count": 87330, 
+        "description": "larger work that a given work was published in", 
+        "id": "P1433", 
+        "label": "published in"
+    }, 
+    {
+        "count": 86052, 
+        "description": "organization for which the subject works or worked", 
+        "id": "P108", 
+        "label": "employer"
+    }, 
+    {
+        "count": 85522, 
+        "description": "is involved in the biological process", 
+        "id": "P682", 
+        "label": "biological process"
+    }, 
+    {
+        "count": 80730, 
+        "description": "component of the cell in which this item is present", 
+        "id": "P681", 
+        "label": "cell component"
+    }, 
+    {
+        "count": 78214, 
+        "description": "conservation status assigned by the International Union for Conservation of Nature", 
+        "id": "P141", 
+        "label": "IUCN conservation status"
+    }, 
+    {
+        "count": 73657, 
+        "description": "main creator(s) of a written work", 
+        "id": "P50", 
+        "label": "author"
+    }, 
+    {
+        "count": 72548, 
+        "description": "subject is a part of that object. Inverse property of \"has part\"", 
+        "id": "P361", 
+        "label": "part of"
+    }, 
+    {
+        "count": 72422, 
+        "description": "maker of a creative work or other object (where no more specific property exists)", 
+        "id": "P170", 
+        "label": "creator"
+    }, 
+    {
+        "count": 58175, 
+        "description": "musician, music group, or other performer associated with this work", 
+        "id": "P175", 
+        "label": "performer"
+    }, 
+    {
+        "count": 55396, 
+        "description": "discovered, first described, or invented by", 
+        "id": "P61", 
+        "label": "discoverer or inventor"
+    }, 
+    {
+        "count": 53923, 
+        "description": "depicted entity (see also P921: subject heading)", 
+        "id": "P180", 
+        "label": "depicts"
+    }, 
+    {
+        "count": 52277, 
+        "description": "chromosome on which an entity is localized", 
+        "id": "P1057", 
+        "label": "chromosome"
+    }, 
+    {
+        "count": 51482, 
+        "description": "battles, wars or engagements in which the person or item participated", 
+        "id": "P607", 
+        "label": "conflict"
+    }, 
+    {
+        "count": 50291, 
+        "description": "language that a person learned natively", 
+        "id": "P103", 
+        "label": "native language"
+    }, 
+    {
+        "count": 48902, 
+        "description": "this category combines these two or more topics", 
+        "id": "P971", 
+        "label": "category combines topics"
+    }, 
+    {
+        "count": 44770, 
+        "description": "the place where an astronomical object was discovered (observatory, satellite)", 
+        "id": "P65", 
+        "label": "site of astronomical discovery"
+    }, 
+    {
+        "count": 44129, 
+        "description": "represents gene ontology function annotations", 
+        "id": "P680", 
+        "label": "molecular function"
+    }, 
+    {
+        "count": 43673, 
+        "description": "time zone for this item", 
+        "id": "P421", 
+        "label": "located in time zone"
+    }, 
+    {
+        "count": 43665, 
+        "description": "specific location where an organization's HQ is or has been situated", 
+        "id": "P159", 
+        "label": "headquarters location"
+    }, 
+    {
+        "count": 38816, 
+        "description": "director(s) of this motion picture, play, video game or similar", 
+        "id": "P57", 
+        "label": "director"
+    }, 
+    {
+        "count": 37627, 
+        "description": "platform for which a work has been developed or released / specific platform version of a software developed", 
+        "id": "P400", 
+        "label": "platform"
+    }, 
+    {
+        "count": 37539, 
+        "description": "location where persons were active", 
+        "id": "P937", 
+        "label": "work location"
+    }, 
+    {
+        "count": 34512, 
+        "description": "person or organization that operates the equipment, facility, or service", 
+        "id": "P137", 
+        "label": "operator"
+    }, 
+    {
+        "count": 31900, 
+        "description": "religion of a person, organization or religious building (MUST be claimed by the subject or documented by historical sources)", 
+        "id": "P140", 
+        "label": "religion"
+    }, 
+    {
+        "count": 31179, 
+        "description": "continent of which the subject is a part. Use for countries, locations in Antarctica, and items located in countries that belong to more than one continent, e.g. Russian cities.", 
+        "id": "P30", 
+        "label": "continent"
+    }, 
+    {
+        "count": 30013, 
+        "description": "circumstances of a person's death; one of: natural causes, accident, suicide, homicide, pending investigation or special 'unknown value'.  Use 'cause of death' (P509) for more immediate or underlying causes and events, e.g. heart attack, car accident", 
+        "id": "P1196", 
+        "label": "manner of death"
+    }, 
+    {
+        "count": 29779, 
+        "description": "organization responsible for publishing books, periodicals or software", 
+        "id": "P123", 
+        "label": "publisher"
+    }, 
+    {
+        "count": 29513, 
+        "description": "location of grave, resting place, place of ash-scattering, etc, (e.g. town/city or cemetery) for a person. There may be several places: e.g. re-burials, cenotaphs, parts of body buried separately.", 
+        "id": "P119", 
+        "label": "place of burial"
+    }, 
+    {
+        "count": 28856, 
+        "description": "the branch to which this military unit, award, or person belongs, e.g. Royal Navy", 
+        "id": "P241", 
+        "label": "military branch"
+    }, 
+    {
+        "count": 26593, 
+        "description": "position or specialism of a player on a team, e.g. Small Forward", 
+        "id": "P413", 
+        "label": "position played on team / speciality"
+    }, 
+    {
+        "count": 25494, 
+        "description": "instrument that a person plays", 
+        "id": "P1303", 
+        "label": "instrument"
+    }, 
+    {
+        "count": 24951, 
+        "description": "underlying or immediate cause of death.  Underlying cause (e.g. car accident, stomach cancer) preferred.  Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide", 
+        "id": "P509", 
+        "label": "cause of death"
+    }, 
+    {
+        "count": 23945, 
+        "description": "available playing mode(s) in a video game", 
+        "id": "P404", 
+        "label": "game mode"
+    }, 
+    {
+        "count": 21786, 
+        "description": "the narrative of the work is set in this location", 
+        "id": "P840", 
+        "label": "narrative location"
+    }, 
+    {
+        "count": 21714, 
+        "description": "academic degree that the person holds", 
+        "id": "P512", 
+        "label": "academic degree"
+    }, 
+    {
+        "count": 20110, 
+        "description": "the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)", 
+        "id": "P59", 
+        "label": "constellation"
+    }, 
+    {
+        "count": 20106, 
+        "description": "architectural style of a structure or architect", 
+        "id": "P149", 
+        "label": "architectural style"
+    }, 
+    {
+        "count": 19972, 
+        "description": "the subject is part of a series, whose sum constitutes the object", 
+        "id": "P179", 
+        "label": "series"
+    }, 
+    {
+        "count": 19938, 
+        "description": "part of this subject, also valuable subclass or exemplar. Inverse property of \"part of\".", 
+        "id": "P527", 
+        "label": "has part"
+    }, 
+    {
+        "count": 18830, 
+        "description": "company that produced this film, audio or performing arts work", 
+        "id": "P272", 
+        "label": "production company"
+    }, 
+    {
+        "count": 18510, 
+        "description": "system (or specific country specific road type) of which the highway is a part", 
+        "id": "P16", 
+        "label": "highway system"
+    }, 
+    {
+        "count": 16918, 
+        "description": "primary topic of a work", 
+        "id": "P921", 
+        "label": "main subject"
+    }, 
+    {
+        "count": 16713, 
+        "description": "network(s) the radio or television show was originally aired on, not including later re-runs or additional syndication", 
+        "id": "P449", 
+        "label": "original network"
+    }, 
+    {
+        "count": 16175, 
+        "description": "manufacturer or producer of this product", 
+        "id": "P176", 
+        "label": "manufacturer"
+    }, 
+    {
+        "count": 16124, 
+        "description": "entity or event that inspired the subject's name, or namesake (in at least one language)", 
+        "id": "P138", 
+        "label": "named after"
+    }, 
+    {
+        "count": 15661, 
+        "description": "owner of the subject", 
+        "id": "P127", 
+        "label": "owned by"
+    }, 
+    {
+        "count": 15511, 
+        "description": "main use of the subject (includes current and former usage)", 
+        "id": "P366", 
+        "label": "use"
+    }, 
+    {
+        "count": 14495, 
+        "description": "actual place where this scene/film was shot", 
+        "id": "P915", 
+        "label": "filming location"
+    }, 
+    {
+        "count": 13454, 
+        "description": "person or organization in charge of keeping the subject (for instance an infrastructure) in functioning order", 
+        "id": "P126", 
+        "label": "maintained by"
+    }, 
+    {
+        "count": 13418, 
+        "description": "subject's ethnicity (consensus is that a VERY high standard of proof is needed for this field to be used. In general this means 1) the subject claims it him/herself, or 2) it is widely agreed on by scholars, or 3) is fictional and portrayed as such).", 
+        "id": "P172", 
+        "label": "ethnic group"
+    }, 
+    {
+        "count": 13073, 
+        "description": "literary, artistic or philosophical movement associated with this person or work", 
+        "id": "P135", 
+        "label": "movement"
+    }, 
+    {
+        "count": 12969, 
+        "description": "significant or notable events associated with the subject", 
+        "id": "P793", 
+        "label": "significant event"
+    }, 
+    {
+        "count": 11356, 
+        "description": "subject's fictional entity is in the object narrative. See also P1441 and P1445", 
+        "id": "P1080", 
+        "label": "from fictional universe"
+    }, 
+    {
+        "count": 10894, 
+        "description": "topic of which this item is an aspect, item that offers a broader perspective on the same topic", 
+        "id": "P1269", 
+        "label": "facet of"
+    }, 
+    {
+        "count": 10371, 
+        "description": "method (or type) of distribution for the subject", 
+        "id": "P437", 
+        "label": "distribution"
+    }, 
+    {
+        "count": 9604, 
+        "description": "the body of water to which the watercourse drains", 
+        "id": "P403", 
+        "label": "mouth of the watercourse"
+    }, 
+    {
+        "count": 8939, 
+        "description": "person's voice type. expected values: soprano, mezzo-soprano, contralto, countertenor, tenor, baritone, bass (and derivatives)", 
+        "id": "P412", 
+        "label": "voice type"
+    }, 
+    {
+        "count": 8644, 
+        "description": "work in which this fictional entity (Q14897293) is present. See also P:1080 for in-universe information", 
+        "id": "P1441", 
+        "label": "present in work"
+    }, 
+    {
+        "count": 8488, 
+        "description": "producer(s) of this film or music work (film: not executive producers, associate producers, etc.)", 
+        "id": "P162", 
+        "label": "producer"
+    }, 
+    {
+        "count": 8186, 
+        "description": "protected areas category by the World Commission on Protected Areas. Used with dedicated items for each category.", 
+        "id": "P814", 
+        "label": "IUCN protected areas category"
+    }, 
+    {
+        "count": 8170, 
+        "description": "street, or road, where the item is located. To add the number, use Property:P670 \"street number\" as qualifier", 
+        "id": "P669", 
+        "label": "located on street"
+    }, 
+    {
+        "count": 7312, 
+        "description": "located on the specified landform or body of water. Should not be used when the value is only political/administrative (provinces, states, countries, etc.).", 
+        "id": "P706", 
+        "label": "located on terrain feature"
+    }, 
+    {
+        "count": 7283, 
+        "description": "legal form of an organization", 
+        "id": "P1454", 
+        "label": "legal form"
+    }, 
+    {
+        "count": 6945, 
+        "description": "industry of company or organization", 
+        "id": "P452", 
+        "label": "industry"
+    }, 
+    {
+        "count": 6919, 
+        "description": "railway or public transport line(s) subject is directly connected to", 
+        "id": "P81", 
+        "label": "connecting line"
+    }, 
+    {
+        "count": 6890, 
+        "description": "author(s) of the screenplay or script for this work", 
+        "id": "P58", 
+        "label": "screenwriter"
+    }, 
+    {
+        "count": 6548, 
+        "description": "administrative division of the church to which the element belongs", 
+        "id": "P708", 
+        "label": "diocese"
+    }, 
+    {
+        "count": 6475, 
+        "description": "fields of work related to this item (physics, history). For occupation like physicist, historian see P106. Note: Can be used in any item, including person", 
+        "id": "P101", 
+        "label": "field of work"
+    }, 
+    {
+        "count": 6173, 
+        "description": "league in which the team plays or has played in", 
+        "id": "P118", 
+        "label": "league"
+    }, 
+    {
+        "count": 6160, 
+        "description": "twin towns, sister cities, twinned municipalities and other localities that have a partnership or cooperative agreement, either legally or informally acknowledged by their governments", 
+        "id": "P190", 
+        "label": "sister city"
+    }, 
+    {
+        "count": 6004, 
+        "description": "organisation or person that developed this item", 
+        "id": "P178", 
+        "label": "developer"
+    }, 
+    {
+        "count": 5984, 
+        "description": "military rank achieved by a person (should usually have a \"start date\" qualifier)", 
+        "id": "P410", 
+        "label": "military rank"
+    }, 
+    {
+        "count": 5979, 
+        "description": "license under which this copyrighted work is released", 
+        "id": "P275", 
+        "label": "license"
+    }, 
+    {
+        "count": 5384, 
+        "description": "status given to each mineral by the IMA (International Mineralogical Association)", 
+        "id": "P579", 
+        "label": "IMA status and/or rank"
+    }, 
+    {
+        "count": 5382, 
+        "description": "person(s) who wrote the music; also use P676 for lyricist", 
+        "id": "P86", 
+        "label": "composer"
+    }, 
+    {
+        "count": 5303, 
+        "description": "site or launch pad from where the spacecraft was or will be launched", 
+        "id": "P448", 
+        "label": "location of spacecraft launch"
+    }, 
+    {
+        "count": 5204, 
+        "description": "spacing of the rails on a railway track", 
+        "id": "P1064", 
+        "label": "track gauge"
+    }, 
+    {
+        "count": 5151, 
+        "description": "political ideology of this organization", 
+        "id": "P1142", 
+        "label": "political ideology"
+    }, 
+    {
+        "count": 5115, 
+        "description": "person responsible for the framing, lighting and filtration of the subject work", 
+        "id": "P344", 
+        "label": "director of photography"
+    }, 
+    {
+        "count": 4969, 
+        "description": "this item is said to be the same as that item, but the statement is disputed", 
+        "id": "P460", 
+        "label": "said to be the same as"
+    }, 
+    {
+        "count": 4920, 
+        "description": "order of monks or nuns which the monastery housed", 
+        "id": "P611", 
+        "label": "religious order"
+    }, 
+    {
+        "count": 4783, 
+        "description": "rocket or other vehicle for launching subject payload into space", 
+        "id": "P375", 
+        "label": "space launch vehicle"
+    }, 
+    {
+        "count": 4656, 
+        "description": "exchange on which this company is traded", 
+        "id": "P414", 
+        "label": "stock exchange"
+    }, 
+    {
+        "count": 4497, 
+        "description": "input method or device used to interact with a software product", 
+        "id": "P479", 
+        "label": "input device"
+    }, 
+    {
+        "count": 4266, 
+        "description": "the programming language(s) in which the software is developed", 
+        "id": "P277", 
+        "label": "programming language"
+    }, 
+    {
+        "count": 4089, 
+        "description": "titles held by the person", 
+        "id": "P97", 
+        "label": "noble title"
+    }, 
+    {
+        "count": 4003, 
+        "description": "disease or other health problem affecting an individual human or other animal", 
+        "id": "P1050", 
+        "label": "medical condition"
+    }, 
+    {
+        "count": 3795, 
+        "description": "main medical specialty concerned with a specific condition", 
+        "id": "P1995", 
+        "label": "medical specialty"
+    }, 
+    {
+        "count": 3670, 
+        "description": "astronomical body on which features or places are situated", 
+        "id": "P376", 
+        "label": "located on astronomical body"
+    }, 
+    {
+        "count": 3598, 
+        "description": "stage in the process of attaining sainthood per the subject's religious organization", 
+        "id": "P411", 
+        "label": "canonization status"
+    }, 
+    {
+        "count": 3466, 
+        "description": "organization that a person is affiliated with", 
+        "id": "P1416", 
+        "label": "affiliation"
+    }, 
+    {
+        "count": 3446, 
+        "description": "North American video game content rating - appropriate values are on property's talk page", 
+        "id": "P852", 
+        "label": "ESRB rating"
+    }, 
+    {
+        "count": 3255, 
+        "description": "type of organism which a condition or disease afflicts", 
+        "id": "P689", 
+        "label": "afflicts"
+    }, 
+    {
+        "count": 3227, 
+        "description": "the sexual orientation of the person - use IF AND ONLY IF they have stated it themselves, unambiguously, or it has been widely agreed upon by historians after their death", 
+        "id": "P91", 
+        "label": "sexual orientation"
+    }, 
+    {
+        "count": 3057, 
+        "description": "path by which a drug, fluid, poison, or other substance is taken into the body", 
+        "id": "P636", 
+        "label": "route of administration"
+    }, 
+    {
+        "count": 2955, 
+        "description": "countries or administrative subdivisions, of equal level, that this item borders, either by land or water", 
+        "id": "P47", 
+        "label": "shares border with"
+    }, 
+    {
+        "count": 2935, 
+        "description": "European video game rating system - see talk page for appropriate values", 
+        "id": "P908", 
+        "label": "PEGI rating"
+    }, 
+    {
+        "count": 2915, 
+        "description": "possible symptoms of a medical condition", 
+        "id": "P780", 
+        "label": "symptoms"
+    }, 
+    {
+        "count": 2911, 
+        "description": "the place where the person is, or has been, resident", 
+        "id": "P551", 
+        "label": "residence"
+    }, 
+    {
+        "count": 2850, 
+        "description": "language designated as official by this item", 
+        "id": "P37", 
+        "label": "official language"
+    }, 
+    {
+        "count": 2824, 
+        "description": "title of office which election will determine the next holder of", 
+        "id": "P541", 
+        "label": "office contested"
+    }, 
+    {
+        "count": 2772, 
+        "description": "crime a person was convicted of", 
+        "id": "P1399", 
+        "label": "convicted of"
+    }, 
+    {
+        "count": 2759, 
+        "description": "editor of a compiled work such as a book or academic journal", 
+        "id": "P98", 
+        "label": "editor"
+    }, 
+    {
+        "count": 2728, 
+        "description": "vessel classification (e.g. Nelson-class battleship)", 
+        "id": "P289", 
+        "label": "vessel class"
+    }, 
+    {
+        "count": 2637, 
+        "description": "certification for a product, qualify with P1001 (\"applies to jurisdiction\") if needed", 
+        "id": "P1389", 
+        "label": "product certification"
+    }, 
+    {
+        "count": 2524, 
+        "description": "the item (an institution, law, public office ...) belongs to or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)", 
+        "id": "P1001", 
+        "label": "applies to jurisdiction"
+    }, 
+    {
+        "count": 2469, 
+        "description": "a website that the person or organization has an account on (use with P554) Note: only used with reliable source or if the person or organization disclosed it.", 
+        "id": "P553", 
+        "label": "website account on"
+    }, 
+    {
+        "count": 2431, 
+        "description": "combination of musical instruments employed in a composition", 
+        "id": "P870", 
+        "label": "instrumentation"
+    }, 
+    {
+        "count": 2420, 
+        "description": "person or architectural firm that designed this building", 
+        "id": "P84", 
+        "label": "architect"
+    }, 
+    {
+        "count": 2404, 
+        "description": "include dynasty and nobility houses", 
+        "id": "P53", 
+        "label": "noble family"
+    }, 
+    {
+        "count": 2375, 
+        "description": "author of song lyrics; also use P86 for music composer", 
+        "id": "P676", 
+        "label": "lyrics by"
+    }, 
+    {
+        "count": 2222, 
+        "description": "hand used to play a racket sport", 
+        "id": "P741", 
+        "label": "playing hand"
+    }, 
+    {
+        "count": 2096, 
+        "description": "political office that is fulfilled by the head of the government of this item", 
+        "id": "P1313", 
+        "label": "office held by head of government"
+    }, 
+    {
+        "count": 2095, 
+        "description": "main category", 
+        "id": "P910", 
+        "label": "topic's main category"
+    }, 
+    {
+        "count": 2078, 
+        "description": "person, group of people or organization that actively takes/took part in the event", 
+        "id": "P710", 
+        "label": "participant"
+    }, 
+    {
+        "count": 2053, 
+        "description": "type of crystal for minerals\u00a0and/or for crystal coumpounds", 
+        "id": "P556", 
+        "label": "crystal system"
+    }, 
+    {
+        "count": 1992, 
+        "description": "actions to take to help a person in the case of accidents, injuries and accidental exposures to harmful chemicals", 
+        "id": "P2239", 
+        "label": "first aid measures"
+    }, 
+    {
+        "count": 1901, 
+        "description": "key of a musical composition", 
+        "id": "P826", 
+        "label": "tonality"
+    }, 
+    {
+        "count": 1814, 
+        "description": "geographical place of publication of the edition (use 1st edition when referring to works)", 
+        "id": "P291", 
+        "label": "place of publication"
+    }, 
+    {
+        "count": 1698, 
+        "description": "German video game content rating - see talk page for appropriate values", 
+        "id": "P914", 
+        "label": "USK rating"
+    }, 
+    {
+        "count": 1576, 
+        "description": "primary topic of the subject Wikimedia category", 
+        "id": "P301", 
+        "label": "category's main topic"
+    }, 
+    {
+        "count": 1508, 
+        "description": "electrification system scheme and/or voltage", 
+        "id": "P930", 
+        "label": "type of electrification"
+    }, 
+    {
+        "count": 1440, 
+        "description": "operating system (OS) on which a software works or the OS installed on hardware", 
+        "id": "P306", 
+        "label": "operating system"
+    }, 
+    {
+        "count": 1401, 
+        "description": "sole location or habitat type where the taxon lives", 
+        "id": "P183", 
+        "label": "endemic to"
+    }, 
+    {
+        "count": 1376, 
+        "description": "Japanese video game rating system - see talk page for appropriate values", 
+        "id": "P853", 
+        "label": "CERO rating"
+    }, 
+    {
+        "count": 1368, 
+        "description": "award nomination received by a person, organisation or creative work (inspired from \"award received\" (Property:P166))", 
+        "id": "P1411", 
+        "label": "nominated for"
+    }, 
+    {
+        "count": 1342, 
+        "description": "obstacle (body of water, road, ...) which this bridge crosses over or this tunnel goes under", 
+        "id": "P177", 
+        "label": "crosses"
+    }, 
+    {
+        "count": 1341, 
+        "description": "person's hair color. Use P585 as qualifier if there's more than one value.", 
+        "id": "P1884", 
+        "label": "hair color"
+    }, 
+    {
+        "count": 1164, 
+        "description": "cartridge or other ammunition used by the subject weapon", 
+        "id": "P739", 
+        "label": "ammunition"
+    }, 
+    {
+        "count": 1118, 
+        "description": "the work(s) used as basis for subject", 
+        "id": "P144", 
+        "label": "based on"
+    }, 
+    {
+        "count": 1078, 
+        "description": "image width to height ratio of films, pictures photographs", 
+        "id": "P2061", 
+        "label": "aspect ratio"
+    }, 
+    {
+        "count": 1071, 
+        "description": "service stopping at a station", 
+        "id": "P1192", 
+        "label": "connecting service"
+    }, 
+    {
+        "count": 1001, 
+        "description": "the surface on which the tournament is played", 
+        "id": "P765", 
+        "label": "surface played on"
+    }, 
+    {
+        "count": 962, 
+        "description": "color of subject", 
+        "id": "P462", 
+        "label": "color"
+    }, 
+    {
+        "count": 925, 
+        "description": "type of spore-bearing surface or that mushroom", 
+        "id": "P783", 
+        "label": "hymenium type"
+    }, 
+    {
+        "count": 915, 
+        "description": null, 
+        "id": "P788", 
+        "label": "mushroom ecological type"
+    }, 
+    {
+        "count": 855, 
+        "description": "software engine employed by the subject item", 
+        "id": "P408", 
+        "label": "software engine"
+    }, 
+    {
+        "count": 844, 
+        "description": "how the hymenium of the mushroom attaches to the stem", 
+        "id": "P785", 
+        "label": "hymenium attachment"
+    }, 
+    {
+        "count": 837, 
+        "description": "catalog for the item, or, as a qualifier of P528 \u2013 catalog for which the 'catalog code' is valid", 
+        "id": "P972", 
+        "label": "catalog"
+    }, 
+    {
+        "count": 820, 
+        "description": "color of the irises of a person's eyes", 
+        "id": "P1340", 
+        "label": "eye color"
+    }, 
+    {
+        "count": 791, 
+        "description": "framework or toolkit a program uses to display the graphical user interface", 
+        "id": "P1414", 
+        "label": "GUI toolkit or framework"
+    }, 
+    {
+        "count": 791, 
+        "description": "Manchu household register for people of the Qing Dynasty", 
+        "id": "P470", 
+        "label": "Eight Banner register"
+    }, 
+    {
+        "count": 782, 
+        "description": "person(s) elected after the election", 
+        "id": "P991", 
+        "label": "successful candidate"
+    }, 
+    {
+        "count": 774, 
+        "description": "characters which appear in this item (plays, operas, operettas, books...)", 
+        "id": "P674", 
+        "label": "characters"
+    }, 
+    {
+        "count": 748, 
+        "description": "alphabet, character set or other system of writing used by subject language", 
+        "id": "P282", 
+        "label": "writing system"
+    }, 
+    {
+        "count": 746, 
+        "description": "distributor of a creative work", 
+        "id": "P750", 
+        "label": "distributor"
+    }, 
+    {
+        "count": 734, 
+        "description": "equippable weapon item for the subject", 
+        "id": "P520", 
+        "label": "armament"
+    }, 
+    {
+        "count": 729, 
+        "description": "the Code that governs the scientific name of this taxon", 
+        "id": "P944", 
+        "label": "Code of nomenclature"
+    }, 
+    {
+        "count": 701, 
+        "description": "handedness of the person", 
+        "id": "P552", 
+        "label": "handedness"
+    }, 
+    {
+        "count": 700, 
+        "description": "person or institution organizing an event", 
+        "id": "P664", 
+        "label": "organizer"
+    }, 
+    {
+        "count": 657, 
+        "description": null, 
+        "id": "P784", 
+        "label": "mushroom cap shape"
+    }, 
+    {
+        "count": 641, 
+        "description": "facet of a polytope, in the next-lower dimension", 
+        "id": "P1312", 
+        "label": "has facet polytope"
+    }, 
+    {
+        "count": 627, 
+        "description": "person who has taught this person", 
+        "id": "P1066", 
+        "label": "student of"
+    }, 
+    {
+        "count": 613, 
+        "description": "sea, lake or river", 
+        "id": "P206", 
+        "label": "located next to body of water"
+    }, 
+    {
+        "count": 592, 
+        "description": "indicates whether a mushroom has a universal or partial veil", 
+        "id": "P786", 
+        "label": "stipe character"
+    }, 
+    {
+        "count": 586, 
+        "description": "place where the item was made; location of final assembly", 
+        "id": "P1071", 
+        "label": "location of final assembly"
+    }, 
+    {
+        "count": 563, 
+        "description": "typical way of life of an individual, group, or culture", 
+        "id": "P1576", 
+        "label": "lifestyle"
+    }, 
+    {
+        "count": 532, 
+        "description": "diplomatic relations of the country", 
+        "id": "P530", 
+        "label": "diplomatic relation"
+    }, 
+    {
+        "count": 529, 
+        "description": "whether something can be eaten or not", 
+        "id": "P789", 
+        "label": "edibility"
+    }, 
+    {
+        "count": 519, 
+        "description": "organisation that published or maintains the standard", 
+        "id": "P1462", 
+        "label": "standards body"
+    }, 
+    {
+        "count": 517, 
+        "description": "patron saint adopted by the subject", 
+        "id": "P417", 
+        "label": "patron saint"
+    }, 
+    {
+        "count": 511, 
+        "description": "color of a mushroom spore print (see documentation for allowed values)", 
+        "id": "P787", 
+        "label": "spore print color"
+    }, 
+    {
+        "count": 510, 
+        "description": "source of this claim's value (use only in References section)", 
+        "id": "P143", 
+        "label": "imported from"
+    }, 
+    {
+        "count": 499, 
+        "description": "historic period or era in which the subject occured", 
+        "id": "P2348", 
+        "label": "period"
+    }, 
+    {
+        "count": 484, 
+        "description": "configuration of wing(s) used by an aircraft", 
+        "id": "P1654", 
+        "label": "wing configuration"
+    }, 
+    {
+        "count": 477, 
+        "description": "location where a group or organization was formed", 
+        "id": "P740", 
+        "label": "location of formation"
+    }, 
+    {
+        "count": 473, 
+        "description": "symmetry classification for 2 and 3 dimensional patterns or crystals", 
+        "id": "P690", 
+        "label": "space group"
+    }, 
+    {
+        "count": 462, 
+        "description": "performer of a spoken role in a creative work such as animation, video game, radio drama, or dubbing over [use \"character role\" (P453) as qualifier] [use \"cast member\" (P161) for live acting]", 
+        "id": "P725", 
+        "label": "voice actor"
+    }, 
+    {
+        "count": 457, 
+        "description": "legislative body governing this entity; political institution with elected representatives, such as a parliament/legislature or council", 
+        "id": "P194", 
+        "label": "legislative body"
+    }, 
+    {
+        "count": 439, 
+        "description": "the subject is a work describing a fictional universe, i.e. whose plot occurs in this universe.", 
+        "id": "P1434", 
+        "label": "describes the fictional universe"
+    }, 
+    {
+        "count": 432, 
+        "description": "linking to an edition of this item", 
+        "id": "P747", 
+        "label": "edition(s)"
+    }, 
+    {
+        "count": 411, 
+        "description": "winner of an event", 
+        "id": "P1346", 
+        "label": "winner"
+    }, 
+    {
+        "count": 404, 
+        "description": "designer of this item", 
+        "id": "P287", 
+        "label": "designer"
+    }, 
+    {
+        "count": 387, 
+        "description": "equipment or engine used to power the subject", 
+        "id": "P516", 
+        "label": "powerplant"
+    }, 
+    {
+        "count": 387, 
+        "description": "major astronomical body the item belongs to", 
+        "id": "P397", 
+        "label": "parent astronomical body"
+    }, 
+    {
+        "count": 378, 
+        "description": "object used by the subject", 
+        "id": "P121", 
+        "label": "item operated"
+    }, 
+    {
+        "count": 367, 
+        "description": "male parent", 
+        "id": "P22", 
+        "label": "father"
+    }, 
+    {
+        "count": 362, 
+        "description": "central processing unit found within the subject item", 
+        "id": "P880", 
+        "label": "CPU"
+    }, 
+    {
+        "count": 361, 
+        "description": "spacecraft vehicle designed to move the payload from a reference orbit to the target orbit, or direct it to an interplanetary trajectory", 
+        "id": "P1201", 
+        "label": "space tug"
+    }, 
+    {
+        "count": 341, 
+        "description": "lieu d'origine of a Swiss national. Not be confused with place of birth or place of residence", 
+        "id": "P1321", 
+        "label": "place of origin (Switzerland)"
+    }, 
+    {
+        "count": 328, 
+        "description": "religion or group/civilization that worships a given deity", 
+        "id": "P1049", 
+        "label": "deity of"
+    }, 
+    {
+        "count": 327, 
+        "description": "standard part of the name of a Roman, link to items for specific Roman praenomen only.", 
+        "id": "P2358", 
+        "label": "Roman praenomen"
+    }, 
+    {
+        "count": 317, 
+        "description": "a parent company of an organisation, opposite of subsidiaries (P355)", 
+        "id": "P749", 
+        "label": "parent organization"
+    }, 
+    {
+        "count": 316, 
+        "description": "type of food served by a restaurant or restaurant chain", 
+        "id": "P2012", 
+        "label": "cuisine"
+    }, 
+    {
+        "count": 305, 
+        "description": "person or organization occupying a building or facility", 
+        "id": "P466", 
+        "label": "occupant"
+    }, 
+    {
+        "count": 304, 
+        "description": "orbit a satellite has around its central body", 
+        "id": "P522", 
+        "label": "type of orbit"
+    }, 
+    {
+        "count": 278, 
+        "description": "spectral classifications of asteroids based on  spectral shape, color, and albedo", 
+        "id": "P720", 
+        "label": "asteroid spectral type"
+    }, 
+    {
+        "count": 277, 
+        "description": "the subject's government", 
+        "id": "P122", 
+        "label": "basic form of government"
+    }, 
+    {
+        "count": 276, 
+        "description": "describes the overall content broadcast on a radio station", 
+        "id": "P415", 
+        "label": "radio format"
+    }, 
+    {
+        "count": 264, 
+        "description": "substance used by the subject to dissipate excess thermal energy", 
+        "id": "P588", 
+        "label": "coolant"
+    }, 
+    {
+        "count": 259, 
+        "description": "the institution holding the subject's archives", 
+        "id": "P485", 
+        "label": "archives at"
+    }, 
+    {
+        "count": 248, 
+        "description": "taxa, preferably species, present at a zoo, botanical garden,  collection, or other institution. NOT specific animals, not for any geographic location", 
+        "id": "P1990", 
+        "label": "species kept"
+    }, 
+    {
+        "count": 243, 
+        "description": "place that a radio/TV station is licensed/required to broadcast to", 
+        "id": "P1408", 
+        "label": "licensed to broadcast to"
+    }, 
+    {
+        "count": 240, 
+        "description": "configuration of an engine's cylinders", 
+        "id": "P1002", 
+        "label": "engine configuration"
+    }, 
+    {
+        "count": 236, 
+        "description": "penalty passed, at a trial", 
+        "id": "P1596", 
+        "label": "penalty"
+    }, 
+    {
+        "count": 236, 
+        "description": "is an edition or translation of this entity", 
+        "id": "P629", 
+        "label": "edition or translation of"
+    }, 
+    {
+        "count": 220, 
+        "description": "person, group or organisation responsible for the structural engineering of a building or structure", 
+        "id": "P631", 
+        "label": "structural engineer"
+    }, 
+    {
+        "count": 218, 
+        "description": "material or product produced by a business, industry, facility, or process", 
+        "id": "P1056", 
+        "label": "product"
+    }, 
+    {
+        "count": 198, 
+        "description": "the alliance the airline belongs to", 
+        "id": "P114", 
+        "label": "airline alliance"
+    }, 
+    {
+        "count": 195, 
+        "description": "currency used by item", 
+        "id": "P38", 
+        "label": "currency"
+    }, 
+    {
+        "count": 192, 
+        "description": "presiding member of an organization, group or body", 
+        "id": "P488", 
+        "label": "chairperson"
+    }, 
+    {
+        "count": 184, 
+        "description": "illustrator of a book", 
+        "id": "P110", 
+        "label": "illustrator"
+    }, 
+    {
+        "count": 182, 
+        "description": "female parent", 
+        "id": "P25", 
+        "label": "mother"
+    }, 
+    {
+        "count": 181, 
+        "description": "author of the libretto (words) of an opera, operetta, oratorio or cantata, or of the book of a musical", 
+        "id": "P87", 
+        "label": "librettist"
+    }, 
+    {
+        "count": 170, 
+        "description": "person or organization who awards a prize to or bestows an honor upon a recipient", 
+        "id": "P1027", 
+        "label": "conferred by"
+    }, 
+    {
+        "count": 158, 
+        "description": "location (city, municipality) of governmental seat of the country, or administrative territorial entity", 
+        "id": "P36", 
+        "label": "capital"
+    }, 
+    {
+        "count": 139, 
+        "description": "describes the special ablilites of an operatic singers voice", 
+        "id": "P1731", 
+        "label": "Fach"
+    }, 
+    {
+        "count": 139, 
+        "description": "the gene that encodes some gene product", 
+        "id": "P702", 
+        "label": "encoded by"
+    }, 
+    {
+        "count": 138, 
+        "description": "brand of a product", 
+        "id": "P1716", 
+        "label": "brand"
+    }, 
+    {
+        "count": 137, 
+        "description": "MediaWiki hooks used by this extension", 
+        "id": "P2377", 
+        "label": "MediaWiki hooks used"
+    }, 
+    {
+        "count": 137, 
+        "description": "intended destination for this route (journey, flight, sailing, exploration, migration etc.)", 
+        "id": "P1444", 
+        "label": "destination point"
+    }, 
+    {
+        "count": 137, 
+        "description": "item is approved by other item(s) [qualifier: statement is approved by other item(s)]", 
+        "id": "P790", 
+        "label": "approved by"
+    }, 
+    {
+        "count": 137, 
+        "description": "the country (or other power) that the person, or organization, served", 
+        "id": "P945", 
+        "label": "allegiance"
+    }, 
+    {
+        "count": 130, 
+        "description": "the main organization responsible for construction of this structure or building", 
+        "id": "P193", 
+        "label": "main building contractor"
+    }, 
+    {
+        "count": 130, 
+        "description": "person or organization to whom the subject was dedicated", 
+        "id": "P825", 
+        "label": "dedicated to"
+    }, 
+    {
+        "count": 129, 
+        "description": "allowed values:  killed in action (Q210392), missing in action (Q2344557), died of wounds (Q16861372), prisoner of war (Q179637), killed in flight accident (Q16861407), others used in military casualty classification", 
+        "id": "P1347", 
+        "label": "military casualty classification"
+    }, 
+    {
+        "count": 128, 
+        "description": "the subject has the object as their spouse (husband, wife, partner, etc.). Use \"cohabitant\" (P451) for non-married companions", 
+        "id": "P26", 
+        "label": "spouse"
+    }, 
+    {
+        "count": 127, 
+        "description": "location where the craft landed", 
+        "id": "P1158", 
+        "label": "location of landing"
+    }, 
+    {
+        "count": 122, 
+        "description": "airport that serves as a hub for an airline", 
+        "id": "P113", 
+        "label": "airline hub"
+    }, 
+    {
+        "count": 116, 
+        "description": "Person who works with the raw footage, selecting shots and combining them into sequences to create a finished motion picture", 
+        "id": "P1040", 
+        "label": "film editor"
+    }, 
+    {
+        "count": 114, 
+        "description": "this person, idea, etc. is informed by that other person, idea, etc., e.g. \"Heidegger has influence Aristotle\".", 
+        "id": "P737", 
+        "label": "influenced by"
+    }, 
+    {
+        "count": 108, 
+        "description": "who appointed the person to the office, can be used as a qualifier", 
+        "id": "P748", 
+        "label": "appointed by"
+    }, 
+    {
+        "count": 104, 
+        "description": "exhibitions where the item was displayed", 
+        "id": "P608", 
+        "label": "exhibition history"
+    }, 
+    {
+        "count": 103, 
+        "description": "country a person or a team represents when playing a sport", 
+        "id": "P1532", 
+        "label": "country for sport"
+    }, 
+    {
+        "count": 96, 
+        "description": "guidance system of a missile", 
+        "id": "P624", 
+        "label": "guidance system"
+    }, 
+    {
+        "count": 92, 
+        "description": "(list of) direct subdivisions of an administrative territorial entity", 
+        "id": "P150", 
+        "label": "contains administrative territorial entity"
+    }, 
+    {
+        "count": 89, 
+        "description": "lakes and reservoirs the river flows through, flows into or flows out of", 
+        "id": "P469", 
+        "label": "lakes on river"
+    }, 
+    {
+        "count": 84, 
+        "description": "text setting the main rules by which the subject is regulated", 
+        "id": "P92", 
+        "label": "main regulatory text"
+    }, 
+    {
+        "count": 81, 
+        "description": "name of the subject's anthem", 
+        "id": "P85", 
+        "label": "anthem"
+    }, 
+    {
+        "count": 74, 
+        "description": "starting place of this journey, flight, voyage, trek, migration etc. (excl. spaceflight launch)", 
+        "id": "P1427", 
+        "label": "start point"
+    }, 
+    {
+        "count": 71, 
+        "description": "crystal subdivision", 
+        "id": "P589", 
+        "label": "point group"
+    }, 
+    {
+        "count": 64, 
+        "description": "link to the list of heritage monuments in the place/area", 
+        "id": "P1456", 
+        "label": "list of monuments"
+    }, 
+    {
+        "count": 64, 
+        "description": "person(s) who did the choreography", 
+        "id": "P1809", 
+        "label": "choreographer"
+    }, 
+    {
+        "count": 62, 
+        "description": "depositor/depositaries for the treaty", 
+        "id": "P2058", 
+        "label": "depositor"
+    }, 
+    {
+        "count": 56, 
+        "description": "person who supervised the doctorate or PhD thesis of the subject", 
+        "id": "P184", 
+        "label": "doctoral advisor"
+    }, 
+    {
+        "count": 56, 
+        "description": "indicates that an act or bill was passed by a legislature.  The value can be a particular session of the legislature", 
+        "id": "P467", 
+        "label": "legislated by"
+    }, 
+    {
+        "count": 53, 
+        "description": "type of aircraft landing gear the item is equipped with", 
+        "id": "P1637", 
+        "label": "undercarriage"
+    }, 
+    {
+        "count": 51, 
+        "description": "way that crystals or minerals cleave", 
+        "id": "P693", 
+        "label": "cleavage"
+    }, 
+    {
+        "count": 51, 
+        "description": "someone who takes a main role in presenting a radio or television program", 
+        "id": "P371", 
+        "label": "presenter"
+    }, 
+    {
+        "count": 44, 
+        "description": "official with the highest formal authority in a country", 
+        "id": "P35", 
+        "label": "head of state"
+    }, 
+    {
+        "count": 42, 
+        "description": "population of asteroids that share similar proper orbital elements", 
+        "id": "P744", 
+        "label": "asteroid family"
+    }, 
+    {
+        "count": 37, 
+        "description": "subject software depends on object software", 
+        "id": "P1547", 
+        "label": "depends on software"
+    }, 
+    {
+        "count": 36, 
+        "description": "geometric shape of an object", 
+        "id": "P1419", 
+        "label": "shape"
+    }, 
+    {
+        "count": 35, 
+        "description": "underlying cause, thing that ultimately resulted in this effect", 
+        "id": "P828", 
+        "label": "has cause"
+    }, 
+    {
+        "count": 33, 
+        "description": "the subject item has this type of facility, e.g. toilet, car park", 
+        "id": "P912", 
+        "label": "has facility"
+    }, 
+    {
+        "count": 32, 
+        "description": "The immediately following item in some series of which the subject is part. Use P1366 (replaced by) if the item is replaced, e.g. political offices, states", 
+        "id": "P156", 
+        "label": "followed by"
+    }, 
+    {
+        "count": 31, 
+        "description": "founder or co-founder of this organization, religion or place", 
+        "id": "P112", 
+        "label": "founder"
+    }, 
+    {
+        "count": 30, 
+        "description": "method, process or technique used to grow, cook, weave, build, assemble, manufacture the item", 
+        "id": "P2079", 
+        "label": "fabrication method"
+    }, 
+    {
+        "count": 28, 
+        "description": "executive producer of a movie or TV show", 
+        "id": "P1431", 
+        "label": "executive producer"
+    }, 
+    {
+        "count": 28, 
+        "description": "the feature (intersecting road, train station, etc.) at the end of a linear feature", 
+        "id": "P559", 
+        "label": "terminus"
+    }, 
+    {
+        "count": 27, 
+        "description": "subject has the object as their brother", 
+        "id": "P7", 
+        "label": "brother"
+    }, 
+    {
+        "count": 26, 
+        "description": "rivers and other outflows waterway names. If evaporation or seepage are notable outflows, they may be included. Some terms may not be place names, e.g. evaporation", 
+        "id": "P201", 
+        "label": "lake outflow"
+    }, 
+    {
+        "count": 26, 
+        "description": "subject has the object in their family as their offspring son or daughter (independently of their age)", 
+        "id": "P40", 
+        "label": "child"
+    }, 
+    {
+        "count": 26, 
+        "description": "object that is partially part of, but not fully part of (P361), the subject", 
+        "id": "P1382", 
+        "label": "coincident with"
+    }, 
+    {
+        "count": 25, 
+        "description": "color of a mineral or material when abraded", 
+        "id": "P534", 
+        "label": "streak color"
+    }, 
+    {
+        "count": 24, 
+        "description": "organization that printed the creative work (if different from \"publisher\")", 
+        "id": "P872", 
+        "label": "printed by"
+    }, 
+    {
+        "count": 23, 
+        "description": "physical property measured by a unit", 
+        "id": "P111", 
+        "label": "measured physical quantity"
+    }, 
+    {
+        "count": 23, 
+        "description": "official public holiday that occurs in this place in its honor, usually a non-working day", 
+        "id": "P832", 
+        "label": "public holiday"
+    }, 
+    {
+        "count": 22, 
+        "description": "with which of the 4 fundamental forces does the particle interact? strong interaction Q11415, electromagnetic: Q849919, weak interaction: Q11418, gravitation: Q11412", 
+        "id": "P517", 
+        "label": "interaction"
+    }, 
+    {
+        "count": 18, 
+        "description": "the residence at which heads of government and other senior figures officially reside", 
+        "id": "P263", 
+        "label": "official residence"
+    }, 
+    {
+        "count": 18, 
+        "description": "describes the source of energy an animated object (machine or animal) uses", 
+        "id": "P618", 
+        "label": "source of energy"
+    }, 
+    {
+        "count": 17, 
+        "description": "(qualifier only) item which describes the relation identified in this statement", 
+        "id": "P805", 
+        "label": "subject of"
+    }, 
+    {
+        "count": 16, 
+        "description": "ship's port of registry. This is generally painted on the ship's stern (for the \"home port\", see Property:P504)", 
+        "id": "P532", 
+        "label": "port of registry"
+    }, 
+    {
+        "count": 16, 
+        "description": "head of the executive power of a town, city, municipality, state, country, or other governmental body", 
+        "id": "P6", 
+        "label": "head of government"
+    }, 
+    {
+        "count": 16, 
+        "description": "The immediately prior item in some series of which the subject is part. Use P1365 (replaces) if the preceding item was replaced, e.g. political offices, states and there is no identity between precedent and following geographic unit", 
+        "id": "P155", 
+        "label": "follows"
+    }, 
+    {
+        "count": 16, 
+        "description": "qualifier stating how a value has been determined", 
+        "id": "P459", 
+        "label": "determination method"
+    }, 
+    {
+        "count": 16, 
+        "description": "UN Food and Agriculture Organization designation of status for a domesticated breed", 
+        "id": "P2371", 
+        "label": "FAO risk status"
+    }, 
+    {
+        "count": 15, 
+        "description": "countries that have drainage to/from or border the body of water", 
+        "id": "P205", 
+        "label": "basin country"
+    }, 
+    {
+        "count": 15, 
+        "description": "activity corresponding to this occupation", 
+        "id": "P425", 
+        "label": "field of this occupation"
+    }, 
+    {
+        "count": 15, 
+        "description": "parent club of this team", 
+        "id": "P831", 
+        "label": "parent club"
+    }, 
+    {
+        "count": 15, 
+        "description": "Person or state or item who replaces another in an office, position, etc. Use P156 (followed by) if the item is not replaced, e.g. books in a series", 
+        "id": "P1366", 
+        "label": "replaced by"
+    }, 
+    {
+        "count": 15, 
+        "description": "instruction set on which the processor architecture is based", 
+        "id": "P1068", 
+        "label": "instruction set"
+    }, 
+    {
+        "count": 15, 
+        "description": "subject has the object as their sister (female sibling)", 
+        "id": "P9", 
+        "label": "sister"
+    }, 
+    {
+        "count": 15, 
+        "description": "political position within the political spectrum", 
+        "id": "P1387", 
+        "label": "political alignment"
+    }, 
+    {
+        "count": 15, 
+        "description": "classification grade of a Philippine local government unit based on income", 
+        "id": "P1879", 
+        "label": "income classification (Philippines)"
+    }
+]
