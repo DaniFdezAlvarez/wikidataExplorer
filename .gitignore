@@ -63,4 +63,5 @@ target/
 .idea/
 *.tsv
 *.xml
+*.json
 files/
