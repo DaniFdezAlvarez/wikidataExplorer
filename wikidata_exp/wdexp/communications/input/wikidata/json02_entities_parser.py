@@ -1,8 +1,8 @@
 __author__ = 'Dani'
 
 import json
-from wdexp.communications.input.wikidata.interfaces import EntityTracker
-from wdexp.model.wikidata import WikidataEntity
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import EntityTracker
+from wikidata_exp.wdexp.model.wikidata import WikidataEntity
 
 
 ENTITY_ID = "id"

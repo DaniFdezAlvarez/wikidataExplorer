@@ -46,25 +46,37 @@ class WikidataApiReader(EntityTracker, PropertyTracker):
 
     @staticmethod
     def _get_elem_aliases(prop_id, json_property):
-        result = []
-        target_dict = json_property['entities'][prop_id]['aliases']
-        if 'en' in target_dict:
-            for elem in target_dict['en']:
-                result.append(elem['value'])
-        return result
+        try:
+            result = []
+            target_dict = json_property['entities'][prop_id]['aliases']
+            if 'en' in target_dict:
+                for elem in target_dict['en']:
+                    result.append(elem['value'])
+            return result
+        except:
+            print "En aliases ojo con ", prop_id
+            return []
 
     @staticmethod
     def _get_elem_label(prop_id, json_property):
-        result = None
-        target_dict = json_property['entities'][prop_id]['labels']
-        if 'en' in target_dict:
-            result = target_dict['en']['value']
-        return result
+        try:
+            result = None
+            target_dict = json_property['entities'][prop_id]['labels']
+            if 'en' in target_dict:
+                result = target_dict['en']['value']
+            return result
+        except:
+            print "En label ojo con ", prop_id
+            return None
 
     @staticmethod
     def _get_elem_description(prop_id, json_property):
-        result = None
-        target_dict = json_property['entities'][prop_id]['descriptions']
-        if 'en' in target_dict:
-            result = target_dict['en']['value']
-        return result
+        try:
+            result = None
+            target_dict = json_property['entities'][prop_id]['descriptions']
+            if 'en' in target_dict:
+                result = target_dict['en']['value']
+            return result
+        except:
+            print "!!!!!!!!!!!!!!!!!!!!! En description ojo con ", prop_id
+            return None

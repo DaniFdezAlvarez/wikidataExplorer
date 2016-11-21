@@ -1,6 +1,6 @@
 __author__ = 'Dani'
 
-from wdexp.communications.input.wikidata.interfaces import IdTracker
+from wikidata_exp.wdexp.communications.input.wikidata.interfaces import IdTracker
 from decimal import *
 
 

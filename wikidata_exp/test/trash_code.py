@@ -2,7 +2,9 @@ from wikidata_exp.wdexp.communications.input.wikidata.api_reader import Wikidata
 from wikidata_exp.wdexp.communications.input.wikidata.dump_parser import WikidataDumpParser
 from wikidata_exp.wdexp.communications.input.wikidata.json05_properties_parser import Json05PropertiesParser
 from wikidata_exp.wdexp.communications.input.wikidata.sparql_endpoint import WikidataSparqlEndpoint
+from wikidata_exp.wdexp.wikidata.commands.agregated_class_summarizer_API import AgregatedClassSummaryCommand
 from wikidata_exp.wdexp.wikidata.commands.aliases_properties_API import AliasesPropertiesCommand
+from wikidata_exp.wdexp.wikidata.commands.class_ranking_DUMP import ClassRankingCommand
 from wikidata_exp.wdexp.wikidata.props_survey.xslt_processing import XsltSurveyProcessor
 
 __author__ = 'Dani'
@@ -76,7 +78,39 @@ import json
 #     print an_entity
 
 
-processor = XsltSurveyProcessor("C:\Users\Dani\Documents\EII\doctorado\PAPERS_PROPIOS\WikidatavsTwitter\experimentos",
-                                out_file="experiments.json")
-processor.process_survey()
+# processor = XsltSurveyProcessor("C:\Users\Dani\Documents\EII\doctorado\PAPERS_PROPIOS\WikidatavsTwitter\experimentos",
+#                                 out_file="experiments.json")
+# processor.process_survey()
+
+
+#
+# class_ranker = ClassRankingCommand(source_file_classes="classes_or_not.xlsx",
+#                                    source_file_dump="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\wdexp_datasets\\datasets\\wikidata-all\\wikidata-all.json",  # TODO
+#                                    source_file_scores="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\wdexp_datasets\\datasets\\filt_sort_page_rank.json",
+#                                    out_file="agregated_pg_v2.json",
+#                                    security_threshold=15)  # TODO
+
+# class_ranker = ClassRankingCommand(source_file_classes="classes_or_not.xlsx",
+#                                    source_file_dump="wikidata_slice.json",  # TODO
+#                                    source_file_scores="filt_sort_pg_slice.json",
+#                                    out_file="agregated_pg_slice.json",
+#                                    security_threshold=0)  # TODO
+#
+# class_ranker.exec_command()
+
+
+# class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\resultados_wikidata\\agregated_pg.json",
+#                                                 out_file="aggregated_class_summary_all.json",
+#                                                 n_desirable_complete_classes=80000)
+
+
+class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="agregated_pg_v2.json",
+                                                out_file="aggregated_class_summary_all_v2.json",
+                                                n_desirable_complete_classes=8000)
+
+class_summarizer.exec_command()
+
+
+
+
 

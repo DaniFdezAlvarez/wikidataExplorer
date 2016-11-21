@@ -1,17 +1,17 @@
 __author__ = 'Dani'
 
-from wdexp.wikidata.commands.aliases_properties_API import AliasesPropertiesCommand
-from wdexp.aol.commands.count_ngrams_DUMP import CountNgramsCommand
-from wdexp.g_trends.commads.track_trends_SCRAP import TrackTrendsCommand
-from wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
-from wdexp.wikidata.commands.page_rank_NETG import PageRankCommand
-from wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
-from wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCommand
-from wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
-from wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCommand
-from wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
-from wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCommand
-from wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import FrequentIncomingPropsByEntityCommand
+from wikidata_exp.wdexp.wikidata.commands.aliases_properties_API import AliasesPropertiesCommand
+from wikidata_exp.wdexp.aol.commands.count_ngrams_DUMP import CountNgramsCommand
+# from wikidata_exp.wdexp.g_trends.commads.track_trends_SCRAP import TrackTrendsCommand
+# from wikidata_exp.wdexp.wikidata.commands.graph_entities_DUMP import GraphEntitiesCommand
+# from wikidata_exp.wdexp.wikidata.commands.page_rank_NETG import PageRankCommand
+# from wikidata_exp.wdexp.wikidata.commands.page_rank_filter_JSON import PageRankFilterCommand
+# from wikidata_exp.wdexp.wikidata.commands.entities_properties_API import EntitiesPropertiesCommand
+# from wikidata_exp.wdexp.wikidata.commands.entity_ranker_JSON import EntityRankerCommand
+# from wikidata_exp.wdexp.wikidata.commands.subgraph_entities_SPARQL import SubgraphEntitiesCommand
+# from wikidata_exp.wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
+# from wikidata_exp.wdexp.wikidata.commands.common_incoming_props_DUMP import CommonIncomingCommand
+from wikidata_exp.wdexp.wikidata.commands.frequent_incoming_props_by_entity_JSON import FrequentIncomingPropsByEntityCommand
 
 
 # property_counter = FrequencyPropertiesCommand(source_file="../../files/in/wikidata_slice.json",

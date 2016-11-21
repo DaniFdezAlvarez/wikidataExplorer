@@ -8,8 +8,8 @@ PROP_TRENDS = "trends"
 import json
 import traceback
 
-from wdexp.wikidata.commands.aliases_properties_API import PROP_LABEL, PROP_ALIASES
-from wdexp.g_trends.g_trends_scraper import GTrendsScrapper
+from wikidata_exp.wdexp.wikidata.commands.aliases_properties_API import PROP_LABEL, PROP_ALIASES
+from wikidata_exp.wdexp.g_trends.g_trends_scraper import GTrendsScrapper
 
 
 class TrackTrendsCommand(object):

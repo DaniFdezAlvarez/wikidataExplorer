@@ -34,8 +34,7 @@ _CLEAR_INSTANCE = "INSTANCE (Clear)"
 
 class XsltSurveyProcessor(object):
     def __init__(self, source_folder, out_file=None, first_row=None, id_column=None, label_column=None,
-                 desc_column=None,
-                 score_column=None):
+                 desc_column=None, score_column=None):
         # In/out
         self._in_folder = source_folder
         self._out_file = out_file
@@ -49,6 +48,8 @@ class XsltSurveyProcessor(object):
             _LABEL_C = label_column
         if first_row is not None:
             _FIRST_ROW = first_row
+
+
 
         # Internal estructures
         self._props_dict = {}  # expected: {_KEY_ID : { model dict returned by template_dict()} }

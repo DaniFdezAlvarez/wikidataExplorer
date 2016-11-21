@@ -1,9 +1,9 @@
 __author__ = 'Dani'
 
-from wdexp.communications.input.wikidata.json04_entities_parser import Json04EntitiesParser
-from wdexp.communications.input.wikidata.sparql_endpoint import WikidataSparqlEndpoint
-from wdexp.communications.output.wikidata.json_entity_dumper import *
-from wdexp.communications.output.json.json_out import write_json_object, json_to_string
+from wikidata_exp.wdexp.communications.input.wikidata.json04_entities_parser import Json04EntitiesParser
+from wikidata_exp.wdexp.communications.input.wikidata.sparql_endpoint import WikidataSparqlEndpoint
+from wikidata_exp.wdexp.communications.output.wikidata.json_entity_dumper import *
+from wikidata_exp.wdexp.communications.output.json.json_out import write_json_object, json_to_string
 # import requests
 # import urllib
 # from requests.adapters import HTTPAdapter
