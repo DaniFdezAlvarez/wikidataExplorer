@@ -5,18 +5,23 @@ from wikidata_exp.wdexp.communications.input.wikidata.api_reader import Wikidata
 from wikidata_exp.wdexp.communications.input.json.json_in import read_json_object
 from wikidata_exp.wdexp.communications.output.json.json_out import write_json_object
 
+
 KEY_N_INSTANCES = "n_instances"
 KEY_LABEL = "label"
 KEY_DESC = "desc"
+KEY_POS_CLASSRANK = "pos_classrank"
+KEY_POS_INSTANCE_COUNTING = "pos_instances"
 
 
 class AgregatedClassSummaryCommand(object):
-    def __init__(self, source_agregated_scores, out_file=None, n_desirable_complete_classes=1000):
+    def __init__(self, source_agregated_scores, out_file=None, n_desirable_complete_classes=1000,
+                 n_instances_already_counted=False):
 
         self._in_ag_scores = source_agregated_scores
         self._out_file = out_file
         self._n_desirable = n_desirable_complete_classes
         self._summary_list = []
+        self._n_instances_already_counted = n_instances_already_counted
 
         # Communications
         self._api_reader = WikidataApiReader()
@@ -34,9 +39,18 @@ class AgregatedClassSummaryCommand(object):
     def _get_summary_dict(self, raw_class_dict, counter):
         result = {KEY_ID: raw_class_dict[KEY_ID],
                   KEY_ACCUMULATED: raw_class_dict[KEY_ACCUMULATED],
-                  KEY_N_INSTANCES: self._count_dict_instances(raw_class_dict),
                   KEY_LABEL: None,
                   KEY_DESC: None}
+        if KEY_POS_INSTANCE_COUNTING in raw_class_dict:
+            result[KEY_POS_INSTANCE_COUNTING] = raw_class_dict[KEY_POS_INSTANCE_COUNTING]
+
+        if KEY_POS_CLASSRANK in raw_class_dict:
+            result[KEY_POS_CLASSRANK] = raw_class_dict[KEY_POS_CLASSRANK]
+
+        if not self._n_instances_already_counted:
+            result[KEY_N_INSTANCES] = self._count_dict_instances(raw_class_dict)
+        else:
+            result[KEY_N_INSTANCES] = raw_class_dict[KEY_N_INSTANCES]
 
         if counter < self._n_desirable:
             try:

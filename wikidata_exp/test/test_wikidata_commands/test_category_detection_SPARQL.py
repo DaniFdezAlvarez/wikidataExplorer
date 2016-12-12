@@ -1,7 +1,7 @@
 __author__ = 'Dani'
 
-from wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
-from wdexp.utils import rel_path_to_file
+from wikidata_exp.wdexp.wikidata.commands.category_detection_SPARQL import CategoryDetectionCommand
+from wikidata_exp.wdexp.utils import rel_path_to_file
 import unittest
 import json
 

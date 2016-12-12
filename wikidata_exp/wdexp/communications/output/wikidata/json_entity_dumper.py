@@ -1,6 +1,6 @@
 __author__ = 'Dani'
 
-from wdexp.communications.output.wikidata.interfaces import EntityDumper
+from wikidata_exp.wdexp.communications.output.wikidata.interfaces import EntityDumper
 import json
 
 PERSIST_P_ID = "id"

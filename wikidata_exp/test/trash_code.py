@@ -6,7 +6,7 @@ from wikidata_exp.wdexp.wikidata.commands.agregated_class_summarizer_API import 
 from wikidata_exp.wdexp.wikidata.commands.aliases_properties_API import AliasesPropertiesCommand
 from wikidata_exp.wdexp.wikidata.commands.class_ranking_DUMP import ClassRankingCommand
 from wikidata_exp.wdexp.wikidata.props_survey.xslt_processing import XsltSurveyProcessor
-
+from wikidata_exp.wdexp.wikidata.commands.class_instance_counter_JSON import ClassInstanceCounter
 __author__ = 'Dani'
 
 
@@ -104,11 +104,56 @@ import json
 #                                                 n_desirable_complete_classes=80000)
 
 
-class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="agregated_pg_v2.json",
-                                                out_file="aggregated_class_summary_all_v2.json",
-                                                n_desirable_complete_classes=8000)
+# class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="agregated_pg_v2.json",
+#                                                 out_file="aggregated_class_summary_all_v2.json",
+#                                                 n_desirable_complete_classes=8000)
+#
+# class_summarizer.exec_command()
+
+
+# instance_counter = ClassInstanceCounter(source_file_instances="agregated_pg_v2.json",
+#                                         out_file="instance_counts_agregated_pg_v2.json")
+#
+# instance_counter.exec_command()
+
+
+# class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="instance_counts_agregated_pg_v2.json",
+#                                                 out_file="instance_counts_aggregated_class_summary_all_v2.json",
+#                                                 n_desirable_complete_classes=1000,
+#                                                 n_instances_already_counted=True)
+#
+# class_summarizer.exec_command()
+
+
+###################### Looking for different Pc (class-pointers)
+
+
+# class_ranker = ClassRankingCommand(source_file_classes="classes_or_not.xlsx",
+#                                    source_file_dump="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\wdexp_datasets\\datasets\\wikidata-all\\wikidata-all.json",  # TODO
+#                                    source_file_scores="C:\\Users\\Dani\\Documents\\EII\\doctorado\\datasets\\wdexp_datasets\\datasets\\filt_sort_page_rank.json",
+#                                    out_file="agregated_pg_v2_Pc2.json",
+#                                    security_threshold=15,
+#                                    direct_class_pointers_input=["P31", "P279"])  # TODO
+# class_ranker.exec_command()
+
+# class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="agregated_pg_v2_Pc2.json",
+#                                                 out_file="aggregated_class_summary_all_v2_Pc2.json",
+#                                                 n_desirable_complete_classes=10000)
+#
+# class_summarizer.exec_command()
+
+# instance_counter = ClassInstanceCounter(source_file_instances="agregated_pg_v2_Pc2.json",
+#                                         out_file="instance_counts_agregated_pg_v2_Pc2.json")
+#
+# instance_counter.exec_command()
+#
+class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="instance_counts_agregated_pg_v2_Pc2.json",
+                                                out_file="instance_counts_aggregated_class_summary_all_v2_Pc2.json",
+                                                n_desirable_complete_classes=1000,
+                                                n_instances_already_counted=True)
 
 class_summarizer.exec_command()
+
 
 
 

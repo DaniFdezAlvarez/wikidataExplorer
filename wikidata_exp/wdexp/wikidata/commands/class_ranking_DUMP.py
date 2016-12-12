@@ -14,7 +14,7 @@ KEY_ID = "id"
 class ClassRankingCommand(object):
 
     def __init__(self, source_file_classes, source_file_dump, source_file_scores, out_file=None,
-                 security_threshold=25, default_entity_score=MIN_SCORE):
+                 security_threshold=25, default_entity_score=MIN_SCORE, direct_class_pointers_input=None):
         """
 
         Args:
@@ -35,7 +35,11 @@ class ClassRankingCommand(object):
         self._in_file_scores = source_file_scores  # huge JSON to parse in chunks
         self._out_file = out_file
 
-        self._class_pointers = self._read_classes()
+        if direct_class_pointers_input is None:
+            self._class_pointers = self._read_classes()
+        else:
+            self._class_pointers = set(direct_class_pointers_input)
+
         self._candidate_classes = {}
         self._instances_dict = {}
 
