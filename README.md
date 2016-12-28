@@ -1,4 +1,4 @@
-# wikidataExplorer
+# Wikidata Explorer
 
 Methods to explore wikidata content and to compare it with other sources of different nature. Currently implemented:
 
