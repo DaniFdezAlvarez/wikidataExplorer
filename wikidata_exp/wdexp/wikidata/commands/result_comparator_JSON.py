@@ -26,7 +26,7 @@ class ResultComparatorCommand(object):
         self._sector_summaries = []
 
     def exec_command(self, string_return=False):
-        for a_sector in self._target_sectors():
+        for a_sector in self._target_sectors:
             self._compare_results_in_sector(a_sector)
         self._serialize_results(string_return)
 
@@ -65,11 +65,13 @@ class ResultComparatorCommand(object):
         result_summary[KEY_NUMBER_NOT_FOUND] = len(main_subrange) - len(shared_elements)
         for an_elem in main_subrange:
             if an_elem[KEY_ID] not in shared_elements:
-                result_summary[KEY_NOT_FOUND_SOURCE_1].append(an_elem[KEY_ID] + ":" + an_elem[KEY_LABEL])
+                label = an_elem[KEY_LABEL] if an_elem[KEY_LABEL] is not None else "UNKNOWN"
+                result_summary[KEY_NOT_FOUND_SOURCE_1].append(an_elem[KEY_ID] + ":" + label)
 
         for an_elem in target_subrange:
             if an_elem[KEY_ID] not in shared_elements:
-                result_summary[KEY_NOT_FOUND_SOURCE_2].append(an_elem[KEY_ID] + ":" + an_elem[KEY_LABEL])
+                label = an_elem[KEY_LABEL] if an_elem[KEY_LABEL] is not None else "UNKNOWN"
+                result_summary[KEY_NOT_FOUND_SOURCE_2].append(an_elem[KEY_ID] + ":" + label)
 
     def _compute_ranking_variation(self, main_subrange, target_subrange, shared_elements, result_summary):
         absolute = 0
@@ -77,9 +79,9 @@ class ResultComparatorCommand(object):
         for a_main in main_subrange:
             if a_main[KEY_ID] in shared_elements:
                 a_target = self._get_elem_by_id(target_subrange, a_main[KEY_ID])
-                absolute += abs(a_main[KEY_RANKING_WITHIN_SOURCE] - a_target[KEY_RANKING_WITHIN_SOURCE])
-                relative += abs(a_main[KEY_RANKING_WITHIN_SOURCE] - a_target[KEY_RANKING_WITHIN_SOURCE]) / len(
-                    shared_elements)
+                absolute += abs(float(a_main[KEY_RANKING_WITHIN_SOURCE]) - a_target[KEY_RANKING_WITHIN_SOURCE])
+                relative += abs(float(a_main[KEY_RANKING_WITHIN_SOURCE]) - a_target[KEY_RANKING_WITHIN_SOURCE]) / a_main[
+                    KEY_RANKING_WITHIN_SOURCE]
         absolute /= len(shared_elements)
         relative /= len(shared_elements)
         result_summary[KEY_ABSOLUTE_RANKING_VARIATION] = absolute
@@ -90,7 +92,8 @@ class ResultComparatorCommand(object):
         for a_main in main_subrange:
             if a_main[KEY_ID] in shared_elements:
                 a_target = self._get_elem_by_id(target_subrange, a_main[KEY_ID])
-                relative += abs(a_main[KEY_ACCUMULATED] - a_target[KEY_ACCUMULATED]) / len(shared_elements)
+                relative += abs(float(a_main[KEY_ACCUMULATED]) - float(a_target[KEY_ACCUMULATED])) / float(a_main[
+                    KEY_ACCUMULATED])
         relative /= len(shared_elements)
         result_summary[KEY_RELATIVE_DEVIATION_SCORE] = relative
 
@@ -102,6 +105,18 @@ class ResultComparatorCommand(object):
 
     def _parse_source(self, source_path):
         result = read_json_object(path=source_path)
+
+        # Removing wikis
+        i = 0
+        indexes_to_remove = []
+        for i in range(0, len(result)):
+            if result[i][KEY_LABEL] is not None:
+                if "wiki" in result[i][KEY_LABEL] or "Wiki" in result[i][KEY_LABEL]:
+                    indexes_to_remove.append(i)
+        for index in reversed(indexes_to_remove):
+            del result[index]
+
+        # Adding rank
         i = 1
         for an_elem in result:
             an_elem[KEY_RANKING_WITHIN_SOURCE] = i
@@ -116,7 +131,8 @@ class ResultComparatorCommand(object):
         if string_return:
             print total_str_result
         else:
-            pass  # TODO
+            with open(self._out_file, "w") as out_stream:
+                out_stream.write(total_str_result)
 
     def _generate_report_from_json_summary(self, a_summary):
         result = ""
@@ -134,6 +150,7 @@ class ResultComparatorCommand(object):
         for an_elem in a_summary[KEY_NOT_FOUND_SOURCE_2]:
             result += "\n   " + an_elem
 
+        return result
         # result_summary = {KEY_NUMBER_ELEMS: end_of_sector,
         #                   KEY_NUMBER_NOT_FOUND: 0,
         #                   KEY_NOT_FOUND_SOURCE_1: [],

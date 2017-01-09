@@ -7,6 +7,8 @@ from wikidata_exp.wdexp.wikidata.commands.aliases_properties_API import AliasesP
 from wikidata_exp.wdexp.wikidata.commands.class_ranking_DUMP import ClassRankingCommand
 from wikidata_exp.wdexp.wikidata.props_survey.xslt_processing import XsltSurveyProcessor
 from wikidata_exp.wdexp.wikidata.commands.class_instance_counter_JSON import ClassInstanceCounter
+from wikidata_exp.wdexp.wikidata.commands.result_comparator_JSON import ResultComparatorCommand
+from wikidata_exp.wdexp.communications.input.json.json_in import read_json_object
 __author__ = 'Dani'
 
 
@@ -147,15 +149,93 @@ import json
 #
 # instance_counter.exec_command()
 #
-class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="instance_counts_agregated_pg_v2_Pc2.json",
-                                                out_file="instance_counts_aggregated_class_summary_all_v2_Pc2.json",
-                                                n_desirable_complete_classes=1000,
-                                                n_instances_already_counted=True)
-
-class_summarizer.exec_command()
-
-
+# class_summarizer = AgregatedClassSummaryCommand(source_agregated_scores="instance_counts_agregated_pg_v2_Pc2.json",
+#                                                 out_file="instance_counts_aggregated_class_summary_all_v2_Pc2.json",
+#                                                 n_desirable_complete_classes=1000,
+#                                                 n_instances_already_counted=True)
+#
+# class_summarizer.exec_command()
 
 
 
+######################### Comparing summaries
 
+# comparator = ResultComparatorCommand(source1="aggregated_class_summary_all_v2.json",
+#                                      source2="aggregated_class_summary_all_v2_Pc2.json",
+#                                      out_file="classRankFull_vs_ClassRankPc2.txt",
+#                                      target_sectors=[100,500,1000])
+#
+# comparator.exec_command(string_return=True)
+#
+#
+# comparator = ResultComparatorCommand(source1="aggregated_class_summary_all_v2.json",
+#                                      source2="instance_counts_aggregated_class_summary_all_v2.json",
+#                                      out_file="classRankFull_vs_ClassRankPc2.txt",
+#                                      target_sectors=[100,500,1000])
+#
+# comparator.exec_command(string_return=True)
+#
+#
+# comparator = ResultComparatorCommand(source1="aggregated_class_summary_all_v2.json",
+#                                      source2="instance_counts_aggregated_class_summary_all_v2_Pc2.json",
+#                                      out_file="classRankFull_vs_ClassRankPc2.txt",
+#                                      target_sectors=[100,500,1000])
+#
+# comparator.exec_command(string_return=True)
+
+
+
+
+
+################## Producing a latex body table
+#
+
+def remove_wikis(json_list):
+    i = 0
+    indexes_to_remove = []
+    for i in range(0, len(json_list)):
+        if json_list[i]["label"] is not None:
+            if "wiki" in json_list[i]["label"] or "Wiki" in json_list[i]["label"]:
+                indexes_to_remove.append(i)
+                print "EEEY"
+    for index in reversed(indexes_to_remove):
+        del json_list[index]
+
+
+
+files = ["aggregated_class_summary_all_v2.json",
+         "aggregated_class_summary_all_v2_Pc2.json",
+         "instance_counts_aggregated_class_summary_all_v2.json",
+         "instance_counts_aggregated_class_summary_all_v2_Pc2.json"]
+
+
+
+lines = []
+
+json_object = read_json_object(files[0])
+remove_wikis(json_object)
+for i in range(0, 50):
+    # lines.append(str(i + 1) + ". " + json_object[i]["id"] + ":" + json_object[i]["label"] + " ")
+    lines.append(str(i + 1)  + ". " + json_object[i]["label"] + " ")
+
+for a_path in files[1:]:
+    json_object = read_json_object(a_path)
+    remove_wikis(json_object)
+    for i in range(0, 50):
+        # lines[i] += "&" + str(i + 1) + ". " + json_object[i]["id"] + ":" + json_object[i]["label"] + " "
+        lines[i] += "&" + str(i + 1) + ". " + json_object[i]["label"] + " "
+
+for i in range(0,50):
+    lines[i] += "\\\\"
+
+result = "\n".join(lines)
+print result
+
+
+    # {
+    #     "desc": "group of items sharing common characteristics",
+    #     "score": "0.0405779277501668359472208",
+    #     "n_instances": 20,
+    #     "id": "Q16889133",
+    #     "label": "class"
+    # },
