@@ -7,15 +7,15 @@ The source code maintained in this repository consist on set of modules handy fo
 - Count number of apparitions of each property in Wikidata. It works against a locally stored JSON dump of the graph.
 - Extract description, labels and aliases of a given set of properties specified through a file. It works against an API.
 - Classify a set of input entities of a graph in roles according to the way they are being used. Possibilities: class, instance, both of them (in different triples) or none of them. It uses a SPARQL API.
-- Ellaborate a sorted list of classes regarding their number of discovered isntances in a graph. It consumes a certain format of JSON file.
-- Compute the ClassRank score of each discovered class in a graph. It used a locally stored JSON dump, a local file of PageRank scores and a list of class-pointers in excell (xlsx).
+- Ellaborate a sorted list of classes regarding their number of discovered instances in a graph. It consumes a certain format of JSON file.
+- **Compute the ClassRank score of each discovered class in a graph. It uses a locally stored JSON dump, a local file of PageRank scores and a list of class-pointers in excell (xlsx).**
 - Detect properties frequently used to point a certain set of input nodes. It can consume the Wikidata JSON dump or an alternative format of JSON file.
-- Extract information (descrittion, labels, aliasas) of a given set of entities. It works against an API.
+- Extract information (description, labels, aliases) of a given set of entities. It works against an API.
 - Obtain the rank of a certain set of input entities in a sorted list of PageRank scores. It consumes a certain format of JSON file.
-- Creates a simplified Wikidata graph in a format in which each line represents a triple and each line has two tokes: first for the subject and last for the object. Each token is the ID of a Wikidata element. It uses a locally stored dump of Wikidata.
+- Create a simplified Wikidata graph in a format in which each line represents a triple and each line has two tokes: first for the subject and last for the object. Each token is the ID of a Wikidata element. It uses a locally stored dump of Wikidata.
 - Sort a JSON file containing PageRank scores of Wikidata entities and filter all those elements with minimun score. It consumes a certain format of JSON file.
 - Calculate PageRank scores of a graph. It consumes a local file of a simplified Wikidata graph (unlabelled edges).
-- Compare several features of two json files containing sorted lists of entities (different criteria: ClassRank scores, PageRank scores, number of instances,..).
+- Compare several features of two json files containing sorted lists of entities (different criteria: ClassRank scores, PageRank scores, number of instances...).
 - It builds a subgraph formed by all those elements in a graph conected with an input set of nodes with paths of length 1 (incoming/outgoing/both edges). It works against a SPARQL API.
 
 ### Complementary sources
