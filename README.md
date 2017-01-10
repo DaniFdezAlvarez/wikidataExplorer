@@ -31,16 +31,16 @@ In this page we are also offering some dowloadables with the results of applying
 
 Most of the results are rankings of elements sorted by some kind of metric, In this page we are publishing slices ocntaining the most relevant elements for each ranking in each case. In order to get access to the full lists, contact the authors.
 
-1. Class-pointers:
-  1. [List of acepted/rejected properties in Excell](https://danifdezalvarez.github.io/wikidataExplorer/)
+### Class-pointers
+* [List of acepted/rejected properties in Excell, called in file names PcFull](https://danifdezalvarez.github.io/wikidataExplorer/)
 
-2. PageRank:
-  1. [Top-1000 entities according to PageRank](https://danifdezalvarez.github.io/wikidataExplorer/)
+### PageRank
+* [Top-1000 entities according to PageRank](https://danifdezalvarez.github.io/wikidataExplorer/)
 
-3. ClassRank:
-  1. [Top-1000 classes according to ClassRank. Set of class-pointers of list 1.i] (https://danifdezalvarez.github.io/wikidataExplorer/)
-  2. [Top-1000 classes according to ClassRank. Set of class-pointers: {P31, P279}] (https://danifdezalvarez.github.io/wikidataExplorer/)
+### ClassRank
+* [Top-1000 classes according to ClassRank. Set of class-pointers PcFull] (https://danifdezalvarez.github.io/wikidataExplorer/)
+* [Top-1000 classes according to ClassRank. Set of class-pointers: {P31, P279}] (https://danifdezalvarez.github.io/wikidataExplorer/)
 
-4. Instance counting:
-  1. [Top-1000 classes according to instance cointing. Set of class-pointers of list 1.i] (https://danifdezalvarez.github.io/wikidataExplorer/)
-  2. [Top-1000 classes according to instance counting. Set of class-pointers: {P31, P279}] (https://danifdezalvarez.github.io/wikidataExplorer/) 
+### Instance counting:
+* [Top-1000 classes according to instance cointing. Set of class-pointers PcFull] (https://danifdezalvarez.github.io/wikidataExplorer/)
+* [Top-1000 classes according to instance counting. Set of class-pointers: {P31, P279}] (https://danifdezalvarez.github.io/wikidataExplorer/) 
