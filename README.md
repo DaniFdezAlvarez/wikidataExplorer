@@ -32,15 +32,15 @@ In this page we are also offering some dowloadables with the results of applying
 Most of the results are rankings of elements sorted by some kind of metric, In this page we are publishing slices ocntaining the most relevant elements for each ranking in each case. In order to get access to the full lists, contact the authors.
 
 ### Class-pointers
-* [List of acepted/rejected properties in Excell, called in file names PcFull](https://danifdezalvarez.github.io/wikidataExplorer/)
+* [List of acepted/rejected properties in Excell, called in file names PcFull](https://github.com/DaniFdezAlvarez/wikidataExplorer/raw/master/results/acepted_and_rejected_class_pointers.xlsx)
 
 ### PageRank
-* [Top-1000 entities according to PageRank](https://danifdezalvarez.github.io/wikidataExplorer/)
+* [Top-1000 entities according to PageRank](https://raw.githubusercontent.com/DaniFdezAlvarez/wikidataExplorer/master/results/pagerank_summary_top1000.json)
 
 ### ClassRank
-* [Top-1000 classes according to ClassRank. Set of class-pointers PcFull] (https://danifdezalvarez.github.io/wikidataExplorer/)
-* [Top-1000 classes according to ClassRank. Set of class-pointers: {P31, P279}] (https://danifdezalvarez.github.io/wikidataExplorer/)
+* [Top-1000 classes according to ClassRank. Set of class-pointers PcFull](https://raw.githubusercontent.com/DaniFdezAlvarez/wikidataExplorer/master/results/classrank_summary_PcFull_top1000.json)
+* [Top-1000 classes according to ClassRank. Set of class-pointers: {P31, P279}](https://raw.githubusercontent.com/DaniFdezAlvarez/wikidataExplorer/master/results/classrank_summary_Pc2_top1000.json)
 
 ### Instance counting:
-* [Top-1000 classes according to instance cointing. Set of class-pointers PcFull] (https://danifdezalvarez.github.io/wikidataExplorer/)
-* [Top-1000 classes according to instance counting. Set of class-pointers: {P31, P279}] (https://danifdezalvarez.github.io/wikidataExplorer/) 
+* [Top-1000 classes according to instance cointing. Set of class-pointers PcFull](https://raw.githubusercontent.com/DaniFdezAlvarez/wikidataExplorer/master/results/instance_counts_summary_PcFULL_top1000.json)
+* [Top-1000 classes according to instance counting. Set of class-pointers: {P31, P279}](https://raw.githubusercontent.com/DaniFdezAlvarez/wikidataExplorer/master/results/instance_counts_summary_Pc2_top1000.json) 
