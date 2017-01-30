@@ -97,7 +97,7 @@ class ClassRankingCommand(object):
     def _get_num_of_acepted_instances(self, class_id):
         resultset = set()
         for a_prop_id in self._candidate_classes[class_id][KEY_INSTANCES]:
-            if len(self._candidate_classes[class_id][KEY_INSTANCES][a_prop_id])  >= self._security_threshold:
+            if len(self._candidate_classes[class_id][KEY_INSTANCES][a_prop_id]) >= self._security_threshold:
                 for an_instance in self._candidate_classes[class_id][KEY_INSTANCES][a_prop_id]:
                     resultset.add(an_instance)
         return len(resultset)
@@ -130,6 +130,7 @@ class ClassRankingCommand(object):
                 for a_class_id in self._instances_dict[instance_id]:
                     self._candidate_classes[a_class_id][KEY_ACCUMULATED] += Decimal(instance_score)
                     self._candidate_classes[a_class_id][KEY_NUM_ADDED] += 1
+                    print a_class_id
 
 
 
@@ -196,7 +197,7 @@ class ClassRankingCommand(object):
 
 
     def _add_confirmed_instance(self, instance_id, class_id):
-        # OJOO!!!!! OTRO BUG AQUI, ESTO DEBERIA SER UN SET. CORREGIDO A PRIORI
+
         if instance_id not in self._instances_dict:
             self._instances_dict[instance_id] = set()
         self._instances_dict[instance_id].add(class_id)
@@ -204,17 +205,17 @@ class ClassRankingCommand(object):
 
 
     def _is_not_enough_used_pointer(self, class_id, property_id):
-        return len(self._candidate_classes[class_id][KEY_INSTANCES][property_id]) < self._security_threshold
+        return len(self._candidate_classes[class_id][KEY_INSTANCES][property_id]) < self._security_threshold -1
 
 
 
     def _is_a_threshold_used_pointer(self, class_id, property_id):
-        return len(self._candidate_classes[class_id][KEY_INSTANCES][property_id]) == self._security_threshold
+        return len(self._candidate_classes[class_id][KEY_INSTANCES][property_id]) == self._security_threshold -1
 
 
 
     def _is_more_than_threshold_used_pointer(self, class_id, property_id):
-        return len(self._candidate_classes[class_id][KEY_INSTANCES][property_id]) > self._security_threshold
+        return len(self._candidate_classes[class_id][KEY_INSTANCES][property_id]) > self._security_threshold -1
 
 
 

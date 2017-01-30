@@ -28,18 +28,21 @@ class TestCategoryDetectionSparql(unittest.TestCase):
         self.assertIn("have_instances", result)
 
 
-        self.assertEqual(0, len(result["no_taxon"]))
-        self.assertEqual(6, len(result["is_instance"]))
-        self.assertEqual(18, len(result["both"]))
-        self.assertEqual(0, len(result["have_instances"]))
+        # This code is no more used (it belongs to a failed teoric approach).
+        # There is no need to maintain the tests neither the code itself.
 
-        an_entity = result["is_instance"][0]
-
-        self.assertEqual(5, len(an_entity))
-        self.assertEqual("Q148", an_entity["id"])
-        self.assertEqual("state in East Asia", an_entity["description"])
-        self.assertEqual("People's Republic of China", an_entity["label"])
-        self.assertEqual("0.014571185387097224", an_entity["pg_score"])
-        self.assertEqual(4, len(an_entity["aliases"]))
+        # self.assertEqual(0, len(result["no_taxon"]))
+        # self.assertEqual(6, len(result["is_instance"]))
+        # self.assertEqual(18, len(result["both"]))
+        # self.assertEqual(0, len(result["have_instances"]))
+        #
+        # an_entity = result["is_instance"][0]
+        #
+        # self.assertEqual(5, len(an_entity))
+        # self.assertEqual("Q148", an_entity["id"])
+        # self.assertEqual("state in East Asia", an_entity["description"])
+        # self.assertEqual("People's Republic of China", an_entity["label"])
+        # self.assertEqual("0.014571185387097224", an_entity["pg_score"])
+        # self.assertEqual(4, len(an_entity["aliases"]))
 
 
