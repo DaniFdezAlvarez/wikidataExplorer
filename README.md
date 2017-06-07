@@ -1,7 +1,7 @@
 # ClassRank prototype: Wikidata explorer
 
 ## Source code
-The source code maintained in this repository consist on set of modules handy for exploring the content of Wikidata knowledge graph. The core of the code is a prototype of ClassRank algorithm, but some other features has been implemented. The code is structured by separate commands that have been sequentially executed to obtain different results. Each command use to require an input file/URL and  an output path. Some commands consume the product of some others in a piped system. The following commands have been implemented:
+The source code maintained in this repository consist on a set of modules handy for exploring the content of Wikidata knowledge graph. The core of the code is a prototype of ClassRank algorithm, but some other features has been implemented. The code is structured by separate commands that have been sequentially executed to obtain different results. Each command use to require an input file/URL and  an output path. Some commands consume the product of some others in a piped system. The following commands have been implemented:
 
 
 - Count number of apparitions of each property in Wikidata. It works against a locally stored JSON dump of the graph.
@@ -22,14 +22,14 @@ The source code maintained in this repository consist on set of modules handy fo
 Some other commands have been implemented in order to complete the information of some elements in Wikidata graph using external sources, or to sufy the structure of some other sources in order to compare it with Wikidata.
 
 
-- Scrap of Google Trends. The command scraps queries against Google Trends related with labels or aliases of Wikidata elements in order to find extra aliases. DON NOT EXECUTE WITHOUT THE EXPLICIT PERMISSION OF GOOGLE COMPANY.
+- Scrap of Google Trends. The command scraps queries against Google Trends related with labels or aliases of Wikidata elements in order to find extra aliases. DO NOT EXECUTE WITHOUT THE EXPLICIT PERMISSION OF GOOGLE COMPANY.
 - Parser of AOL dump. The command count the number of n-grams apparitions (with different size of n) in a query log released by AOL.
 
 
 ## Results of applying ClassRank on Wikidata
-In this page we are also offering some dowloadables with the results of applying our prototype of ClassRank on Wikidata. Two sources has been used: Wikidata API () and a local dump of Wikidata graph, with date with date of 2016/10/26. The dump is no longer offered in Wikidata's site. In order to reproduce the experiment using the same source, contact the authors of this repository.
+In this page we are also offering some dowloadables with the results of applying our prototype of ClassRank on Wikidata. Two sources has been used: Wikidata API, and a local dump of Wikidata graph, with date of 2016/10/26. The dump is no longer offered in Wikidata's site. In order to reproduce the experiment using the same data, contact the authors of this repository.
 
-Most of the results are rankings of elements sorted by some kind of metric, In this page we are publishing slices ocntaining the most relevant elements for each ranking in each case. In order to get access to the full lists, contact the authors.
+Most of the results are rankings of elements sorted by some kind of metric. In this page we are publishing slices containing the most relevant elements for each ranking. In order to get access to the full lists, contact the authors.
 
 ### Class-pointers
 * [List of acepted/rejected properties in Excell, called in file names PcFull](https://github.com/DaniFdezAlvarez/wikidataExplorer/raw/master/results/acepted_and_rejected_class_pointers.xlsx)
